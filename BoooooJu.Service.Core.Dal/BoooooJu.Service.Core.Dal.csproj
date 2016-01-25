@@ -54,7 +54,7 @@
   <ItemGroup>
     <Compile Include="BoooooJuDB.cs" />
     <Compile Include="DBModels\Test.cs" />
-    <Compile Include="DBModels\UerKey.cs" />
+    <Compile Include="DBModels\UserKey.cs" />
     <Compile Include="DBModels\User.cs" />
     <Compile Include="Migrations\201601211122085_BooooJuDB.cs" />
     <Compile Include="Migrations\201601211122085_BooooJuDB.Designer.cs">
