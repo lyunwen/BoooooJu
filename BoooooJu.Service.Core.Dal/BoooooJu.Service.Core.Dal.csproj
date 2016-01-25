@@ -41,6 +41,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -52,15 +53,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BoooooJuDB.cs" />
-    <Compile Include="DBModels\Usertt.cs" />
+    <Compile Include="DBModels\Test.cs" />
+    <Compile Include="DBModels\UerKey.cs" />
+    <Compile Include="DBModels\User.cs" />
     <Compile Include="Migrations\201601211122085_BooooJuDB.cs" />
     <Compile Include="Migrations\201601211122085_BooooJuDB.Designer.cs">
       <DependentUpon>201601211122085_BooooJuDB.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DBModels\Test.cs" />
-    <Compile Include="DBModels\User.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="OBModels\" />
@@ -70,11 +76,18 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201601211122085_BooooJuDB.resx">
       <DependentUpon>201601211122085_BooooJuDB.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
