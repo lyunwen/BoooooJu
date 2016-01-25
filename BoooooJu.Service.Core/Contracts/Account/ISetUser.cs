@@ -14,7 +14,6 @@ namespace BoooooJu.Service.Core.Contracts
     [ServiceContract]
     public interface ISetUser: IBaseSetData<User>
     { 
-        [OperationContract]
-        int InsertUser(Dal.User info); 
+       
     } 
 }

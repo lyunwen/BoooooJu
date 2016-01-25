@@ -9,7 +9,7 @@ using BoooooJu.Service.Core.QueryParameter.Base;
 
 namespace BoooooJu.Service.Core.Addresses.Account
 {
-    class GetUser:IGetUser
+    public class GetUser : IGetUser
     {
         public User GetDataByPrimaryKey(int key)
         {

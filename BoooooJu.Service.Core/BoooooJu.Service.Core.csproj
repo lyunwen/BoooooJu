@@ -64,7 +64,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueryParameter\Base\IPage.cs" />
     <Compile Include="QueryParameter\Page.cs" />
-    <Compile Include="Addresses\UserOperation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
