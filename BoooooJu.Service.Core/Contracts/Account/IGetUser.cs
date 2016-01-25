@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace BoooooJu.Service.Core.Contracts
 {
     [ServiceContract]
-    interface IGetUser
+    interface IGetUser : BoooooJu.Service.Core.Contracts.Base.IBaseGetData<User>
     {
         [OperationContract]
         User GetUserById(int id);

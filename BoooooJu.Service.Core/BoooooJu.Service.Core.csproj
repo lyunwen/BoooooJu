@@ -52,6 +52,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Addresses\Account\GetUser.cs" />
+    <Compile Include="Addresses\Account\SetUser.cs" />
     <Compile Include="Addresses\Base\BaseSetData.cs" />
     <Compile Include="Contracts\Account\IUserAuthorize.cs" />
     <Compile Include="Contracts\Base\IBaseGetData.cs" />

@@ -4,7 +4,7 @@ using System.ServiceModel;
 
 namespace BoooooJu.Service.Core.Addresses.Base
 {
-    public class BaseSetOperation<T> : IBaseDataSet<T> where T : class
+    public class BaseSetData<T> : IBaseSetData<T> where T : class
     {
         [OperationContract]
         public T Insert(T t)

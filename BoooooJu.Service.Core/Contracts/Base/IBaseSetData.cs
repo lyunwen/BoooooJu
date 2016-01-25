@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.ServiceModel;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ServiceModel;
 
 namespace BoooooJu.Service.Core.Contracts.Base
-{
-
+{ 
     [ServiceContract]
-    public interface IBaseDataSet<T>
+    public interface IBaseSetData<T>
     {
         [OperationContract]
         T Insert(T t);

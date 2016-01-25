@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.ServiceModel;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BoooooJu.Service.Core.Contracts.Base
 {
-    public interface IBaseDataGet<T> where T : class
+    public interface IBaseGetData<T> where T : class
     { 
         [OperationContract]
         T GetDataByPrimaryKey(int key);
