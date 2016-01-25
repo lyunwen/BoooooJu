@@ -1,22 +1,17 @@
-﻿using BoooooJu.Service.Core.Dal;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using BoooooJu.Service.Core.Contracts.Base;
+using BoooooJu.Service.Core.Dal;
 using System.ServiceModel;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace BoooooJu.Service.Core.Contracts.Base
+namespace BoooooJu.Service.Core.Addresses.Base
 {
-    [ServiceContract]
-    public class BaseSetOperation<T>: IBaseDataSet<T> where T : class
+    public class BaseSetOperation<T> : IBaseDataSet<T> where T : class
     {
         [OperationContract]
         public T Insert(T t)
         {
             T result = null;
             if (t != null)
-            { 
+            {
                 using (BoooooJuDB db = new BoooooJuDB())
                 {
                     db.Entry<T>(t).State = System.Data.Entity.EntityState.Added;
@@ -29,11 +24,11 @@ namespace BoooooJu.Service.Core.Contracts.Base
         [OperationContract]
         public bool DeleteByPrimaryKey(T t)
         {
-            bool result = false; 
+            bool result = false;
             using (BoooooJuDB db = new BoooooJuDB())
             {
                 db.Entry<T>(t).State = System.Data.Entity.EntityState.Deleted;
-                result = db.SaveChanges()>0;
+                result = db.SaveChanges() > 0;
             }
             return result;
         }

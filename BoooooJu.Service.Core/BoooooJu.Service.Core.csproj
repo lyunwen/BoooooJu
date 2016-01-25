@@ -52,9 +52,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Addresses\Base\BaseSetData.cs" />
     <Compile Include="Contracts\Account\IUserAuthorize.cs" />
     <Compile Include="Contracts\Base\IBaseGetData.cs" />
-    <Compile Include="Contracts\Base\BaseSetOperation.cs" />
     <Compile Include="Contracts\Base\IBaseSetData.cs" />
     <Compile Include="Contracts\Account\ISetUser.cs" />
     <Compile Include="Contracts\Account\IGetUser.cs" />
