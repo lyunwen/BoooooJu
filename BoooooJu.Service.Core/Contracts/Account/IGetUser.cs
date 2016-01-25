@@ -3,7 +3,7 @@ using BoooooJu.Service.Core.QueryParameter.Base;
 using System.Collections.Generic;
 using System.ServiceModel;
 
-namespace BoooooJu.Service.Core.Contracts
+namespace BoooooJu.Service.Core.Contracts.Account
 {
     [ServiceContract]
     interface IGetUser : Base.IBaseGetData<User>

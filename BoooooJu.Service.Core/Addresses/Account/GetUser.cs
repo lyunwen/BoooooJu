@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BoooooJu.Service.Core.QueryParameter.Base;
+using BoooooJu.Service.Core.Contracts.Account;
 
 namespace BoooooJu.Service.Core.Addresses.Account
 {
