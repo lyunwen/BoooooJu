@@ -17,19 +17,10 @@ namespace BoooooJu.Web.Core
     {
         protected void Application_Start()
         {
-            var builder = new ContainerBuilder();
-            SetupResolveRules(builder);
-            builder.RegisterControllers(Assembly.GetExecutingAssembly());
-            var container = builder.Build();
-            //using (var container = builder.Build())
-            //{
-            DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
+            DependencyResolver.SetResolver(new App_Start.IOCContainerConfig().Config());
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-
-            //}
-
-
+ 
             ViewEngines.Engines.Clear();
             ViewEngines.Engines.Add(new App_Start.BoooJuViewEngine());
         }

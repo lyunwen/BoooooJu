@@ -85,6 +85,7 @@
   <ItemGroup>
     <Compile Include="App_Start\BoooJuViewEngine.cs" />
     <Compile Include="App_Start\Bundles.cs" />
+    <Compile Include="App_Start\IOCContainerConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="BoooooJuApplication.cs" />
     <Compile Include="Common\RemarkAttribute.cs" />
