@@ -22,7 +22,8 @@ namespace BoooooJu.Web.Core.Test
                 Password = "qq123123",
                 Sex = 2,
                 PasswordSalt = "jyHf7w",
-                PasswordSaltType = 1
+                PasswordSaltType = 1,
+                CreateTime=DateTime.Now
             };
              user = client.Insert(user);
         }
