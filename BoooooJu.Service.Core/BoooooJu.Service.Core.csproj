@@ -55,7 +55,7 @@
     <Compile Include="Contracts\Account\IUserAuthorize.cs" />
     <Compile Include="Contracts\Base\IGetBaseData.cs" />
     <Compile Include="Contracts\Base\BaseSetOperation.cs" />
-    <Compile Include="Contracts\Base\ISetBaseData.cs" />
+    <Compile Include="Contracts\Base\IBaseSetData.cs" />
     <Compile Include="Contracts\Account\ISetUser.cs" />
     <Compile Include="Contracts\Account\IGetUser.cs" />
     <Compile Include="Contracts\ISignIn.cs" />
