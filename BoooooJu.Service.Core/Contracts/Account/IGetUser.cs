@@ -1,16 +1,12 @@
 ﻿using BoooooJu.Service.Core.Dal;
 using BoooooJu.Service.Core.QueryParameter.Base;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.ServiceModel;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BoooooJu.Service.Core.Contracts
 {
     [ServiceContract]
-    interface IGetUser : BoooooJu.Service.Core.Contracts.Base.IBaseGetData<User>
+    interface IGetUser : Base.IBaseGetData<User>
     {
         [OperationContract]
         User GetUserById(int id);

@@ -3,7 +3,7 @@
 namespace BoooooJu.Service.Core.Contracts.Base
 { 
     [ServiceContract]
-    public interface IBaseSetData<T>
+    public interface IBaseSetData<T> where T :class
     {
         [OperationContract]
         T Insert(T t);

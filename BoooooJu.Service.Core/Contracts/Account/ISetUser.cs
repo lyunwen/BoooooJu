@@ -1,12 +1,6 @@
 ﻿using BoooooJu.Service.Core.Contracts.Base;
 using BoooooJu.Service.Core.Dal;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
 using System.ServiceModel;
-using System.ServiceModel.Web;
-using System.Text;
 
 namespace BoooooJu.Service.Core.Contracts
 {
