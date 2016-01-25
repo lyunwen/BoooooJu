@@ -96,7 +96,12 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Filters\BoAuthorizeAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\BoooooJuService\Reference.cs">
+    <Compile Include="Service References\GetUserService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SetUserService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -109,40 +114,75 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <None Include="Service References\BoooooJuService\BoooooJu.Web.Core.BoooooJuService.User.datasource">
+    <None Include="Service References\GetUserService\BoooooJu.Web.Core.GetUserService.User.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\BoooooJuService\UserOperation.wsdl" />
-    <None Include="Service References\BoooooJuService\UserOperation.xsd">
+    <None Include="Service References\GetUserService\GetUser.wsdl" />
+    <None Include="Service References\GetUserService\GetUser.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\BoooooJuService\UserOperation1.xsd">
+    <None Include="Service References\GetUserService\GetUser1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\BoooooJuService\UserOperation2.xsd">
+    <None Include="Service References\GetUserService\GetUser2.xsd">
       <SubType>Designer</SubType>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Service References\BoooooJuService\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\BoooooJuService\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\BoooooJuService\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\BoooooJuService\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
+    <None Include="Service References\GetUserService\GetUser3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SetUserService\BoooooJu.Web.Core.SetUserService.User.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SetUserService\SetUser.wsdl" />
+    <None Include="Service References\SetUserService\SetUser.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SetUserService\SetUser1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SetUserService\SetUser2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SetUserService\SetUser3.xsd">
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\BoooooJuService\UserOperation.disco" />
+    <WCFMetadataStorage Include="Service References\GetUserService\" />
+    <WCFMetadataStorage Include="Service References\SetUserService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GetUserService\GetUser.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GetUserService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GetUserService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GetUserService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SetUserService\SetUser.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SetUserService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SetUserService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SetUserService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

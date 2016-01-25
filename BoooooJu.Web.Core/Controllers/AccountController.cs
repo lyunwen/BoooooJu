@@ -1,4 +1,5 @@
-﻿using BoooooJu.Web.Core.BoooooJuService;
+﻿
+using BoooooJu.Web.Core.GetUserService;
 using BoooooJu.Web.Core.ViewModels.Account;
 using System;
 using System.Collections.Generic;
@@ -13,9 +14,9 @@ namespace BoooooJu.Web.Core.Controllers
     public class AccountController:Base.BoooooJuController
     {
         private readonly IGetUser _getUserClient;
-        public AccountController()
+        public AccountController(IGetUser getUserClient)
         {
-
+            _getUserClient = getUserClient;
         }
         //登入
         public ViewResult SignIn()

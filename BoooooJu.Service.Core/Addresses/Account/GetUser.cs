@@ -17,7 +17,7 @@ namespace BoooooJu.Service.Core.Addresses.Account
             Dal.User user = null;
             using (BoooooJuDB db = new BoooooJuDB())
             {
-                user = db.Users.First(x => x.Account == accountName);
+                user = db.Users.FirstOrDefault(x => x.Account == accountName);
             }
             //User user = new User
             //{

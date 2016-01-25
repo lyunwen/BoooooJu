@@ -1,5 +1,4 @@
-﻿using BoooooJu.Web.Core.BoooooJuService;
-using BoooooJu.Web.Core.Filters;
+﻿using BoooooJu.Web.Core.Filters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,14 +11,14 @@ namespace BoooooJu.Web.Core.Controllers
     // [BoAuthorize(Base.BoooooJuPermit.All)]
     public class HomeController : Base.BoooooJuController
     {
-        private readonly ISetUser _setUserClient;
-        public HomeController(ISetUser SetUserClient)
+        private readonly SetUserService.ISetUser _setUserClient;
+        public HomeController(SetUserService.ISetUser SetUserClient)
         {
             _setUserClient = SetUserClient;
         }
-        public async Task<ActionResult> Index()
+        public  ActionResult Index()
         {
-            int y = await _setUserClient.InsertUserAsync(new BoooooJuService.User()
+            SetUserService.User y =  _setUserClient.Insert(new SetUserService.User()
             {
                 Account = "liuyunwen" + new Random().Next(1000, 9999),
                 CellPhone = "13058171" + new Random().Next(100, 999),

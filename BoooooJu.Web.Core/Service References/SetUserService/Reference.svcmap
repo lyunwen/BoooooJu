@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="007e8b9c-069b-4e6e-a7bc-466c302d682e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57315/SetUser.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SetUser.xsd" MetadataType="Schema" ID="593fa5c7-f621-4e01-8da8-db5de61b68b1" SourceId="1" SourceUrl="http://localhost:57315/SetUser.svc?xsd=xsd2" />
+    <MetadataFile FileName="SetUser1.xsd" MetadataType="Schema" ID="dc1692ff-a93e-4fa3-82d7-ee7b5744e2c3" SourceId="1" SourceUrl="http://localhost:57315/SetUser.svc?xsd=xsd0" />
+    <MetadataFile FileName="SetUser.wsdl" MetadataType="Wsdl" ID="fc17a95b-0f31-4a2e-92e7-488e04bb9094" SourceId="1" SourceUrl="http://localhost:57315/SetUser.svc?wsdl" />
+    <MetadataFile FileName="SetUser2.xsd" MetadataType="Schema" ID="12bf357b-ff00-4bef-94dd-13f0f7b49211" SourceId="1" SourceUrl="http://localhost:57315/SetUser.svc?xsd=xsd3" />
+    <MetadataFile FileName="SetUser3.xsd" MetadataType="Schema" ID="ec922034-15c8-4ffa-853c-c7a293286386" SourceId="1" SourceUrl="http://localhost:57315/SetUser.svc?xsd=xsd1" />
+    <MetadataFile FileName="SetUser.disco" MetadataType="Disco" ID="241b6a91-dcd4-48f3-8348-28eed17e97de" SourceId="1" SourceUrl="http://localhost:57315/SetUser.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

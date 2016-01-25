@@ -5,9 +5,9 @@ using System.Data.Entity;
 using System.ServiceModel;
 
 namespace BoooooJu.Service.Core.Addresses.Base
-{
+{ 
     public class BaseSetData<T> : IBaseSetData<T> where T : class
-    {
+    { 
         public T Insert(T t)
         {
             T result = null;
@@ -21,7 +21,7 @@ namespace BoooooJu.Service.Core.Addresses.Base
                 }
             }
             return result;
-        }
+        } 
         public bool DeleteByPrimaryKey(params object[] keyValues)
         {
             using (BoooooJuDB db = new BoooooJuDB())

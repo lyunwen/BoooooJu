@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BoooooJu.Web.Core;
-using BoooooJu.Web.Core.BoooooJuService;
+using BoooooJu.Web.Core.SetUserService;
 
 namespace BoooooJu.Web.Core.Test
 {
@@ -24,7 +24,7 @@ namespace BoooooJu.Web.Core.Test
                 PasswordSalt = "jyHf7w",
                 PasswordSaltType = 1
             };
-            int userId = client.InsertUser(user);
+             user = client.Insert(user);
         }
     }
    

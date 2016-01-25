@@ -8,6 +8,8 @@ using System.Web.Routing;
 using Autofac;
 using Autofac.Integration.Mvc;
 using Autofac.Configuration;
+using BoooooJu.Web.Core.SetUserService;
+using BoooooJu.Web.Core.GetUserService;
 
 namespace BoooooJu.Web.Core
 {
@@ -32,11 +34,9 @@ namespace BoooooJu.Web.Core
             ViewEngines.Engines.Add(new App_Start.BoooJuViewEngine());
         }
         private void SetupResolveRules(ContainerBuilder builder)
-        {
-           // builder.RegisterType<BoooooJuService.SetUserServiceClient>();
-            builder.RegisterType<BoooooJuService.SetUserClient>().As<BoooooJuService.ISetUser>();
-            builder.RegisterType<BoooooJuService.GetUserClient>().As<BoooooJuService.IGetUser>();
-            // builder.RegisterModule(new ConfigurationSettingsReader("autofac"));
+        { 
+            builder.RegisterType<SetUserClient>().As<ISetUser>();
+            builder.RegisterType<GetUserClient>().As<IGetUser>(); 
         }
     }
 }

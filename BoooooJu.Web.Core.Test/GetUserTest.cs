@@ -8,8 +8,8 @@ namespace BoooooJu.Web.Core.Test
     {
         [TestMethod]
         public void TestMethod1()
-        { 
-            BoooooJuService.IGetUser client = new BoooooJuService.GetUserClient();
+        {
+            GetUserService.IGetUser client = new GetUserService.GetUserClient();
             var value = client.GetUserByAccount("liuyunwen13058");
         }
     }

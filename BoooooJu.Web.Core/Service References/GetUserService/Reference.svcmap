@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="39b7281b-f164-4fcd-aeaa-6bca9b62da04" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57315/GetUser.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GetUser.disco" MetadataType="Disco" ID="a6cabb96-dac8-4ba4-9b1f-1e7ceb17f450" SourceId="1" SourceUrl="http://localhost:57315/GetUser.svc?disco" />
+    <MetadataFile FileName="GetUser.xsd" MetadataType="Schema" ID="bae7ec5b-cf0b-4b70-995a-23acc46f6507" SourceId="1" SourceUrl="http://localhost:57315/GetUser.svc?xsd=xsd3" />
+    <MetadataFile FileName="GetUser1.xsd" MetadataType="Schema" ID="d485df99-9d8e-4881-a33b-54670ec40772" SourceId="1" SourceUrl="http://localhost:57315/GetUser.svc?xsd=xsd2" />
+    <MetadataFile FileName="GetUser2.xsd" MetadataType="Schema" ID="010236d9-4e30-4b70-9ac5-4db6c7c14e55" SourceId="1" SourceUrl="http://localhost:57315/GetUser.svc?xsd=xsd0" />
+    <MetadataFile FileName="GetUser.wsdl" MetadataType="Wsdl" ID="c9f938e4-fab6-41a5-8dfc-62bd39d0c609" SourceId="1" SourceUrl="http://localhost:57315/GetUser.svc?wsdl" />
+    <MetadataFile FileName="GetUser3.xsd" MetadataType="Schema" ID="abce4426-97d5-42d4-a79c-597ff6906b79" SourceId="1" SourceUrl="http://localhost:57315/GetUser.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -9,5 +9,5 @@ namespace BoooooJu.Service.Core.Contracts.Account
     public interface ISetUser: IBaseSetData<User>
     { 
        
-    } 
+    }
 }
