@@ -1,12 +1,13 @@
 ﻿using BoooooJu.Service.Core.Contracts.Base;
 using BoooooJu.Service.Core.Dal;
+using System;
+using System.Data.Entity;
 using System.ServiceModel;
 
 namespace BoooooJu.Service.Core.Addresses.Base
 {
     public class BaseSetData<T> : IBaseSetData<T> where T : class
     {
-        [OperationContract]
         public T Insert(T t)
         {
             T result = null;
@@ -14,38 +15,53 @@ namespace BoooooJu.Service.Core.Addresses.Base
             {
                 using (BoooooJuDB db = new BoooooJuDB())
                 {
-                    db.Entry<T>(t).State = System.Data.Entity.EntityState.Added;
+                    db.Set<T>().Add(t);
                     db.SaveChanges();
                     result = t;
                 }
             }
             return result;
         }
-        [OperationContract]
-        public bool DeleteByPrimaryKey(T t)
+        public bool DeleteByPrimaryKey(params object[] keyValues)
         {
-            bool result = false;
             using (BoooooJuDB db = new BoooooJuDB())
             {
-                db.Entry<T>(t).State = System.Data.Entity.EntityState.Deleted;
-                result = db.SaveChanges() > 0;
+                T model = db.Set<T>().Find(keyValues);
+                if (model != null)
+                {
+                    db.Set<T>().Remove(model);
+                    db.SaveChanges();
+                }
             }
-            return result;
+            return true;
         }
-        [OperationContract]
-        public T Update(T t)
+        public T UpdateByPrimaryKey(T t)
         {
-            T result = null;
             if (t != null)
             {
                 using (BoooooJuDB db = new BoooooJuDB())
                 {
-                    db.Entry<T>(t).State = System.Data.Entity.EntityState.Modified;
-                    db.SaveChanges();
-                    result = t;
+                    if (db.Entry<T>(t).State == EntityState.Modified)
+                    {
+                        db.SaveChanges();
+                    }
+                    else if (db.Entry<T>(t).State == EntityState.Detached)
+                    {
+                        try
+                        {
+                            db.Set<T>().Attach(t);
+                            db.Entry<T>(t).State = EntityState.Modified;
+                        }
+                        catch (InvalidOperationException)
+                        {
+                            T old = db.Set<T>().Find(t);
+                            db.Entry(old).CurrentValues.SetValues(t);
+                        }
+                        db.SaveChanges();
+                    }
                 }
             }
-            return result;
+            return t;
         }
     }
 }

@@ -8,8 +8,8 @@ namespace BoooooJu.Service.Core.Contracts.Base
         [OperationContract]
         T Insert(T t);
         [OperationContract]
-        bool DeleteByPrimaryKey(T t);
+        bool DeleteByPrimaryKey(params object[] keyValues);
         [OperationContract]
-        T Update(T t);
+        T UpdateByPrimaryKey(T t);
     }
 }

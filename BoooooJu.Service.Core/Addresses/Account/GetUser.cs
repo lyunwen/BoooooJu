@@ -9,23 +9,8 @@ using BoooooJu.Service.Core.QueryParameter.Base;
 
 namespace BoooooJu.Service.Core.Addresses.Account
 {
-    public class GetUser : IGetUser
-    {
-        public User GetDataByPrimaryKey(int key)
-        {
-            throw new NotImplementedException();
-        }
-
-        public User GetDataByUniqueKey(string key)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<User> GetDatasBy(IPage page)
-        {
-            throw new NotImplementedException();
-        }
-
+    public class GetUser :Base.BaseGetData<User>, IGetUser
+    {  
         User IGetUser.GetUserByAccount(string accountName)
         {
             Dal.User user = null;
