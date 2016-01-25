@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_default.cshtml";
+}
+@section Head{ 
+    <style>
+        .active{
+            color:red;
+        }
+    </style>
+    }
+<h2 class="testClass">Hello Word!</h2>
+@section Js{
+    <script>
+        $("h2").addClass('active');
+    </script>
+    }
+

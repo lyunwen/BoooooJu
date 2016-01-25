@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1">
+    <meta content="@(ViewBag.KeyWords??"KeyWords")" name=keywords>
+    <meta content="@(ViewBag.Descripition??"Descripition")" name=description>
+    <title>@(ViewBag.Title ?? "Title")</title>
+    @RenderSection("Head", required: false)
+    <script src="~/Scripts/jquery-1.7.1.js"></script>
+</head>
+<body> 
+    @RenderBody()
+</body>
+@RenderSection("Js", required: false)
+</html>
