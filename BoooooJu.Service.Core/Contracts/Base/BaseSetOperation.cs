@@ -16,8 +16,7 @@ namespace BoooooJu.Service.Core.Contracts.Base
         {
             T result = null;
             if (t != null)
-            {
-                int i = 5543;
+            { 
                 using (BoooooJuDB db = new BoooooJuDB())
                 {
                     db.Entry<T>(t).State = System.Data.Entity.EntityState.Added;
