@@ -42,3 +42,17 @@ F:\Git\BoooooJu\BoooooJu.Service.Core\bin\Debug\zh-Hans\EntityFramework.SqlServe
 F:\Git\BoooooJu\BoooooJu.Service.Core\obj\Debug\BoooooJu.Service.Core.csprojResolveAssemblyReference.cache
 F:\Git\BoooooJu\BoooooJu.Service.Core\obj\Debug\BoooooJu.Service.Core.dll
 F:\Git\BoooooJu\BoooooJu.Service.Core\obj\Debug\BoooooJu.Service.Core.pdb
+G:\C#\Program\BoooooJu.Service.Core\bin\Debug\BoooooJu.Service.Core.dll.config
+G:\C#\Program\BoooooJu.Service.Core\bin\Debug\BoooooJu.Service.Core.dll
+G:\C#\Program\BoooooJu.Service.Core\bin\Debug\BoooooJu.Service.Core.pdb
+G:\C#\Program\BoooooJu.Service.Core\bin\Debug\BoooooJu.Service.Core.Dal.dll
+G:\C#\Program\BoooooJu.Service.Core\bin\Debug\EntityFramework.dll
+G:\C#\Program\BoooooJu.Service.Core\bin\Debug\EntityFramework.SqlServer.dll
+G:\C#\Program\BoooooJu.Service.Core\bin\Debug\BoooooJu.Service.Core.Dal.pdb
+G:\C#\Program\BoooooJu.Service.Core\bin\Debug\EntityFramework.xml
+G:\C#\Program\BoooooJu.Service.Core\bin\Debug\EntityFramework.SqlServer.xml
+G:\C#\Program\BoooooJu.Service.Core\bin\Debug\zh-Hans\EntityFramework.resources.dll
+G:\C#\Program\BoooooJu.Service.Core\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+G:\C#\Program\BoooooJu.Service.Core\obj\Debug\BoooooJu.Service.Core.csprojResolveAssemblyReference.cache
+G:\C#\Program\BoooooJu.Service.Core\obj\Debug\BoooooJu.Service.Core.dll
+G:\C#\Program\BoooooJu.Service.Core\obj\Debug\BoooooJu.Service.Core.pdb
