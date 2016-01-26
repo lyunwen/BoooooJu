@@ -6,9 +6,9 @@ namespace BoooooJu.Service.Core.Dal
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("UerKey")]
+    [Table("UserKey")]
     public partial class UserKey
-    { 
+    {
         public int Id { get; set; }
 
         public int UserId { get; set; }
@@ -22,6 +22,18 @@ namespace BoooooJu.Service.Core.Dal
         [Required]
         [StringLength(50)]
         public string PswdSalt { get; set; }
-         
+
+        [StringLength(50)]
+        public string CellPhone { get; set; }
+
+        public bool CellPhoneValidate { get; set; }
+
+        [StringLength(50)]
+        public string EmailAddress { get; set; }
+
+        public bool EmailAddressValidate { get; set; }
+
+        [StringLength(50)]
+        public string OpenId { get; set; }
     }
 }

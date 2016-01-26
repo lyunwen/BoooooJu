@@ -13,8 +13,8 @@ namespace BoooooJu.Service.Core.Dal
         }
 
         public virtual DbSet<Test> Tests { get; set; }
-        public virtual DbSet<UserKey> UserKeys { get; set; }
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<UserKey> UserKeys { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

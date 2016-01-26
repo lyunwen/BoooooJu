@@ -54,9 +54,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BoooooJuDB.cs" />
-    <Compile Include="DBModels\Test.cs" />
-    <Compile Include="DBModels\UserKey.cs" />
-    <Compile Include="DBModels\User.cs" />
     <Compile Include="Migrations\201601211122085_BooooJuDB.cs" />
     <Compile Include="Migrations\201601211122085_BooooJuDB.Designer.cs">
       <DependentUpon>201601211122085_BooooJuDB.cs</DependentUpon>
@@ -68,6 +65,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="DBModels\Test.cs" />
+    <Compile Include="DBModels\User.cs" />
+    <Compile Include="DBModels\UserKey.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="OBModels\" />
