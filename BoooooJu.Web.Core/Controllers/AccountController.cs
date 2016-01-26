@@ -54,11 +54,13 @@ namespace BoooooJu.Web.Core.Controllers
                 return Json(new { success = false });
             }
         }
+
         public JsonResult SignOut()
         {
             Session[Base.SessionConfig.BoooooJuer] = null;
             return Json(new { success = false });
         }
+
         [Filters.BoAuthorizeAttribute(Base.BoooooJuPermit.PermitG)]
         public ViewResult UserManage()
         {
@@ -67,6 +69,21 @@ namespace BoooooJu.Web.Core.Controllers
         public PartialViewResult UserManagePage(int index)
         {
             return PartialView();
+        }
+
+        public ActionResult Register()
+        {
+            RegisterModel model = new RegisterModel();
+            return View(model);
+        }
+        [HttpPost]
+        public ActionResult Register(RegisterModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+            return View(model);
         }
     }
 }
