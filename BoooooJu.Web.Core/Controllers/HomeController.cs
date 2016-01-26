@@ -18,20 +18,14 @@ namespace BoooooJu.Web.Core.Controllers
         }
         public  ActionResult Index()
         {
-            SetUserService.User y =  _setUserClient.Insert(new SetUserService.User()
+            SetUserService.User y = _setUserClient.RegisterByAccountName(new SetUserService.User()
             {
-                Account = "liuyunwen" + new Random().Next(1000, 9999),
-                CellPhone = "13058171" + new Random().Next(100, 999),
-                CellPhoneValidate = false,
-                EmailValidate = false,
                 NickName = "zaizaiyou",
-                Password = "qq123123",
-                EmailAdress = new Random().Next(1000, 9999) + "@qq.com",
                 Sex = 2,
-                PasswordSalt = "jyHf7w",
-                PasswordSaltType = 1,
-                CreateTime = DateTime.Now
-            });
+                CreateTime = DateTime.Now,
+                Role = 0,
+                Signature = "世界这么大" + new Random().Next(1000, 9999)
+            },"lyw"+new Random().Next(100,999));
             return View();
         }
     }

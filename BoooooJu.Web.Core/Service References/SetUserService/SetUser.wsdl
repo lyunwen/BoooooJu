@@ -26,6 +26,54 @@
   <wsdl:message name="ISetUser_UpdateByPrimaryKey_OutputMessage">
     <wsdl:part name="parameters" element="tns:UpdateByPrimaryKeyResponse" />
   </wsdl:message>
+  <wsdl:message name="ISetUser_RegisterByAccountName_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterByAccountName" />
+  </wsdl:message>
+  <wsdl:message name="ISetUser_RegisterByAccountName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterByAccountNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetUser_RegisterByCellPhone_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterByCellPhone" />
+  </wsdl:message>
+  <wsdl:message name="ISetUser_RegisterByCellPhone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterByCellPhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetUser_RegisterByEmailAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterByEmailAddress" />
+  </wsdl:message>
+  <wsdl:message name="ISetUser_RegisterByEmailAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterByEmailAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetUser_RegisterByOpneId_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterByOpneId" />
+  </wsdl:message>
+  <wsdl:message name="ISetUser_RegisterByOpneId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterByOpneIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetUser_AlterPswdByAccountName_InputMessage">
+    <wsdl:part name="parameters" element="tns:AlterPswdByAccountName" />
+  </wsdl:message>
+  <wsdl:message name="ISetUser_AlterPswdByAccountName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AlterPswdByAccountNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetUser_AlterPswdByCellPhone_InputMessage">
+    <wsdl:part name="parameters" element="tns:AlterPswdByCellPhone" />
+  </wsdl:message>
+  <wsdl:message name="ISetUser_AlterPswdByCellPhone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AlterPswdByCellPhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetUser_AlterPswdByEmailAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:AlterPswdByEmailAddress" />
+  </wsdl:message>
+  <wsdl:message name="ISetUser_AlterPswdByEmailAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AlterPswdByEmailAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISetUser_AlterPswdByOpenId_InputMessage">
+    <wsdl:part name="parameters" element="tns:AlterPswdByOpenId" />
+  </wsdl:message>
+  <wsdl:message name="ISetUser_AlterPswdByOpenId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AlterPswdByOpenIdResponse" />
+  </wsdl:message>
   <wsdl:portType name="ISetUser">
     <wsdl:operation name="Insert">
       <wsdl:input wsaw:Action="http://tempuri.org/IBaseSetDataOf_User/Insert" message="tns:ISetUser_Insert_InputMessage" />
@@ -38,6 +86,38 @@
     <wsdl:operation name="UpdateByPrimaryKey">
       <wsdl:input wsaw:Action="http://tempuri.org/IBaseSetDataOf_User/UpdateByPrimaryKey" message="tns:ISetUser_UpdateByPrimaryKey_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IBaseSetDataOf_User/UpdateByPrimaryKeyResponse" message="tns:ISetUser_UpdateByPrimaryKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterByAccountName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetUser/RegisterByAccountName" message="tns:ISetUser_RegisterByAccountName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetUser/RegisterByAccountNameResponse" message="tns:ISetUser_RegisterByAccountName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterByCellPhone">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetUser/RegisterByCellPhone" message="tns:ISetUser_RegisterByCellPhone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetUser/RegisterByCellPhoneResponse" message="tns:ISetUser_RegisterByCellPhone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterByEmailAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetUser/RegisterByEmailAddress" message="tns:ISetUser_RegisterByEmailAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetUser/RegisterByEmailAddressResponse" message="tns:ISetUser_RegisterByEmailAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterByOpneId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetUser/RegisterByOpneId" message="tns:ISetUser_RegisterByOpneId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetUser/RegisterByOpneIdResponse" message="tns:ISetUser_RegisterByOpneId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AlterPswdByAccountName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetUser/AlterPswdByAccountName" message="tns:ISetUser_AlterPswdByAccountName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetUser/AlterPswdByAccountNameResponse" message="tns:ISetUser_AlterPswdByAccountName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AlterPswdByCellPhone">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetUser/AlterPswdByCellPhone" message="tns:ISetUser_AlterPswdByCellPhone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetUser/AlterPswdByCellPhoneResponse" message="tns:ISetUser_AlterPswdByCellPhone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AlterPswdByEmailAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetUser/AlterPswdByEmailAddress" message="tns:ISetUser_AlterPswdByEmailAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetUser/AlterPswdByEmailAddressResponse" message="tns:ISetUser_AlterPswdByEmailAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AlterPswdByOpenId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISetUser/AlterPswdByOpenId" message="tns:ISetUser_AlterPswdByOpenId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISetUser/AlterPswdByOpenIdResponse" message="tns:ISetUser_AlterPswdByOpenId_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="OutUserPoint" type="tns:ISetUser">
@@ -62,6 +142,78 @@
     </wsdl:operation>
     <wsdl:operation name="UpdateByPrimaryKey">
       <soap:operation soapAction="http://tempuri.org/IBaseSetDataOf_User/UpdateByPrimaryKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterByAccountName">
+      <soap:operation soapAction="http://tempuri.org/ISetUser/RegisterByAccountName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterByCellPhone">
+      <soap:operation soapAction="http://tempuri.org/ISetUser/RegisterByCellPhone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterByEmailAddress">
+      <soap:operation soapAction="http://tempuri.org/ISetUser/RegisterByEmailAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterByOpneId">
+      <soap:operation soapAction="http://tempuri.org/ISetUser/RegisterByOpneId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AlterPswdByAccountName">
+      <soap:operation soapAction="http://tempuri.org/ISetUser/AlterPswdByAccountName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AlterPswdByCellPhone">
+      <soap:operation soapAction="http://tempuri.org/ISetUser/AlterPswdByCellPhone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AlterPswdByEmailAddress">
+      <soap:operation soapAction="http://tempuri.org/ISetUser/AlterPswdByEmailAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AlterPswdByOpenId">
+      <soap:operation soapAction="http://tempuri.org/ISetUser/AlterPswdByOpenId" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

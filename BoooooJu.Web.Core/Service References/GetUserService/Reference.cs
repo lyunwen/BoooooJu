@@ -23,22 +23,7 @@ namespace BoooooJu.Web.Core.GetUserService {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string AccountField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CellPhoneField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool CellPhoneValidateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.DateTime CreateTimeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string EmailAdressField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool EmailValidateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int IdField;
@@ -47,13 +32,7 @@ namespace BoooooJu.Web.Core.GetUserService {
         private string NickNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PasswordField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PasswordSaltField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private byte PasswordSaltTypeField;
+        private int RoleField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private byte SexField;
@@ -72,45 +51,6 @@ namespace BoooooJu.Web.Core.GetUserService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Account {
-            get {
-                return this.AccountField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.AccountField, value) != true)) {
-                    this.AccountField = value;
-                    this.RaisePropertyChanged("Account");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string CellPhone {
-            get {
-                return this.CellPhoneField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CellPhoneField, value) != true)) {
-                    this.CellPhoneField = value;
-                    this.RaisePropertyChanged("CellPhone");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool CellPhoneValidate {
-            get {
-                return this.CellPhoneValidateField;
-            }
-            set {
-                if ((this.CellPhoneValidateField.Equals(value) != true)) {
-                    this.CellPhoneValidateField = value;
-                    this.RaisePropertyChanged("CellPhoneValidate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
         public System.DateTime CreateTime {
             get {
                 return this.CreateTimeField;
@@ -119,32 +59,6 @@ namespace BoooooJu.Web.Core.GetUserService {
                 if ((this.CreateTimeField.Equals(value) != true)) {
                     this.CreateTimeField = value;
                     this.RaisePropertyChanged("CreateTime");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string EmailAdress {
-            get {
-                return this.EmailAdressField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.EmailAdressField, value) != true)) {
-                    this.EmailAdressField = value;
-                    this.RaisePropertyChanged("EmailAdress");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool EmailValidate {
-            get {
-                return this.EmailValidateField;
-            }
-            set {
-                if ((this.EmailValidateField.Equals(value) != true)) {
-                    this.EmailValidateField = value;
-                    this.RaisePropertyChanged("EmailValidate");
                 }
             }
         }
@@ -176,40 +90,14 @@ namespace BoooooJu.Web.Core.GetUserService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Password {
+        public int Role {
             get {
-                return this.PasswordField;
+                return this.RoleField;
             }
             set {
-                if ((object.ReferenceEquals(this.PasswordField, value) != true)) {
-                    this.PasswordField = value;
-                    this.RaisePropertyChanged("Password");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string PasswordSalt {
-            get {
-                return this.PasswordSaltField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PasswordSaltField, value) != true)) {
-                    this.PasswordSaltField = value;
-                    this.RaisePropertyChanged("PasswordSalt");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public byte PasswordSaltType {
-            get {
-                return this.PasswordSaltTypeField;
-            }
-            set {
-                if ((this.PasswordSaltTypeField.Equals(value) != true)) {
-                    this.PasswordSaltTypeField = value;
-                    this.RaisePropertyChanged("PasswordSaltType");
+                if ((this.RoleField.Equals(value) != true)) {
+                    this.RoleField = value;
+                    this.RaisePropertyChanged("Role");
                 }
             }
         }
@@ -304,6 +192,30 @@ namespace BoooooJu.Web.Core.GetUserService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGetUser/GetUsers", ReplyAction="http://tempuri.org/IGetUser/GetUsersResponse")]
         System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User[]> GetUsersAsync(object page);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGetUser/SignByAccountName", ReplyAction="http://tempuri.org/IGetUser/SignByAccountNameResponse")]
+        BoooooJu.Web.Core.GetUserService.User SignByAccountName(string accountName, string pswd);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGetUser/SignByAccountName", ReplyAction="http://tempuri.org/IGetUser/SignByAccountNameResponse")]
+        System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User> SignByAccountNameAsync(string accountName, string pswd);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGetUser/SignByCellPhone", ReplyAction="http://tempuri.org/IGetUser/SignByCellPhoneResponse")]
+        BoooooJu.Web.Core.GetUserService.User SignByCellPhone(string cellPhone, string pswd);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGetUser/SignByCellPhone", ReplyAction="http://tempuri.org/IGetUser/SignByCellPhoneResponse")]
+        System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User> SignByCellPhoneAsync(string cellPhone, string pswd);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGetUser/SignByEmaiAddress", ReplyAction="http://tempuri.org/IGetUser/SignByEmaiAddressResponse")]
+        BoooooJu.Web.Core.GetUserService.User SignByEmaiAddress(string emailAddresss, string pswd);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGetUser/SignByEmaiAddress", ReplyAction="http://tempuri.org/IGetUser/SignByEmaiAddressResponse")]
+        System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User> SignByEmaiAddressAsync(string emailAddresss, string pswd);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGetUser/SignByOpenId", ReplyAction="http://tempuri.org/IGetUser/SignByOpenIdResponse")]
+        BoooooJu.Web.Core.GetUserService.User SignByOpenId(string openId, string pswd);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGetUser/SignByOpenId", ReplyAction="http://tempuri.org/IGetUser/SignByOpenIdResponse")]
+        System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User> SignByOpenIdAsync(string openId, string pswd);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -387,6 +299,38 @@ namespace BoooooJu.Web.Core.GetUserService {
         
         public System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User[]> GetUsersAsync(object page) {
             return base.Channel.GetUsersAsync(page);
+        }
+        
+        public BoooooJu.Web.Core.GetUserService.User SignByAccountName(string accountName, string pswd) {
+            return base.Channel.SignByAccountName(accountName, pswd);
+        }
+        
+        public System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User> SignByAccountNameAsync(string accountName, string pswd) {
+            return base.Channel.SignByAccountNameAsync(accountName, pswd);
+        }
+        
+        public BoooooJu.Web.Core.GetUserService.User SignByCellPhone(string cellPhone, string pswd) {
+            return base.Channel.SignByCellPhone(cellPhone, pswd);
+        }
+        
+        public System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User> SignByCellPhoneAsync(string cellPhone, string pswd) {
+            return base.Channel.SignByCellPhoneAsync(cellPhone, pswd);
+        }
+        
+        public BoooooJu.Web.Core.GetUserService.User SignByEmaiAddress(string emailAddresss, string pswd) {
+            return base.Channel.SignByEmaiAddress(emailAddresss, pswd);
+        }
+        
+        public System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User> SignByEmaiAddressAsync(string emailAddresss, string pswd) {
+            return base.Channel.SignByEmaiAddressAsync(emailAddresss, pswd);
+        }
+        
+        public BoooooJu.Web.Core.GetUserService.User SignByOpenId(string openId, string pswd) {
+            return base.Channel.SignByOpenId(openId, pswd);
+        }
+        
+        public System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User> SignByOpenIdAsync(string openId, string pswd) {
+            return base.Channel.SignByOpenIdAsync(openId, pswd);
         }
     }
 }

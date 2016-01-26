@@ -50,6 +50,30 @@
   <wsdl:message name="IGetUser_GetUsers_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetUsersResponse" />
   </wsdl:message>
+  <wsdl:message name="IGetUser_SignByAccountName_InputMessage">
+    <wsdl:part name="parameters" element="tns:SignByAccountName" />
+  </wsdl:message>
+  <wsdl:message name="IGetUser_SignByAccountName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SignByAccountNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGetUser_SignByCellPhone_InputMessage">
+    <wsdl:part name="parameters" element="tns:SignByCellPhone" />
+  </wsdl:message>
+  <wsdl:message name="IGetUser_SignByCellPhone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SignByCellPhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGetUser_SignByEmaiAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:SignByEmaiAddress" />
+  </wsdl:message>
+  <wsdl:message name="IGetUser_SignByEmaiAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SignByEmaiAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGetUser_SignByOpenId_InputMessage">
+    <wsdl:part name="parameters" element="tns:SignByOpenId" />
+  </wsdl:message>
+  <wsdl:message name="IGetUser_SignByOpenId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SignByOpenIdResponse" />
+  </wsdl:message>
   <wsdl:portType name="IGetUser">
     <wsdl:operation name="GetDataByPrimaryKey">
       <wsdl:input wsaw:Action="http://tempuri.org/IBaseGetDataOf_User/GetDataByPrimaryKey" message="tns:IGetUser_GetDataByPrimaryKey_InputMessage" />
@@ -78,6 +102,22 @@
     <wsdl:operation name="GetUsers">
       <wsdl:input wsaw:Action="http://tempuri.org/IGetUser/GetUsers" message="tns:IGetUser_GetUsers_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IGetUser/GetUsersResponse" message="tns:IGetUser_GetUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SignByAccountName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGetUser/SignByAccountName" message="tns:IGetUser_SignByAccountName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGetUser/SignByAccountNameResponse" message="tns:IGetUser_SignByAccountName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SignByCellPhone">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGetUser/SignByCellPhone" message="tns:IGetUser_SignByCellPhone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGetUser/SignByCellPhoneResponse" message="tns:IGetUser_SignByCellPhone_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SignByEmaiAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGetUser/SignByEmaiAddress" message="tns:IGetUser_SignByEmaiAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGetUser/SignByEmaiAddressResponse" message="tns:IGetUser_SignByEmaiAddress_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SignByOpenId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGetUser/SignByOpenId" message="tns:IGetUser_SignByOpenId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGetUser/SignByOpenIdResponse" message="tns:IGetUser_SignByOpenId_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="InUserPoint" type="tns:IGetUser">
@@ -138,6 +178,42 @@
     </wsdl:operation>
     <wsdl:operation name="GetUsers">
       <soap:operation soapAction="http://tempuri.org/IGetUser/GetUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignByAccountName">
+      <soap:operation soapAction="http://tempuri.org/IGetUser/SignByAccountName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignByCellPhone">
+      <soap:operation soapAction="http://tempuri.org/IGetUser/SignByCellPhone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignByEmaiAddress">
+      <soap:operation soapAction="http://tempuri.org/IGetUser/SignByEmaiAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignByOpenId">
+      <soap:operation soapAction="http://tempuri.org/IGetUser/SignByOpenId" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

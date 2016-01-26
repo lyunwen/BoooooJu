@@ -63,7 +63,7 @@ namespace BoooooJu.Service.Core.Addresses.Account
         }
 
         #region 登入
-        public User SignByAccountName(string accountName, string pswd)
+         User IGetUser.SignByAccountName(string accountName, string pswd)
         {
             User user = null;
             using (BoooooJuDB db = new BoooooJuDB())
@@ -81,7 +81,7 @@ namespace BoooooJu.Service.Core.Addresses.Account
             return user;
         }
 
-        public User SignByCellPhone(string cellPhone, string pswd)
+         User IGetUser.SignByCellPhone(string cellPhone, string pswd)
         {
             User user = null;
             using (BoooooJuDB db = new BoooooJuDB())
@@ -99,7 +99,7 @@ namespace BoooooJu.Service.Core.Addresses.Account
             return user;
         }
 
-        public User SignByEmaiAddress(string emailAddresss, string pswd)
+         User IGetUser.SignByEmaiAddress(string emailAddresss, string pswd)
         {
             User user = null;
             using (BoooooJuDB db = new BoooooJuDB())
@@ -117,7 +117,7 @@ namespace BoooooJu.Service.Core.Addresses.Account
             return user;
         }
 
-        public User SignByOpenId(string openId,string pswd)
+         User IGetUser.SignByOpenId(string openId,string pswd)
         {
             User user = null;
             using (BoooooJuDB db = new BoooooJuDB())

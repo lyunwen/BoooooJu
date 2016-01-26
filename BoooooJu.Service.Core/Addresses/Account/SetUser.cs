@@ -12,36 +12,48 @@ namespace BoooooJu.Service.Core.Addresses.Account
 {
     public class SetUser : Base.BaseSetData<User>, ISetUser
     {
-        public User RegisterUser(User user, string pswd)
+        #region 用户注册
+        public User RegisterByAccountName(User user, string accountName, string pswd)
         {
             User result = null;
-            if (user == null || pswd == null)
+            if (user == null || accountName == null || pswd == null)
                 return result;
-            try
+            using (BoooooJuDB db = new BoooooJuDB())
             {
-                using (BoooooJuDB db = new BoooooJuDB())
+                db.Entry(user).State = System.Data.Entity.EntityState.Added;
+                UserKey key = new UserKey
                 {
-                    db.Users.Add(user);
-                    UserKey key = new UserKey
-                    {
-                        UserId = user.Id,
-                        Pswd = pswd,
-                        PswdSalt = "0",
-                        PswdType = 0
-                    };
-                    db.UserKeys.Add(key);
-                    db.SaveChanges();
-                    result = user;
-                }
+                    AccountName = accountName,
+                    AccountNameValidate = true,
+                    Pswd = pswd,
+                    UserId = user.Id,
+                    PswdType = 0,
+                    PswdSalt = "0"
+                };
+                db.SaveChanges();
+                result = user;
             }
-            catch
-            {
-                // ignore
-            }
-            return user;
+            return result;
         }
 
-        public User AlterPswdByAccounName(string accountName, string pswd)
+        public User RegisterByCellPhone(User user, string cellPhone, string pswd)
+        {
+            throw new NotImplementedException();
+        }
+
+        public User RegisterByEmailAddress(User user, string emailAddress, string pswd)
+        {
+            throw new NotImplementedException();
+        }
+
+        public User RegisterByOpneId(User user, string opneId)
+        {
+            throw new NotImplementedException();
+        }
+        #endregion
+
+        #region 修改密码
+        public User AlterPswdByAccountName(string accountName, string pswd)
         {
             User user = null;
             using (BoooooJuDB db = new BoooooJuDB())
@@ -91,7 +103,7 @@ namespace BoooooJu.Service.Core.Addresses.Account
             }
             return result;
         }
-        public User AliterPswdByOpenId(string openId, string pswd)
+        public User AlterPswdByOpenId(string openId, string pswd)
         {
             User user = null;
             using (BoooooJuDB db = new BoooooJuDB())
@@ -107,5 +119,7 @@ namespace BoooooJu.Service.Core.Addresses.Account
             }
             return user;
         }
+        #endregion
+
     }
 }

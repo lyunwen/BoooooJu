@@ -44,4 +44,124 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="RegisterByAccountName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" minOccurs="0" name="user" nillable="true" type="q6:User" />
+        <xs:element minOccurs="0" name="accountName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterByAccountNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" minOccurs="0" name="RegisterByAccountNameResult" nillable="true" type="q7:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterByCellPhone">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" minOccurs="0" name="user" nillable="true" type="q8:User" />
+        <xs:element minOccurs="0" name="cellPhone" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterByCellPhoneResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" minOccurs="0" name="RegisterByCellPhoneResult" nillable="true" type="q9:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterByEmailAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" minOccurs="0" name="user" nillable="true" type="q10:User" />
+        <xs:element minOccurs="0" name="emailAddress" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterByEmailAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" minOccurs="0" name="RegisterByEmailAddressResult" nillable="true" type="q11:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterByOpneId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" minOccurs="0" name="user" nillable="true" type="q12:User" />
+        <xs:element minOccurs="0" name="opneId" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterByOpneIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" minOccurs="0" name="RegisterByOpneIdResult" nillable="true" type="q13:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterPswdByAccountName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="accountName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pswd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterPswdByAccountNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" minOccurs="0" name="AlterPswdByAccountNameResult" nillable="true" type="q14:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterPswdByCellPhone">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cellPhone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pswd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterPswdByCellPhoneResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" minOccurs="0" name="AlterPswdByCellPhoneResult" nillable="true" type="q15:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterPswdByEmailAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="emailAddress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pswd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterPswdByEmailAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" minOccurs="0" name="AlterPswdByEmailAddressResult" nillable="true" type="q16:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterPswdByOpenId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="openId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pswd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AlterPswdByOpenIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" minOccurs="0" name="AlterPswdByOpenIdResult" nillable="true" type="q17:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

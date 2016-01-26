@@ -100,4 +100,64 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="SignByAccountName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="accountName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pswd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SignByAccountNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" minOccurs="0" name="SignByAccountNameResult" nillable="true" type="q9:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SignByCellPhone">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cellPhone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pswd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SignByCellPhoneResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" minOccurs="0" name="SignByCellPhoneResult" nillable="true" type="q10:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SignByEmaiAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="emailAddresss" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pswd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SignByEmaiAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" minOccurs="0" name="SignByEmaiAddressResult" nillable="true" type="q11:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SignByOpenId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="openId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pswd" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SignByOpenIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" minOccurs="0" name="SignByOpenIdResult" nillable="true" type="q12:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

@@ -23,22 +23,7 @@ namespace BoooooJu.Web.Core.SetUserService {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string AccountField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CellPhoneField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool CellPhoneValidateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.DateTime CreateTimeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string EmailAdressField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool EmailValidateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int IdField;
@@ -47,13 +32,7 @@ namespace BoooooJu.Web.Core.SetUserService {
         private string NickNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PasswordField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PasswordSaltField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private byte PasswordSaltTypeField;
+        private int RoleField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private byte SexField;
@@ -72,45 +51,6 @@ namespace BoooooJu.Web.Core.SetUserService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Account {
-            get {
-                return this.AccountField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.AccountField, value) != true)) {
-                    this.AccountField = value;
-                    this.RaisePropertyChanged("Account");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string CellPhone {
-            get {
-                return this.CellPhoneField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CellPhoneField, value) != true)) {
-                    this.CellPhoneField = value;
-                    this.RaisePropertyChanged("CellPhone");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool CellPhoneValidate {
-            get {
-                return this.CellPhoneValidateField;
-            }
-            set {
-                if ((this.CellPhoneValidateField.Equals(value) != true)) {
-                    this.CellPhoneValidateField = value;
-                    this.RaisePropertyChanged("CellPhoneValidate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
         public System.DateTime CreateTime {
             get {
                 return this.CreateTimeField;
@@ -119,32 +59,6 @@ namespace BoooooJu.Web.Core.SetUserService {
                 if ((this.CreateTimeField.Equals(value) != true)) {
                     this.CreateTimeField = value;
                     this.RaisePropertyChanged("CreateTime");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string EmailAdress {
-            get {
-                return this.EmailAdressField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.EmailAdressField, value) != true)) {
-                    this.EmailAdressField = value;
-                    this.RaisePropertyChanged("EmailAdress");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool EmailValidate {
-            get {
-                return this.EmailValidateField;
-            }
-            set {
-                if ((this.EmailValidateField.Equals(value) != true)) {
-                    this.EmailValidateField = value;
-                    this.RaisePropertyChanged("EmailValidate");
                 }
             }
         }
@@ -176,40 +90,14 @@ namespace BoooooJu.Web.Core.SetUserService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Password {
+        public int Role {
             get {
-                return this.PasswordField;
+                return this.RoleField;
             }
             set {
-                if ((object.ReferenceEquals(this.PasswordField, value) != true)) {
-                    this.PasswordField = value;
-                    this.RaisePropertyChanged("Password");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string PasswordSalt {
-            get {
-                return this.PasswordSaltField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PasswordSaltField, value) != true)) {
-                    this.PasswordSaltField = value;
-                    this.RaisePropertyChanged("PasswordSalt");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public byte PasswordSaltType {
-            get {
-                return this.PasswordSaltTypeField;
-            }
-            set {
-                if ((this.PasswordSaltTypeField.Equals(value) != true)) {
-                    this.PasswordSaltTypeField = value;
-                    this.RaisePropertyChanged("PasswordSaltType");
+                if ((this.RoleField.Equals(value) != true)) {
+                    this.RoleField = value;
+                    this.RaisePropertyChanged("Role");
                 }
             }
         }
@@ -273,6 +161,54 @@ namespace BoooooJu.Web.Core.SetUserService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBaseSetDataOf_User/UpdateByPrimaryKey", ReplyAction="http://tempuri.org/IBaseSetDataOf_User/UpdateByPrimaryKeyResponse")]
         System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> UpdateByPrimaryKeyAsync(BoooooJu.Web.Core.SetUserService.User t);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/RegisterByAccountName", ReplyAction="http://tempuri.org/ISetUser/RegisterByAccountNameResponse")]
+        BoooooJu.Web.Core.SetUserService.User RegisterByAccountName(BoooooJu.Web.Core.SetUserService.User user, string accountName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/RegisterByAccountName", ReplyAction="http://tempuri.org/ISetUser/RegisterByAccountNameResponse")]
+        System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> RegisterByAccountNameAsync(BoooooJu.Web.Core.SetUserService.User user, string accountName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/RegisterByCellPhone", ReplyAction="http://tempuri.org/ISetUser/RegisterByCellPhoneResponse")]
+        BoooooJu.Web.Core.SetUserService.User RegisterByCellPhone(BoooooJu.Web.Core.SetUserService.User user, string cellPhone);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/RegisterByCellPhone", ReplyAction="http://tempuri.org/ISetUser/RegisterByCellPhoneResponse")]
+        System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> RegisterByCellPhoneAsync(BoooooJu.Web.Core.SetUserService.User user, string cellPhone);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/RegisterByEmailAddress", ReplyAction="http://tempuri.org/ISetUser/RegisterByEmailAddressResponse")]
+        BoooooJu.Web.Core.SetUserService.User RegisterByEmailAddress(BoooooJu.Web.Core.SetUserService.User user, string emailAddress);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/RegisterByEmailAddress", ReplyAction="http://tempuri.org/ISetUser/RegisterByEmailAddressResponse")]
+        System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> RegisterByEmailAddressAsync(BoooooJu.Web.Core.SetUserService.User user, string emailAddress);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/RegisterByOpneId", ReplyAction="http://tempuri.org/ISetUser/RegisterByOpneIdResponse")]
+        BoooooJu.Web.Core.SetUserService.User RegisterByOpneId(BoooooJu.Web.Core.SetUserService.User user, string opneId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/RegisterByOpneId", ReplyAction="http://tempuri.org/ISetUser/RegisterByOpneIdResponse")]
+        System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> RegisterByOpneIdAsync(BoooooJu.Web.Core.SetUserService.User user, string opneId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/AlterPswdByAccountName", ReplyAction="http://tempuri.org/ISetUser/AlterPswdByAccountNameResponse")]
+        BoooooJu.Web.Core.SetUserService.User AlterPswdByAccountName(string accountName, string pswd);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/AlterPswdByAccountName", ReplyAction="http://tempuri.org/ISetUser/AlterPswdByAccountNameResponse")]
+        System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> AlterPswdByAccountNameAsync(string accountName, string pswd);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/AlterPswdByCellPhone", ReplyAction="http://tempuri.org/ISetUser/AlterPswdByCellPhoneResponse")]
+        BoooooJu.Web.Core.SetUserService.User AlterPswdByCellPhone(string cellPhone, string pswd);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/AlterPswdByCellPhone", ReplyAction="http://tempuri.org/ISetUser/AlterPswdByCellPhoneResponse")]
+        System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> AlterPswdByCellPhoneAsync(string cellPhone, string pswd);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/AlterPswdByEmailAddress", ReplyAction="http://tempuri.org/ISetUser/AlterPswdByEmailAddressResponse")]
+        BoooooJu.Web.Core.SetUserService.User AlterPswdByEmailAddress(string emailAddress, string pswd);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/AlterPswdByEmailAddress", ReplyAction="http://tempuri.org/ISetUser/AlterPswdByEmailAddressResponse")]
+        System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> AlterPswdByEmailAddressAsync(string emailAddress, string pswd);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/AlterPswdByOpenId", ReplyAction="http://tempuri.org/ISetUser/AlterPswdByOpenIdResponse")]
+        BoooooJu.Web.Core.SetUserService.User AlterPswdByOpenId(string openId, string pswd);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/AlterPswdByOpenId", ReplyAction="http://tempuri.org/ISetUser/AlterPswdByOpenIdResponse")]
+        System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> AlterPswdByOpenIdAsync(string openId, string pswd);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -324,6 +260,70 @@ namespace BoooooJu.Web.Core.SetUserService {
         
         public System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> UpdateByPrimaryKeyAsync(BoooooJu.Web.Core.SetUserService.User t) {
             return base.Channel.UpdateByPrimaryKeyAsync(t);
+        }
+        
+        public BoooooJu.Web.Core.SetUserService.User RegisterByAccountName(BoooooJu.Web.Core.SetUserService.User user, string accountName) {
+            return base.Channel.RegisterByAccountName(user, accountName);
+        }
+        
+        public System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> RegisterByAccountNameAsync(BoooooJu.Web.Core.SetUserService.User user, string accountName) {
+            return base.Channel.RegisterByAccountNameAsync(user, accountName);
+        }
+        
+        public BoooooJu.Web.Core.SetUserService.User RegisterByCellPhone(BoooooJu.Web.Core.SetUserService.User user, string cellPhone) {
+            return base.Channel.RegisterByCellPhone(user, cellPhone);
+        }
+        
+        public System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> RegisterByCellPhoneAsync(BoooooJu.Web.Core.SetUserService.User user, string cellPhone) {
+            return base.Channel.RegisterByCellPhoneAsync(user, cellPhone);
+        }
+        
+        public BoooooJu.Web.Core.SetUserService.User RegisterByEmailAddress(BoooooJu.Web.Core.SetUserService.User user, string emailAddress) {
+            return base.Channel.RegisterByEmailAddress(user, emailAddress);
+        }
+        
+        public System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> RegisterByEmailAddressAsync(BoooooJu.Web.Core.SetUserService.User user, string emailAddress) {
+            return base.Channel.RegisterByEmailAddressAsync(user, emailAddress);
+        }
+        
+        public BoooooJu.Web.Core.SetUserService.User RegisterByOpneId(BoooooJu.Web.Core.SetUserService.User user, string opneId) {
+            return base.Channel.RegisterByOpneId(user, opneId);
+        }
+        
+        public System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> RegisterByOpneIdAsync(BoooooJu.Web.Core.SetUserService.User user, string opneId) {
+            return base.Channel.RegisterByOpneIdAsync(user, opneId);
+        }
+        
+        public BoooooJu.Web.Core.SetUserService.User AlterPswdByAccountName(string accountName, string pswd) {
+            return base.Channel.AlterPswdByAccountName(accountName, pswd);
+        }
+        
+        public System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> AlterPswdByAccountNameAsync(string accountName, string pswd) {
+            return base.Channel.AlterPswdByAccountNameAsync(accountName, pswd);
+        }
+        
+        public BoooooJu.Web.Core.SetUserService.User AlterPswdByCellPhone(string cellPhone, string pswd) {
+            return base.Channel.AlterPswdByCellPhone(cellPhone, pswd);
+        }
+        
+        public System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> AlterPswdByCellPhoneAsync(string cellPhone, string pswd) {
+            return base.Channel.AlterPswdByCellPhoneAsync(cellPhone, pswd);
+        }
+        
+        public BoooooJu.Web.Core.SetUserService.User AlterPswdByEmailAddress(string emailAddress, string pswd) {
+            return base.Channel.AlterPswdByEmailAddress(emailAddress, pswd);
+        }
+        
+        public System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> AlterPswdByEmailAddressAsync(string emailAddress, string pswd) {
+            return base.Channel.AlterPswdByEmailAddressAsync(emailAddress, pswd);
+        }
+        
+        public BoooooJu.Web.Core.SetUserService.User AlterPswdByOpenId(string openId, string pswd) {
+            return base.Channel.AlterPswdByOpenId(openId, pswd);
+        }
+        
+        public System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> AlterPswdByOpenIdAsync(string openId, string pswd) {
+            return base.Channel.AlterPswdByOpenIdAsync(openId, pswd);
         }
     }
 }

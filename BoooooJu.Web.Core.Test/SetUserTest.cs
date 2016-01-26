@@ -14,19 +14,14 @@ namespace BoooooJu.Web.Core.Test
             SetUserClient client = new SetUserClient();
             User user = new User()
             {
-                Account = "liuyunwen" + new Random().Next(1000, 9999),
-                CellPhone = "13058171032",
-                CellPhoneValidate = false,
-                EmailValidate = false,
                 NickName = "zaizaiyou",
-                Password = "qq123123",
                 Sex = 2,
-                PasswordSalt = "jyHf7w",
-                PasswordSaltType = 1,
-                CreateTime=DateTime.Now
+                CreateTime = DateTime.Now,
+                Signature = "世界好大",
+                Role = 0
             };
-             user = client.Insert(user);
+            user = client.RegisterByCellPhone(user, "1305817" + new Random().Next(1000, 9999));
         }
     }
-   
+
 }
