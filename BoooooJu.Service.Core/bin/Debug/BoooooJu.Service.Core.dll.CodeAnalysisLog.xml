@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="G:\C#\软件项目\BoooooJu.Web\BoooooJu.Service\bin\Debug\BoooooJu.Service.Core.dll">
+   <Modules>
+    <Module Name="boooooju.service.core.dll">
+     <Namespaces>
+      <Namespace Name="BoooooJu.Service.Core.Addresses">
+       <Types>
+        <Type Name="UserOperation" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#BoooooJu.Service.Core.Contracts.ISetUser.InsertUser(BoooooJu.Service.Core.Dal.User)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-01-23 02:16:53Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="G:\C#\软件项目\BoooooJu.Web\BoooooJu.Service\Addresses" File="UserOperation.cs" Line="68">将 'UserOperation' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'ISetUser.InsertUser(User)' 的功能且对派生类可见的新方法。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="BoooooJu.Service.Core.QueryParameter">
+       <Types>
+        <Type Name="Page" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#BoooooJu.Service.Core.QueryParameter.Base.IPage.IsPage" Kind="Property" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#BoooooJu.Service.Core.QueryParameter.Base.IPage.get_IsPage()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-01-23 02:16:53Z" FixCategory="NonBreaking">
+               <Issue Certainty="95" Level="Error" Path="G:\C#\软件项目\BoooooJu.Web\BoooooJu.Service\QueryParameter" File="Page.cs" Line="12">将 'Page' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'IPage.IsPage.get()' 的功能且对派生类可见的新方法。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+            <Accessor Name="#BoooooJu.Service.Core.QueryParameter.Base.IPage.set_IsPage(System.Boolean)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-01-23 02:16:53Z" FixCategory="NonBreaking">
+               <Issue Certainty="95" Level="Error" Path="G:\C#\软件项目\BoooooJu.Web\BoooooJu.Service\QueryParameter" File="Page.cs" Line="12">将 'Page' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'IPage.IsPage.set(bool)' 的功能且对派生类可见的新方法。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#BoooooJu.Service.Core.QueryParameter.Base.IPage.OrderBy" Kind="Property" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#BoooooJu.Service.Core.QueryParameter.Base.IPage.get_OrderBy()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-01-23 02:16:53Z" FixCategory="NonBreaking">
+               <Issue Certainty="95" Level="Error" Path="G:\C#\软件项目\BoooooJu.Web\BoooooJu.Service\QueryParameter" File="Page.cs" Line="17">将 'Page' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'IPage.OrderBy.get()' 的功能且对派生类可见的新方法。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+            <Accessor Name="#BoooooJu.Service.Core.QueryParameter.Base.IPage.set_OrderBy(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-01-23 02:16:53Z" FixCategory="NonBreaking">
+               <Issue Certainty="95" Level="Error" Path="G:\C#\软件项目\BoooooJu.Web\BoooooJu.Service\QueryParameter" File="Page.cs" Line="17">将 'Page' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'IPage.OrderBy.set(string)' 的功能且对派生类可见的新方法。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#BoooooJu.Service.Core.QueryParameter.Base.IPage.PageIndex" Kind="Property" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#BoooooJu.Service.Core.QueryParameter.Base.IPage.get_PageIndex()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-01-23 02:16:53Z" FixCategory="NonBreaking">
+               <Issue Certainty="95" Level="Error" Path="G:\C#\软件项目\BoooooJu.Web\BoooooJu.Service\QueryParameter" File="Page.cs" Line="13">将 'Page' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'IPage.PageIndex.get()' 的功能且对派生类可见的新方法。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+            <Accessor Name="#BoooooJu.Service.Core.QueryParameter.Base.IPage.set_PageIndex(System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-01-23 02:16:53Z" FixCategory="NonBreaking">
+               <Issue Certainty="95" Level="Error" Path="G:\C#\软件项目\BoooooJu.Web\BoooooJu.Service\QueryParameter" File="Page.cs" Line="13">将 'Page' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'IPage.PageIndex.set(int)' 的功能且对派生类可见的新方法。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#BoooooJu.Service.Core.QueryParameter.Base.IPage.PageSize" Kind="Property" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#BoooooJu.Service.Core.QueryParameter.Base.IPage.get_PageSize()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-01-23 02:16:53Z" FixCategory="NonBreaking">
+               <Issue Certainty="95" Level="Error" Path="G:\C#\软件项目\BoooooJu.Web\BoooooJu.Service\QueryParameter" File="Page.cs" Line="14">将 'Page' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'IPage.PageSize.get()' 的功能且对派生类可见的新方法。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+            <Accessor Name="#BoooooJu.Service.Core.QueryParameter.Base.IPage.set_PageSize(System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-01-23 02:16:53Z" FixCategory="NonBreaking">
+               <Issue Certainty="95" Level="Error" Path="G:\C#\软件项目\BoooooJu.Web\BoooooJu.Service\QueryParameter" File="Page.cs" Line="14">将 'Page' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'IPage.PageSize.set(int)' 的功能且对派生类可见的新方法。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#BoooooJu.Service.Core.QueryParameter.Base.IPage.Sort" Kind="Property" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#BoooooJu.Service.Core.QueryParameter.Base.IPage.get_Sort()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-01-23 02:16:53Z" FixCategory="NonBreaking">
+               <Issue Certainty="95" Level="Error" Path="G:\C#\软件项目\BoooooJu.Web\BoooooJu.Service\QueryParameter" File="Page.cs" Line="18">将 'Page' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'IPage.Sort.get()' 的功能且对派生类可见的新方法。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+            <Accessor Name="#BoooooJu.Service.Core.QueryParameter.Base.IPage.set_Sort(BoooooJu.Service.Core.QueryParameter.Base.Sort)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-01-23 02:16:53Z" FixCategory="NonBreaking">
+               <Issue Certainty="95" Level="Error" Path="G:\C#\软件项目\BoooooJu.Web\BoooooJu.Service\QueryParameter" File="Page.cs" Line="18">将 'Page' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'IPage.Sort.set(Sort)' 的功能且对派生类可见的新方法。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#BoooooJu.Service.Core.QueryParameter.Base.IPage.TotalCounts" Kind="Property" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#BoooooJu.Service.Core.QueryParameter.Base.IPage.get_TotalCounts()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-01-23 02:16:53Z" FixCategory="NonBreaking">
+               <Issue Certainty="95" Level="Error" Path="G:\C#\软件项目\BoooooJu.Web\BoooooJu.Service\QueryParameter" File="Page.cs" Line="15">将 'Page' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'IPage.TotalCounts.get()' 的功能且对派生类可见的新方法。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+            <Accessor Name="#BoooooJu.Service.Core.QueryParameter.Base.IPage.set_TotalCounts(System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-01-23 02:16:53Z" FixCategory="NonBreaking">
+               <Issue Certainty="95" Level="Error" Path="G:\C#\软件项目\BoooooJu.Web\BoooooJu.Service\QueryParameter" File="Page.cs" Line="15">将 'Page' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'IPage.TotalCounts.set(int)' 的功能且对派生类可见的新方法。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#BoooooJu.Service.Core.QueryParameter.Base.IPage.TotalPages" Kind="Property" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#BoooooJu.Service.Core.QueryParameter.Base.IPage.get_TotalPages()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-01-23 02:16:53Z" FixCategory="NonBreaking">
+               <Issue Certainty="95" Level="Error" Path="G:\C#\软件项目\BoooooJu.Web\BoooooJu.Service\QueryParameter" File="Page.cs" Line="16">将 'Page' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'IPage.TotalPages.get()' 的功能且对派生类可见的新方法。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+            <Accessor Name="#BoooooJu.Service.Core.QueryParameter.Base.IPage.set_TotalPages(System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2016-01-23 02:16:53Z" FixCategory="NonBreaking">
+               <Issue Certainty="95" Level="Error" Path="G:\C#\软件项目\BoooooJu.Web\BoooooJu.Service\QueryParameter" File="Page.cs" Line="16">将 'Page' 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 'IPage.TotalPages.set(int)' 的功能且对派生类可见的新方法。</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033">
+   <Name>接口方法应可由子类型调用</Name>
+   <Description>定义的显式方法实现具有私有可访问性。除非基类提供了具有相应可访问性的备用方法，否则从具有显式方法实现的类派生，并选择在类中重新声明它们的类不能调入基类实现。如果重写的基类方法已被显式接口实现所隐藏，则为了调入基类实现，派生类必须将基指针强制转换为相关接口。但是，通过此引用调用基类实现时，实际调用的将是派生类实现，这会导致递归调用，并最终导致堆栈溢出。</Description>
+   <Resolution Name="Default">将 {0} 设置为密封(如果以前提供过此类，则为重大更改)，非显式实现该方法，或实现一个公开 {1} 的功能且对派生类可见的新方法。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182153.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">类别</String>
+  <String Key="Certainty">确定性</String>
+  <String Key="CollapseAll">全部折叠</String>
+  <String Key="CheckId">检查 ID</String>
+  <String Key="Error">错误</String>
+  <String Key="Errors">错误</String>
+  <String Key="ExpandAll">全部展开</String>
+  <String Key="Help">帮助</String>
+  <String Key="Line">行</String>
+  <String Key="Messages">消息</String>
+  <String Key="LocationNotStoredInPdb">[位置未存储在 Pdb 中]</String>
+  <String Key="Project">项目</String>
+  <String Key="Resolution">解析</String>
+  <String Key="Rule">规则</String>
+  <String Key="RuleFile">规则文件</String>
+  <String Key="RuleDescription">规则说明</String>
+  <String Key="Source">源</String>
+  <String Key="Status">状态</String>
+  <String Key="Target">目标</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">代码分析报告</String>
+ </Localized>
+</FxCopReport>

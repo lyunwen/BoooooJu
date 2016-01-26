@@ -1,0 +1,9 @@
+F:\Project\BoooooJu.Web\BoooooJu.Service\bin\Release\BoooooJu.Service.Core.dll
+F:\Project\BoooooJu.Web\BoooooJu.Service\bin\Release\BoooooJu.Service.Core.pdb
+F:\Project\BoooooJu.Web\BoooooJu.Service\bin\Release\BoooooJu.Service.Core.Dal.dll
+F:\Project\BoooooJu.Web\BoooooJu.Service\bin\Release\EntityFramework.dll
+F:\Project\BoooooJu.Web\BoooooJu.Service\bin\Release\BoooooJu.Service.Core.Dal.pdb
+F:\Project\BoooooJu.Web\BoooooJu.Service\bin\Release\EntityFramework.xml
+F:\Project\BoooooJu.Web\BoooooJu.Service\obj\Release\BoooooJu.Service.Core.csprojResolveAssemblyReference.cache
+F:\Project\BoooooJu.Web\BoooooJu.Service\obj\Release\BoooooJu.Service.Core.dll
+F:\Project\BoooooJu.Web\BoooooJu.Service\obj\Release\BoooooJu.Service.Core.pdb

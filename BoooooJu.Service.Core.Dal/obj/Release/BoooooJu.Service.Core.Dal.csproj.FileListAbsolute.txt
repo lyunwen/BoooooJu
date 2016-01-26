@@ -1,0 +1,9 @@
+F:\Project\BoooooJu.Web\BoooooJu.Service.Dal\bin\Release\BoooooJu.Service.Core.Dal.dll.config
+F:\Project\BoooooJu.Web\BoooooJu.Service.Dal\bin\Release\BoooooJu.Service.Core.Dal.dll
+F:\Project\BoooooJu.Web\BoooooJu.Service.Dal\bin\Release\BoooooJu.Service.Core.Dal.pdb
+F:\Project\BoooooJu.Web\BoooooJu.Service.Dal\bin\Release\EntityFramework.dll
+F:\Project\BoooooJu.Web\BoooooJu.Service.Dal\bin\Release\EntityFramework.SqlServer.dll
+F:\Project\BoooooJu.Web\BoooooJu.Service.Dal\bin\Release\EntityFramework.xml
+F:\Project\BoooooJu.Web\BoooooJu.Service.Dal\bin\Release\EntityFramework.SqlServer.xml
+F:\Project\BoooooJu.Web\BoooooJu.Service.Dal\obj\Release\BoooooJu.Service.Core.Dal.dll
+F:\Project\BoooooJu.Web\BoooooJu.Service.Dal\obj\Release\BoooooJu.Service.Core.Dal.pdb
