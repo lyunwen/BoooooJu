@@ -18,9 +18,6 @@ namespace BoooooJu.Service.Core.Dal.Test
                     CellPhoneValidate = false,
                     EmailValidate = false,
                     NickName = "zaizaiyou",
-                    Password = "qq123123",
-                    PasswordSalt = "0",
-                    PasswordSaltType = 0,
                     Signature = "世界那么大",
                     Sex = 2
                 };

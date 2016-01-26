@@ -1,6 +1,7 @@
 ﻿using BoooooJu.Service.Core.Contracts;
 using BoooooJu.Service.Core.Contracts.Account;
 using BoooooJu.Service.Core.Dal;
+using System.Transactions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,9 +36,60 @@ namespace BoooooJu.Service.Core.Addresses.Account
             }
             catch
             {
-               // ignore
+                // ignore
             }
             return user;
-        } 
+        }
+
+        public User AlterPswdByAccounName(string accountName, string pswd)
+        {
+            User user = null;
+            if (accountName == null || pswd == null)
+                return user;
+            using (BoooooJuDB db = new BoooooJuDB())
+            {
+                using (TransactionScope scope = new TransactionScope())
+                {
+                    var foo = db.Users.FirstOrDefault(x => x.Account == accountName);
+                    if (foo != null)
+                    {
+                        var bar = db.UserKeys.FirstOrDefault(x => x.UserId == foo.Id);
+                        if (bar != null)
+                        {
+                            bar.Pswd = pswd;
+                            db.Entry(bar).State = System.Data.Entity.EntityState.Modified;
+                            db.SaveChanges();
+                            user = foo;
+                        }
+                    }
+                }
+            }
+            return user; 
+        }
+        public User AlterPswdByCellPhone(string cellPhone, string pswd)
+        {
+            User result = null;
+            if (cellPhone == null || pswd == null)
+                return result;
+            using(BoooooJuDB db=new BoooooJuDB())
+            {
+                using (TransactionScope scope = new TransactionScope())
+                {
+                    User foo = db.Users.FirstOrDefault(x => x.CellPhoneValidate && x.CellPhone == cellPhone);
+                    if (foo != null)
+                    {
+                        UserKey bar = db.UserKeys.FirstOrDefault(x => x.UserId == foo.Id);
+                        if (bar != null)
+                        {
+                            bar.Pswd = pswd;
+                            db.Entry(bar).State = System.Data.Entity.EntityState.Modified;
+                            db.SaveChanges();
+                            result = foo;
+                        }
+                    }
+                }
+            }
+            return result;
+        }
     }
 }

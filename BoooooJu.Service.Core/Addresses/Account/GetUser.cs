@@ -10,8 +10,8 @@ using BoooooJu.Service.Core.Contracts.Account;
 
 namespace BoooooJu.Service.Core.Addresses.Account
 {
-    public class GetUser :Base.BaseGetData<User>, IGetUser
-    {  
+    public class GetUser : Base.BaseGetData<User>, IGetUser
+    {
         User IGetUser.GetUserByAccount(string accountName)
         {
             Dal.User user = null;
@@ -66,5 +66,67 @@ namespace BoooooJu.Service.Core.Addresses.Account
             }
             return users;
         }
+
+        #region 登入
+        public User SignByAccountName(string accountName, string pswd)
+        {
+            User user = null;
+            if (accountName == null || pswd == null)
+                return user;
+            using (BoooooJuDB db = new BoooooJuDB())
+            {
+                var foo = db.Users.FirstOrDefault(x => x.Account == accountName);
+                if (foo != null)
+                {
+                    var bar = db.UserKeys.FirstOrDefault(x => x.Pswd == pswd);
+                    if (bar != null)
+                    {
+                        user = foo;
+                    }
+                }
+            }
+            return user;
+        }
+
+        public User SignByCellPhone(string cellPhone, string pswd)
+        {
+            User user = null;
+            if (cellPhone == null || pswd == null)
+                return user;
+            using (BoooooJuDB db = new BoooooJuDB())
+            {
+                var foo = db.Users.FirstOrDefault(x => x.CellPhoneValidate && x.CellPhone == cellPhone);
+                if (foo != null)
+                {
+                    var bar = db.UserKeys.FirstOrDefault(x => x.Pswd == pswd);
+                    if (bar != null)
+                    {
+                        user = foo;
+                    }
+                }
+            }
+            return user;
+        }
+
+        public User SignByEmaiAddress(string emailAddresss, string pswd)
+        {
+            User user = null;
+            if (emailAddresss == null || pswd == null)
+                return user;
+            using (BoooooJuDB db = new BoooooJuDB())
+            {
+                var foo = db.Users.FirstOrDefault(x => x.EmailValidate && x.EmailAdress == emailAddresss);
+                if (foo != null)
+                {
+                    var bar = db.UserKeys.FirstOrDefault(x => x.Pswd == pswd);
+                    if (bar != null)
+                    {
+                        user = foo;
+                    }
+                }
+            }
+            return user;
+        }
+        #endregion
     }
 }

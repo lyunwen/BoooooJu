@@ -41,16 +41,16 @@ namespace BoooooJu.Service.Core.Addresses.Base
             {
                 using (BoooooJuDB db = new BoooooJuDB())
                 {
-                    if (db.Entry<T>(t).State == EntityState.Modified)
+                    if (db.Entry(t).State == EntityState.Modified)
                     {
                         db.SaveChanges();
                     }
-                    else if (db.Entry<T>(t).State == EntityState.Detached)
+                    else if (db.Entry(t).State == EntityState.Detached)
                     {
                         try
                         {
                             db.Set<T>().Attach(t);
-                            db.Entry<T>(t).State = EntityState.Modified;
+                            db.Entry(t).State = EntityState.Modified;
                         }
                         catch (InvalidOperationException)
                         {
