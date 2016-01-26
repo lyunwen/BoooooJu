@@ -13,7 +13,7 @@ namespace BoooooJu.Web.Core.ViewModels.Base
         //以字母开头，长度在6~18之间，只能包含字符、数字和下划线。 
         private readonly Regex Regex;
         private const string expression = @"^[a-zA-Z]\w{5,17}$";
-        public PasswordValidator() : base(() => "密码长度须在6~18位，且以字母开头")
+        public PasswordValidator() : base(() => "密码须以字母开头，长度在6至18位")
         {
             Regex = new Regex(expression, RegexOptions.IgnoreCase);
         }

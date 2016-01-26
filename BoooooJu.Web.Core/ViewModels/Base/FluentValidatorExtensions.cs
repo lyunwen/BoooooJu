@@ -19,5 +19,10 @@ namespace BoooooJu.Web.Core.ViewModels
         {
             return ruleBuilder.SetValidator(new PasswordValidator());
         }
+
+        public static IRuleBuilderOptions<T, string> EmailFormat<T>(this IRuleBuilder<T, string> ruleBuilder)
+        {
+            return ruleBuilder.SetValidator(new EmailAddressValidator());
+        }
     }
 }
