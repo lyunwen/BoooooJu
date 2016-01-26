@@ -115,7 +115,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\Account\RegisterModel.cs" />
     <Compile Include="ViewModels\Account\SignInModel.cs" />
+    <Compile Include="ViewModels\Base\EmailAddressValidator.cs" />
+    <Compile Include="ViewModels\Base\FluentValidatorExtensions.cs" />
+    <Compile Include="ViewModels\Base\MobilePhoneValidator.cs" />
+    <Compile Include="ViewModels\Base\MustChineseValidator.cs" />
+    <Compile Include="ViewModels\Base\MustNumberValidator.cs" />
+    <Compile Include="ViewModels\Base\PasswordValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -192,6 +199,9 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ViewModels\Base\TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

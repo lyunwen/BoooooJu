@@ -1,4 +1,21 @@
-﻿@{
+﻿@model BoooooJu.Web.Core.ViewModels.Account.RegisterModel
+@{
     ViewBag.Title = "Register";
     Layout = "~/Views/Shared/_default.cshtml";
+}
+@using (Html.BeginForm())
+{
+    @Html.TextBoxFor(model=>model.NickName,new { placeholder = "昵称"})
+    @Html.ValidationMessageFor(model=>model.NickName)
+     
+
+    @Html.TextBoxFor(model => model.CellPhone,new { placeholder ="手机号码"})
+    @Html.ValidationMessageFor(model => model.CellPhone)
+
+    @Html.TextBoxFor(model => model.EmailAddress,new { placeholder ="邮箱"})
+    @Html.ValidationMessageFor(model => model.EmailAddress)
+
+    @Html.TextBoxFor(model => model.Pswd,new { placeholder ="密码"})
+    @Html.ValidationMessageFor(model => model.Pswd)
+    <input type="submit" value="提交" />
 }
