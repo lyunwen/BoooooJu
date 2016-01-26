@@ -14,40 +14,35 @@ namespace BoooooJu.Service.Core.Addresses.Account
     {
         User IGetUser.GetUserByAccount(string accountName)
         {
-            Dal.User user = null;
+            User user = null;
             using (BoooooJuDB db = new BoooooJuDB())
             {
-                user = db.Users.FirstOrDefault(x => x.Account == accountName);
+                UserKey key = db.UserKeys.FirstOrDefault(x =>x.AccountNameValidate&&x.AccountName == accountName);
+                if (key != null)
+                {
+                    user = db.Users.FirstOrDefault(x => x.Id == key.UserId);
+                }
             }
-            //User user = new User
-            //{
-            //    Account = accountName,
-            //    CellPhone = "13058171032",
-            //    CellPhoneValidate = false,
-            //    NickName = "zaizaiyou"+new Random().Next(100,999),
-            //    Signature = "世界这么大",
-            //    EmailValidate = false,
-            //    Password = "123456",
-            //    PasswordSalt = "0",
-            //    PasswordSaltType = 0,
-            //    Sex = 2
-            //};
             return user;
         }
 
         User IGetUser.GetUserByCellPhone(string cellPhone)
         {
-            Dal.User user = null;
+            User user = null;
             using (BoooooJuDB db = new BoooooJuDB())
             {
-                user = db.Users.First(x => x.CellPhone == cellPhone);
+                UserKey key = db.UserKeys.FirstOrDefault(x => x.CellPhoneValidate && x.CellPhone == cellPhone);
+                if (key != null)
+                {
+                    user = db.Users.FirstOrDefault(x => x.Id == key.UserId);
+                }
             }
             return user;
         }
 
         User IGetUser.GetUserById(int id)
         {
-            Dal.User user = null;
+            User user = null;
             using (BoooooJuDB db = new BoooooJuDB())
             {
                 user = db.Users.First(x => x.Id == id);
@@ -71,17 +66,15 @@ namespace BoooooJu.Service.Core.Addresses.Account
         public User SignByAccountName(string accountName, string pswd)
         {
             User user = null;
-            if (accountName == null || pswd == null)
-                return user;
             using (BoooooJuDB db = new BoooooJuDB())
             {
-                var foo = db.Users.FirstOrDefault(x => x.Account == accountName);
+                var foo = db.UserKeys.FirstOrDefault(x => x.AccountNameValidate&&x.AccountName == accountName&&x.Pswd==pswd);
                 if (foo != null)
                 {
-                    var bar = db.UserKeys.FirstOrDefault(x => x.Pswd == pswd);
+                    var bar = db.Users.FirstOrDefault(x => x.Id == foo.UserId);
                     if (bar != null)
                     {
-                        user = foo;
+                        user = bar;
                     }
                 }
             }
@@ -91,17 +84,15 @@ namespace BoooooJu.Service.Core.Addresses.Account
         public User SignByCellPhone(string cellPhone, string pswd)
         {
             User user = null;
-            if (cellPhone == null || pswd == null)
-                return user;
             using (BoooooJuDB db = new BoooooJuDB())
             {
-                var foo = db.Users.FirstOrDefault(x => x.CellPhoneValidate && x.CellPhone == cellPhone);
+                var foo = db.UserKeys.FirstOrDefault(x => x.CellPhoneValidate && x.CellPhone == cellPhone && x.Pswd == pswd);
                 if (foo != null)
                 {
-                    var bar = db.UserKeys.FirstOrDefault(x => x.Pswd == pswd);
+                    var bar = db.Users.FirstOrDefault(x => x.Id == foo.UserId);
                     if (bar != null)
                     {
-                        user = foo;
+                        user = bar;
                     }
                 }
             }
@@ -111,22 +102,39 @@ namespace BoooooJu.Service.Core.Addresses.Account
         public User SignByEmaiAddress(string emailAddresss, string pswd)
         {
             User user = null;
-            if (emailAddresss == null || pswd == null)
-                return user;
             using (BoooooJuDB db = new BoooooJuDB())
             {
-                var foo = db.Users.FirstOrDefault(x => x.EmailValidate && x.EmailAdress == emailAddresss);
+                var foo = db.UserKeys.FirstOrDefault(x => x.EmailAddressValidate && x.EmailAddress == emailAddresss && x.Pswd == pswd);
                 if (foo != null)
                 {
-                    var bar = db.UserKeys.FirstOrDefault(x => x.Pswd == pswd);
+                    var bar = db.Users.FirstOrDefault(x => x.Id == foo.UserId);
                     if (bar != null)
                     {
-                        user = foo;
+                        user = bar;
                     }
                 }
             }
             return user;
         }
+
+        public User SignByOpenId(string openId,string pswd)
+        {
+            User user = null;
+            using (BoooooJuDB db = new BoooooJuDB())
+            {
+                var foo = db.UserKeys.FirstOrDefault(x => x.OpenIdValidate && x.OpenId == openId && x.Pswd == pswd);
+                if (foo != null)
+                {
+                    var bar = db.Users.FirstOrDefault(x => x.Id == foo.UserId);
+                    if (bar != null)
+                    {
+                        user = bar;
+                    }
+                }
+            }
+            return user;
+        }
+
         #endregion
     }
 }

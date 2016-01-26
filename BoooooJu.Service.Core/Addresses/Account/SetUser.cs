@@ -44,52 +44,68 @@ namespace BoooooJu.Service.Core.Addresses.Account
         public User AlterPswdByAccounName(string accountName, string pswd)
         {
             User user = null;
-            if (accountName == null || pswd == null)
-                return user;
             using (BoooooJuDB db = new BoooooJuDB())
             {
-                using (TransactionScope scope = new TransactionScope())
+                var foo = db.UserKeys.FirstOrDefault(x => x.AccountNameValidate && x.AccountName == accountName);
+                if (foo != null)
                 {
-                    var foo = db.Users.FirstOrDefault(x => x.Account == accountName);
-                    if (foo != null)
-                    {
-                        var bar = db.UserKeys.FirstOrDefault(x => x.UserId == foo.Id);
-                        if (bar != null)
-                        {
-                            bar.Pswd = pswd;
-                            db.Entry(bar).State = System.Data.Entity.EntityState.Modified;
-                            db.SaveChanges();
-                            user = foo;
-                        }
-                    }
+                    foo.Pswd = pswd;
+                    db.Entry(foo).State = System.Data.Entity.EntityState.Modified;
+                    db.SaveChanges();
+                    user = db.Users.FirstOrDefault(x => x.Id == foo.UserId);
                 }
             }
-            return user; 
+            return user;
         }
         public User AlterPswdByCellPhone(string cellPhone, string pswd)
         {
             User result = null;
-            if (cellPhone == null || pswd == null)
-                return result;
-            using(BoooooJuDB db=new BoooooJuDB())
+            using (BoooooJuDB db = new BoooooJuDB())
             {
-                using (TransactionScope scope = new TransactionScope())
+                // using (TransactionScope scope = new TransactionScope())
+                UserKey foo = db.UserKeys.FirstOrDefault(x => x.CellPhoneValidate && x.CellPhone == cellPhone);
+                if (foo != null)
                 {
-                    User foo = db.Users.FirstOrDefault(x => x.CellPhoneValidate && x.CellPhone == cellPhone);
-                    if (foo != null)
-                    {
-                        UserKey bar = db.UserKeys.FirstOrDefault(x => x.UserId == foo.Id);
-                        if (bar != null)
-                        {
-                            bar.Pswd = pswd;
-                            db.Entry(bar).State = System.Data.Entity.EntityState.Modified;
-                            db.SaveChanges();
-                            result = foo;
-                        }
-                    }
+                    foo.Pswd = pswd;
+                    db.Entry(foo).State = System.Data.Entity.EntityState.Modified;
+                    db.SaveChanges();
+                    result = db.Users.FirstOrDefault(x => x.Id == foo.UserId);
                 }
             }
             return result;
+        }
+        public User AlterPswdByEmailAddress(string emailAddress, string pswd)
+        {
+            User result = null;
+            using (BoooooJuDB db = new BoooooJuDB())
+            {
+                // using (TransactionScope scope = new TransactionScope())
+                UserKey foo = db.UserKeys.FirstOrDefault(x => x.EmailAddressValidate && x.EmailAddress == emailAddress);
+                if (foo != null)
+                {
+                    foo.Pswd = pswd;
+                    db.Entry(foo).State = System.Data.Entity.EntityState.Modified;
+                    db.SaveChanges();
+                    result = db.Users.FirstOrDefault(x => x.Id == foo.UserId);
+                }
+            }
+            return result;
+        }
+        public User AliterPswdByOpenId(string openId, string pswd)
+        {
+            User user = null;
+            using (BoooooJuDB db = new BoooooJuDB())
+            {
+                UserKey bar = db.UserKeys.FirstOrDefault(x => x.OpenId == openId);
+                if (bar != null)
+                {
+                    bar.Pswd = pswd;
+                    db.Entry(bar).State = System.Data.Entity.EntityState.Modified;
+                    db.SaveChanges();
+                    user = db.Users.FirstOrDefault(x => x.Id == bar.UserId);
+                }
+            }
+            return user;
         }
     }
 }

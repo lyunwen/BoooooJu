@@ -1,5 +1,5 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting; 
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BoooooJu.Service.Core.Dal.Test
 {
@@ -13,13 +13,11 @@ namespace BoooooJu.Service.Core.Dal.Test
             {
                 User user = new User
                 {
-                    Account = "lyw2016"+new Random().Next(1000,9999),
-                    CellPhone = "13058171032",
-                    CellPhoneValidate = false,
-                    EmailValidate = false,
                     NickName = "zaizaiyou",
                     Signature = "世界那么大",
-                    Sex = 2
+                    Sex = 2,
+                    CreateTime = DateTime.Now,
+                    Role = 0
                 };
                 db.Entry(user).State = System.Data.Entity.EntityState.Modified;
                 db.SaveChanges();

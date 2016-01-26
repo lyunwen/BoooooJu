@@ -13,23 +13,9 @@ namespace BoooooJu.Service.Core.Dal
 
         [Required]
         [StringLength(50)]
-        public string Account { get; set; }
-
-        [Required]
-        [StringLength(50)]
         public string NickName { get; set; }
 
         public byte Sex { get; set; }
-
-        public bool CellPhoneValidate { get; set; }
-
-        [StringLength(50)]
-        public string CellPhone { get; set; }
-
-        public bool EmailValidate { get; set; }
-
-        [StringLength(30)]
-        public string EmailAdress { get; set; }
 
         [StringLength(100)]
         public string Signature { get; set; }

@@ -34,6 +34,13 @@ namespace BoooooJu.Service.Core.Dal
         public bool EmailAddressValidate { get; set; }
 
         [StringLength(50)]
+        public string AccountName { get; set; }
+
+        public bool AccountNameValidate { get; set; }
+
+        [StringLength(50)]
         public string OpenId { get; set; }
+
+        public bool OpenIdValidate { get; set; }
     }
 }
