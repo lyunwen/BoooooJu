@@ -10,6 +10,8 @@ using Autofac.Integration.Mvc;
 using Autofac.Configuration;
 using BoooooJu.Web.Core.SetUserService;
 using BoooooJu.Web.Core.GetUserService;
+using FluentValidation;
+using FluentValidation.Mvc;
 
 namespace BoooooJu.Web.Core
 {
@@ -17,6 +19,9 @@ namespace BoooooJu.Web.Core
     {
         protected void Application_Start()
         {
+            ValidatorOptions.CascadeMode = CascadeMode.StopOnFirstFailure;
+            FluentValidationModelValidatorProvider.Configure();
+
             DependencyResolver.SetResolver(new App_Start.IOCContainerConfig().Config());
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
