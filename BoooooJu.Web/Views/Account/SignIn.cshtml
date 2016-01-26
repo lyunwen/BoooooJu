@@ -1,7 +1,43 @@
-﻿
+﻿@model BoooooJu.Web.Core.ViewModels.Account.SignInModel
 @{
     ViewBag.Title = "SignIn";
     Layout = "~/Views/Shared/_default.cshtml";
 }
-
 <h2>SignIn</h2>
+@using (Html.BeginForm())
+{
+    @Html.TextBoxFor(model => model.SignName, new { placeholder = "请输入手机/邮箱/用户名" })
+    @Html.PasswordFor(model => model.Pswd, new { placeholder = "请输入密码" })
+    <button type="button" onclick="SignIn()">登入</button>
+}
+<div id="AutoSkip"></div>
+@section Js{
+    <script>
+        $(function () {
+            AutoSkipInit();
+        });
+        function SignIn() {
+            var signName = $("input[name=SignName]").val();
+            var pswd = $("input[name=Pswd]").val();
+            if(FormValidate(signName,pswd))
+            $.ajax({
+                url: "/Account/SignIn",
+                type: "post",
+                dataType: "json",
+                data: { SignName: signName, Pswd: pswd },
+                success: function (e) {
+                    if (e.success) {
+                        alert(2);
+                    } else {
+                        AutoSkip("登入失败...")
+                    }
+                }
+            });
+            return false;
+        }
+        //表单验证
+        function FormValidate(SignName, Pswd) {
+            return true;
+        }
+    </script>
+}

@@ -124,6 +124,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Properties\DataSources\BoooooJu.Web.Core.ServiceReference.User.datasource" />
+    <Content Include="Scripts\commonJs.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <Content Include="wwwroot\StaticHtml\NotAllow.Html" />

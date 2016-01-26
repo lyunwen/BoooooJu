@@ -8,8 +8,9 @@
     <title>@(ViewBag.Title ?? "Title")</title>
     @RenderSection("Head", required: false)
     <script src="~/Scripts/jquery-1.7.1.js"></script>
+    <script src="~/Scripts/commonJs.js"></script>
 </head>
-<body> 
+<body>
     @RenderBody()
 </body>
 @RenderSection("Js", required: false)
