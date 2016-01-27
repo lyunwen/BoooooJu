@@ -1,5 +1,6 @@
 ﻿
 using BoooooJu.Web.Core.GetUserService;
+using BoooooJu.Web.Core.SetUserService;
 using BoooooJu.Web.Core.ViewModels.Account;
 using System;
 using System.Collections.Generic;
@@ -14,9 +15,11 @@ namespace BoooooJu.Web.Core.Controllers
     public class AccountController : Base.BoooooJuController
     {
         private readonly IGetUser _getUserClient;
-        public AccountController(IGetUser getUserClient)
+        private readonly ISetUser _setUserClient;
+        public AccountController(IGetUser getUserClient,ISetUser setUserClient)
         {
             _getUserClient = getUserClient;
+            _setUserClient = setUserClient;
         }
         //登入
         public ViewResult SignIn()
@@ -83,6 +86,13 @@ namespace BoooooJu.Web.Core.Controllers
             {
                 return View(model);
             }
+            _setUserClient.RegisterByAccountName(new SetUserService.User {
+                CreateTime =DateTime.Now,
+                 NickName=model.NickName,
+                  Sex=model.Sex,
+                   Signature=model.Signature,
+                    Role=1
+            }, model.AccountName);
             return View(model);
         }
     }

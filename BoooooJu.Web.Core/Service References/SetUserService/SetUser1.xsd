@@ -49,6 +49,7 @@
       <xs:sequence>
         <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" minOccurs="0" name="user" nillable="true" type="q6:User" />
         <xs:element minOccurs="0" name="accountName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pswd" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -64,6 +65,7 @@
       <xs:sequence>
         <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" minOccurs="0" name="user" nillable="true" type="q8:User" />
         <xs:element minOccurs="0" name="cellPhone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pswd" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -79,6 +81,7 @@
       <xs:sequence>
         <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" minOccurs="0" name="user" nillable="true" type="q10:User" />
         <xs:element minOccurs="0" name="emailAddress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="pwsd" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

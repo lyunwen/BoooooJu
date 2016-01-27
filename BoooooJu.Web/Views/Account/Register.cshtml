@@ -7,8 +7,11 @@
 {
     @Html.TextBoxFor(model=>model.NickName,new { placeholder = "昵称"})
     @Html.ValidationMessageFor(model=>model.NickName)
-     
 
+    <label for="Sex">
+        <input type="radio" value="1" name="Sex" />
+        <input type="radio" value="2" name="Sex" />
+    </label>
     @Html.TextBoxFor(model => model.CellPhone,new { placeholder ="手机号码"})
     @Html.ValidationMessageFor(model => model.CellPhone)
 
@@ -17,5 +20,8 @@
 
     @Html.TextBoxFor(model => model.Pswd,new { placeholder ="密码"})
     @Html.ValidationMessageFor(model => model.Pswd)
+
+    @Html.TextBoxFor(model => model.Pswd, new { placeholder = "个性签名" }) 
+
     <input type="submit" value="提交" />
 }

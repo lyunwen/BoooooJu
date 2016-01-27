@@ -163,22 +163,22 @@ namespace BoooooJu.Web.Core.SetUserService {
         System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> UpdateByPrimaryKeyAsync(BoooooJu.Web.Core.SetUserService.User t);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/RegisterByAccountName", ReplyAction="http://tempuri.org/ISetUser/RegisterByAccountNameResponse")]
-        BoooooJu.Web.Core.SetUserService.User RegisterByAccountName(BoooooJu.Web.Core.SetUserService.User user, string accountName);
+        BoooooJu.Web.Core.SetUserService.User RegisterByAccountName(BoooooJu.Web.Core.SetUserService.User user, string accountName, string pswd);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/RegisterByAccountName", ReplyAction="http://tempuri.org/ISetUser/RegisterByAccountNameResponse")]
-        System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> RegisterByAccountNameAsync(BoooooJu.Web.Core.SetUserService.User user, string accountName);
+        System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> RegisterByAccountNameAsync(BoooooJu.Web.Core.SetUserService.User user, string accountName, string pswd);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/RegisterByCellPhone", ReplyAction="http://tempuri.org/ISetUser/RegisterByCellPhoneResponse")]
-        BoooooJu.Web.Core.SetUserService.User RegisterByCellPhone(BoooooJu.Web.Core.SetUserService.User user, string cellPhone);
+        BoooooJu.Web.Core.SetUserService.User RegisterByCellPhone(BoooooJu.Web.Core.SetUserService.User user, string cellPhone, string pswd);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/RegisterByCellPhone", ReplyAction="http://tempuri.org/ISetUser/RegisterByCellPhoneResponse")]
-        System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> RegisterByCellPhoneAsync(BoooooJu.Web.Core.SetUserService.User user, string cellPhone);
+        System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> RegisterByCellPhoneAsync(BoooooJu.Web.Core.SetUserService.User user, string cellPhone, string pswd);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/RegisterByEmailAddress", ReplyAction="http://tempuri.org/ISetUser/RegisterByEmailAddressResponse")]
-        BoooooJu.Web.Core.SetUserService.User RegisterByEmailAddress(BoooooJu.Web.Core.SetUserService.User user, string emailAddress);
+        BoooooJu.Web.Core.SetUserService.User RegisterByEmailAddress(BoooooJu.Web.Core.SetUserService.User user, string emailAddress, string pwsd);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/RegisterByEmailAddress", ReplyAction="http://tempuri.org/ISetUser/RegisterByEmailAddressResponse")]
-        System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> RegisterByEmailAddressAsync(BoooooJu.Web.Core.SetUserService.User user, string emailAddress);
+        System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> RegisterByEmailAddressAsync(BoooooJu.Web.Core.SetUserService.User user, string emailAddress, string pwsd);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ISetUser/RegisterByOpneId", ReplyAction="http://tempuri.org/ISetUser/RegisterByOpneIdResponse")]
         BoooooJu.Web.Core.SetUserService.User RegisterByOpneId(BoooooJu.Web.Core.SetUserService.User user, string opneId);
@@ -262,28 +262,28 @@ namespace BoooooJu.Web.Core.SetUserService {
             return base.Channel.UpdateByPrimaryKeyAsync(t);
         }
         
-        public BoooooJu.Web.Core.SetUserService.User RegisterByAccountName(BoooooJu.Web.Core.SetUserService.User user, string accountName) {
-            return base.Channel.RegisterByAccountName(user, accountName);
+        public BoooooJu.Web.Core.SetUserService.User RegisterByAccountName(BoooooJu.Web.Core.SetUserService.User user, string accountName, string pswd) {
+            return base.Channel.RegisterByAccountName(user, accountName, pswd);
         }
         
-        public System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> RegisterByAccountNameAsync(BoooooJu.Web.Core.SetUserService.User user, string accountName) {
-            return base.Channel.RegisterByAccountNameAsync(user, accountName);
+        public System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> RegisterByAccountNameAsync(BoooooJu.Web.Core.SetUserService.User user, string accountName, string pswd) {
+            return base.Channel.RegisterByAccountNameAsync(user, accountName, pswd);
         }
         
-        public BoooooJu.Web.Core.SetUserService.User RegisterByCellPhone(BoooooJu.Web.Core.SetUserService.User user, string cellPhone) {
-            return base.Channel.RegisterByCellPhone(user, cellPhone);
+        public BoooooJu.Web.Core.SetUserService.User RegisterByCellPhone(BoooooJu.Web.Core.SetUserService.User user, string cellPhone, string pswd) {
+            return base.Channel.RegisterByCellPhone(user, cellPhone, pswd);
         }
         
-        public System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> RegisterByCellPhoneAsync(BoooooJu.Web.Core.SetUserService.User user, string cellPhone) {
-            return base.Channel.RegisterByCellPhoneAsync(user, cellPhone);
+        public System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> RegisterByCellPhoneAsync(BoooooJu.Web.Core.SetUserService.User user, string cellPhone, string pswd) {
+            return base.Channel.RegisterByCellPhoneAsync(user, cellPhone, pswd);
         }
         
-        public BoooooJu.Web.Core.SetUserService.User RegisterByEmailAddress(BoooooJu.Web.Core.SetUserService.User user, string emailAddress) {
-            return base.Channel.RegisterByEmailAddress(user, emailAddress);
+        public BoooooJu.Web.Core.SetUserService.User RegisterByEmailAddress(BoooooJu.Web.Core.SetUserService.User user, string emailAddress, string pwsd) {
+            return base.Channel.RegisterByEmailAddress(user, emailAddress, pwsd);
         }
         
-        public System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> RegisterByEmailAddressAsync(BoooooJu.Web.Core.SetUserService.User user, string emailAddress) {
-            return base.Channel.RegisterByEmailAddressAsync(user, emailAddress);
+        public System.Threading.Tasks.Task<BoooooJu.Web.Core.SetUserService.User> RegisterByEmailAddressAsync(BoooooJu.Web.Core.SetUserService.User user, string emailAddress, string pwsd) {
+            return base.Channel.RegisterByEmailAddressAsync(user, emailAddress, pwsd);
         }
         
         public BoooooJu.Web.Core.SetUserService.User RegisterByOpneId(BoooooJu.Web.Core.SetUserService.User user, string opneId) {
