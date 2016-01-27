@@ -28,6 +28,11 @@ namespace BoooooJu.Web.Core
  
             ViewEngines.Engines.Clear();
             ViewEngines.Engines.Add(new App_Start.BoooJuViewEngine());
+
+
+
+
+
         }
         private void SetupResolveRules(ContainerBuilder builder)
         { 

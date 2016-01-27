@@ -115,6 +115,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\TestService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\Account\RegisterModel.cs" />
     <Compile Include="ViewModels\Account\SignInModel.cs" />
     <Compile Include="ViewModels\Base\EmailAddressValidator.cs" />
@@ -162,46 +167,45 @@
     <None Include="Service References\SetUserService\SetUser3.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\TestService\MySimpleService.wsdl" />
+    <None Include="Service References\TestService\MySimpleService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\TestService\MySimpleService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\GetUserService\" />
-    <WCFMetadataStorage Include="Service References\SetUserService\" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Service References\GetUserService\GetUser.disco" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Service References\GetUserService\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Service References\GetUserService\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Service References\GetUserService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Service References\SetUserService\SetUser.disco" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Service References\SetUserService\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Service References\SetUserService\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Service References\SetUserService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Service References\TestService\MySimpleService.disco" />
+    <None Include="Service References\TestService\configuration91.svcinfo" />
+    <None Include="Service References\TestService\configuration.svcinfo" />
+    <None Include="Service References\TestService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="ViewModels\Base\TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ViewModels\Base\TextFile1.txt" />
+    <WCFMetadataStorage Include="Service References\GetUserService\" />
+    <WCFMetadataStorage Include="Service References\SetUserService\" />
+    <WCFMetadataStorage Include="Service References\TestService\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
