@@ -34,10 +34,5 @@ namespace BoooooJu.Web.Core
 
 
         }
-        private void SetupResolveRules(ContainerBuilder builder)
-        { 
-            builder.RegisterType<SetUserClient>().As<ISetUser>();
-            builder.RegisterType<GetUserClient>().As<IGetUser>(); 
-        }
     }
 }
