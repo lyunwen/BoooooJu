@@ -7,62 +7,80 @@
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword />
-    <_PublishTargetUrl>F:\WebSite\BooooJuWCF</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\Administrator\Desktop\WCFService</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
-      <publishTime>01/18/2016 14:06:32</publishTime>
+      <publishTime>01/22/2016 21:38:36</publishTime>
     </File>
     <File Include="bin/ApplicationInsights.config">
-      <publishTime>01/18/2016 14:06:32</publishTime>
+      <publishTime>01/22/2016 21:38:36</publishTime>
     </File>
     <File Include="bin/BoooooJu.Service.Core.Dal.dll">
-      <publishTime>01/20/2016 09:34:36</publishTime>
+      <publishTime>01/27/2016 15:54:56</publishTime>
     </File>
     <File Include="bin/BoooooJu.Service.Core.dll">
-      <publishTime>01/20/2016 09:34:37</publishTime>
+      <publishTime>01/27/2016 15:54:57</publishTime>
     </File>
     <File Include="bin/BoooooJu.Service.dll">
-      <publishTime>01/20/2016 09:34:37</publishTime>
+      <publishTime>01/27/2016 15:54:57</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
-      <publishTime>01/18/2016 15:32:20</publishTime>
+      <publishTime>01/22/2016 21:38:36</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>01/22/2016 21:38:36</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
-      <publishTime>01/18/2016 13:57:34</publishTime>
+      <publishTime>01/22/2016 21:38:36</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.DependencyCollector.dll">
-      <publishTime>01/18/2016 13:57:34</publishTime>
+      <publishTime>01/22/2016 21:38:36</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
-      <publishTime>01/18/2016 13:57:35</publishTime>
+      <publishTime>01/22/2016 21:38:36</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
-      <publishTime>01/18/2016 13:57:35</publishTime>
+      <publishTime>01/22/2016 21:38:36</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Web.dll">
-      <publishTime>01/18/2016 13:57:35</publishTime>
+      <publishTime>01/22/2016 21:38:36</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.WindowsServer.dll">
-      <publishTime>01/18/2016 13:57:35</publishTime>
+      <publishTime>01/22/2016 21:38:36</publishTime>
     </File>
     <File Include="bin/Microsoft.ApplicationInsights.dll">
-      <publishTime>01/18/2016 13:57:34</publishTime>
+      <publishTime>01/22/2016 21:38:36</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/EntityFramework.resources.dll">
+      <publishTime>01/22/2016 21:38:36</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/EntityFramework.SqlServer.resources.dll">
+      <publishTime>01/22/2016 21:38:36</publishTime>
+    </File>
+    <File Include="GetUser.svc">
+      <publishTime>01/25/2016 13:47:42</publishTime>
+    </File>
+    <File Include="MySimpleService.svc">
+      <publishTime>01/27/2016 11:20:16</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>01/18/2016 14:06:32</publishTime>
+      <publishTime>01/22/2016 21:38:36</publishTime>
     </File>
     <File Include="scripts/ai.0.15.0-build58334.js">
-      <publishTime>01/18/2016 14:06:32</publishTime>
+      <publishTime>01/22/2016 21:38:36</publishTime>
     </File>
     <File Include="scripts/ai.0.15.0-build58334.min.js">
-      <publishTime>01/18/2016 14:06:32</publishTime>
+      <publishTime>01/22/2016 21:38:36</publishTime>
+    </File>
+    <File Include="SetUser.svc">
+      <publishTime>01/25/2016 14:54:10</publishTime>
     </File>
     <File Include="UserService.svc">
       <publishTime>01/18/2016 14:50:21</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/20/2016 09:34:37</publishTime>
+      <publishTime>01/27/2016 15:54:58</publishTime>
     </File>
   </ItemGroup>
 </Project>

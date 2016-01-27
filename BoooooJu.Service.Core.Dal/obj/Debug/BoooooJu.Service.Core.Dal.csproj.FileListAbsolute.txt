@@ -38,3 +38,16 @@ F:\Git\BoooooJu\BoooooJu.Service.Core.Dal\bin\Debug\zh-Hans\EntityFramework.reso
 F:\Git\BoooooJu\BoooooJu.Service.Core.Dal\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
 F:\Git\BoooooJu\BoooooJu.Service.Core.Dal\obj\Debug\BoooooJu.Service.Core.Dal.dll
 F:\Git\BoooooJu\BoooooJu.Service.Core.Dal\obj\Debug\BoooooJu.Service.Core.Dal.pdb
+G:\C#\Program\BoooooJu.Service.Core.Dal\bin\Debug\BoooooJu.Service.Core.Dal.dll.config
+G:\C#\Program\BoooooJu.Service.Core.Dal\bin\Debug\BoooooJu.Service.Core.Dal.dll
+G:\C#\Program\BoooooJu.Service.Core.Dal\bin\Debug\BoooooJu.Service.Core.Dal.pdb
+G:\C#\Program\BoooooJu.Service.Core.Dal\bin\Debug\EntityFramework.dll
+G:\C#\Program\BoooooJu.Service.Core.Dal\bin\Debug\EntityFramework.SqlServer.dll
+G:\C#\Program\BoooooJu.Service.Core.Dal\bin\Debug\EntityFramework.xml
+G:\C#\Program\BoooooJu.Service.Core.Dal\bin\Debug\EntityFramework.SqlServer.xml
+G:\C#\Program\BoooooJu.Service.Core.Dal\bin\Debug\zh-Hans\EntityFramework.resources.dll
+G:\C#\Program\BoooooJu.Service.Core.Dal\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+G:\C#\Program\BoooooJu.Service.Core.Dal\obj\Debug\BoooooJu.Service.Core.Dal.csprojResolveAssemblyReference.cache
+G:\C#\Program\BoooooJu.Service.Core.Dal\obj\Debug\BoooooJu.Service.Core.Dal.dll
+G:\C#\Program\BoooooJu.Service.Core.Dal\obj\Debug\BoooooJu.Service.Core.Dal.pdb
+F:\Git\BoooooJu\BoooooJu.Service.Core.Dal\obj\Debug\BoooooJu.Service.Core.Dal.csprojResolveAssemblyReference.cache

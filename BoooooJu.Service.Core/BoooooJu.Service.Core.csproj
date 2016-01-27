@@ -41,6 +41,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IdentityModel" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceModel.Web" />
@@ -57,13 +58,16 @@
     <Compile Include="Addresses\Account\SetUser.cs" />
     <Compile Include="Addresses\Base\BaseGetData.cs" />
     <Compile Include="Addresses\Base\BaseSetData.cs" />
-    <Compile Include="Contracts\Base\IBaseGetData.cs" />
-    <Compile Include="Contracts\Base\IBaseSetData.cs" />
-    <Compile Include="Contracts\Account\ISetUser.cs" />
-    <Compile Include="Contracts\Account\IGetUser.cs" />
+    <Compile Include="ServiceContracts\Base\IBaseGetData.cs" />
+    <Compile Include="ServiceContracts\Base\IBaseSetData.cs" />
+    <Compile Include="ServiceContracts\Account\ISetUser.cs" />
+    <Compile Include="ServiceContracts\Account\IGetUser.cs" />
+    <Compile Include="MyCustomValidator.cs" />
+    <Compile Include="Addresses\MySimpleService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueryParameter\Base\IPage.cs" />
     <Compile Include="QueryParameter\Page.cs" />
+    <Compile Include="ServiceContracts\IMySimpleService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

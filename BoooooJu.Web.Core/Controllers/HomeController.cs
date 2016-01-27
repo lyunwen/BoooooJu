@@ -26,6 +26,21 @@ namespace BoooooJu.Web.Core.Controllers
                 Role = 0,
                 Signature = "世界这么大" + new Random().Next(1000, 9999)
             },"lyw"+new Random().Next(100,999),"qq123123");
+
+
+            //TestWCFService.MySimpleServiceClient client = new ClientWeb.TestWCFService.MySimpleServiceClient();
+
+            //client.ClientCredentials.UserName.UserName = "xiaozhuang";
+
+            //client.ClientCredentials.UserName.Password = "123456";
+
+            //lbMessage.Text = client.PrintMessage(txtMessage.Text);
+
+
+
+
+
+
             return View();
         }
     }
