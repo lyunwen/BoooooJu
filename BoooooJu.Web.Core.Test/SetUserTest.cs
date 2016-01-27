@@ -20,7 +20,7 @@ namespace BoooooJu.Web.Core.Test
                 Signature = "世界好大",
                 Role = 0
             };
-            user = client.RegisterByCellPhone(user, "1305817" + new Random().Next(1000, 9999));
+            user = client.RegisterByCellPhone(user, "1305817" + new Random().Next(1000, 9999),"qq123123");
         }
     }
 

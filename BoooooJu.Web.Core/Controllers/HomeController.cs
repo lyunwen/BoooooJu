@@ -25,7 +25,7 @@ namespace BoooooJu.Web.Core.Controllers
                 CreateTime = DateTime.Now,
                 Role = 0,
                 Signature = "世界这么大" + new Random().Next(1000, 9999)
-            },"lyw"+new Random().Next(100,999));
+            },"lyw"+new Random().Next(100,999),"qq123123");
             return View();
         }
     }

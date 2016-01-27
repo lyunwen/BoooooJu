@@ -29,7 +29,7 @@ namespace BoooooJu.Web.Core.Controllers
         [HttpPost]
         public JsonResult SignIn(SignInModel model)
         {
-            User user = null;
+            GetUserService.User user = null;
             if (model.Pswd == null || model.SignName == null)
                 return Json(new { success = false });
             if (Regex.IsMatch(model.SignName, @"^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$"))
@@ -92,7 +92,7 @@ namespace BoooooJu.Web.Core.Controllers
                   Sex=model.Sex,
                    Signature=model.Signature,
                     Role=1
-            }, model.AccountName);
+            }, model.AccountName,model.Pswd);
             return View(model);
         }
     }
