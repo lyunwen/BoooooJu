@@ -13,9 +13,9 @@ using System.Web.Mvc;
 namespace BoooooJu.Web.Core.Controllers
 {
     public class AccountController : Base.BoooooJuController
-    {
-        private readonly IGetUser _getUserClient;
+    { 
         private readonly ISetUser _setUserClient;
+        private readonly IGetUser _getUserClient;
         public AccountController(IGetUser getUserClient,ISetUser setUserClient)
         {
             _getUserClient = getUserClient;

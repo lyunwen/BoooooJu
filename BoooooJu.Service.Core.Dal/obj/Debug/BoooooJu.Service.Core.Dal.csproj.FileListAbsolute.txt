@@ -50,4 +50,3 @@ G:\C#\Program\BoooooJu.Service.Core.Dal\bin\Debug\zh-Hans\EntityFramework.SqlSer
 G:\C#\Program\BoooooJu.Service.Core.Dal\obj\Debug\BoooooJu.Service.Core.Dal.csprojResolveAssemblyReference.cache
 G:\C#\Program\BoooooJu.Service.Core.Dal\obj\Debug\BoooooJu.Service.Core.Dal.dll
 G:\C#\Program\BoooooJu.Service.Core.Dal\obj\Debug\BoooooJu.Service.Core.Dal.pdb
-F:\Git\BoooooJu\BoooooJu.Service.Core.Dal\obj\Debug\BoooooJu.Service.Core.Dal.csprojResolveAssemblyReference.cache

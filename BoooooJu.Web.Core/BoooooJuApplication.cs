@@ -9,7 +9,6 @@ using Autofac;
 using Autofac.Integration.Mvc;
 using Autofac.Configuration;
 using BoooooJu.Web.Core.SetUserService;
-using BoooooJu.Web.Core.GetUserService;
 using FluentValidation;
 using FluentValidation.Mvc;
 

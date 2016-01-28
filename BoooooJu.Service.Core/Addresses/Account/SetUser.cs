@@ -20,18 +20,23 @@ namespace BoooooJu.Service.Core.Addresses.Account
                 return result;
             using (BoooooJuDB db = new BoooooJuDB())
             {
-                db.Entry(user).State = System.Data.Entity.EntityState.Added;
-                UserKey key = new UserKey
+                using (TransactionScope scope = new TransactionScope())
                 {
-                    AccountName = accountName,
-                    AccountNameValidate = true,
-                    Pswd = pswd,
-                    UserId = user.Id,
-                    PswdType = 0,
-                    PswdSalt = "0"
-                };
-                db.SaveChanges();
-                result = user;
+                    db.Entry(user).State = System.Data.Entity.EntityState.Added;
+                    db.SaveChanges();
+                    UserKey key = new UserKey
+                    {
+                        AccountName = accountName,
+                        AccountNameValidate = true,
+                        Pswd = pswd,
+                        UserId = user.Id,
+                        PswdType = 0,
+                        PswdSalt = "0"
+                    };
+                    db.Entry(key).State = System.Data.Entity.EntityState.Added;
+                    db.SaveChanges();
+                    result = user;
+                }
             }
             return result;
         }
