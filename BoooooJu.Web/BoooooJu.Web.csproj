@@ -155,9 +155,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\BoooooJu.Web.Core\BoooooJu.Web.Core.csproj">
       <Project>{3b2c8dd0-d824-464a-be4e-51fb2cf7dc7a}</Project>
       <Name>BoooooJu.Web.Core</Name>
