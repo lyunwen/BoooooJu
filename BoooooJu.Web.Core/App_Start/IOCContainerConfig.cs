@@ -25,8 +25,8 @@ namespace BoooooJu.Web.Core.App_Start
         }
         private void SetupResolveRules(ContainerBuilder builder)
         {
-            builder.RegisterType<SetUserClient>().As<ISetUser>().WithProperty("ClientCredentials", new ClientCredentials().UserName.UserName="");
-            builder.RegisterType<GetUserClient>().As<IGetUser>().WithProperty("ClientCredentials", new object());
+            builder.RegisterType<SetUserClient>().As<ISetUser>();
+            builder.RegisterType<GetUserClient>().As<IGetUser>();
         }
     }
 }
