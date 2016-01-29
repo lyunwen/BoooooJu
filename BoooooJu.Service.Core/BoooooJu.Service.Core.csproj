@@ -58,6 +58,7 @@
     <Compile Include="Addresses\Account\SetUser.cs" />
     <Compile Include="Addresses\Base\BaseGetData.cs" />
     <Compile Include="Addresses\Base\BaseSetData.cs" />
+    <Compile Include="MyCustomValidatort.cs" />
     <Compile Include="ServiceContracts\Base\IBaseGetData.cs" />
     <Compile Include="ServiceContracts\Base\IBaseSetData.cs" />
     <Compile Include="ServiceContracts\Account\ISetUser.cs" />

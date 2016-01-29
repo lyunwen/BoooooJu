@@ -2,7 +2,7 @@
 <configurationSnapshot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-wcfconfigurationsnapshot">
   <behaviors />
   <bindings>
-    <binding digest="System.ServiceModel.Configuration.BasicHttpBindingElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089:&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data name=&quot;InUserPoint1&quot; /&gt;" bindingType="basicHttpBinding" name="InUserPoint1" />
+    <binding digest="System.ServiceModel.Configuration.BasicHttpBindingElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089:&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data name=&quot;InUserPoint1&quot;&gt;&lt;security mode=&quot;Message&quot;&gt;&lt;message clientCredentialType=&quot;Certificate&quot; /&gt;&lt;/security&gt;&lt;/Data&gt;" bindingType="basicHttpBinding" name="InUserPoint1" />
   </bindings>
   <endpoints>
     <endpoint normalizedDigest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://localhost:57315/GetUser.svc&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;InUserPoint1&quot; contract=&quot;GetUserService.IGetUser&quot; name=&quot;InUserPoint1&quot; /&gt;" digest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://localhost:57315/GetUser.svc&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;InUserPoint1&quot; contract=&quot;GetUserService.IGetUser&quot; name=&quot;InUserPoint1&quot; /&gt;" contractName="GetUserService.IGetUser" name="InUserPoint1" />
