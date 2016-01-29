@@ -165,4 +165,3 @@ G:\C#\Program\BoooooJu.Web.Core\bin\Debug\zh-Hans\System.Web.WebPages.Deployment
 G:\C#\Program\BoooooJu.Web.Core\bin\Debug\zh-Hans\System.Web.WebPages.Razor.resources.dll
 G:\C#\Program\BoooooJu.Web.Core\obj\Debug\BoooooJu.Web.Core.dll
 G:\C#\Program\BoooooJu.Web.Core\obj\Debug\BoooooJu.Web.Core.pdb
-F:\Git\BoooooJu\BoooooJu.Web.Core\obj\Debug\BoooooJu.Web.Core.csprojResolveAssemblyReference.cache

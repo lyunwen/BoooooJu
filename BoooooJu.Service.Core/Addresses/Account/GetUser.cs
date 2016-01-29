@@ -45,7 +45,8 @@ namespace BoooooJu.Service.Core.Addresses.Account
             User user = null;
             using (BoooooJuDB db = new BoooooJuDB())
             {
-                user = db.Users.First(x => x.Id == id);
+                user = db.Set<User>().First(x => x.Id == id);
+                db.SaveChanges();
             }
             return user;
         }
