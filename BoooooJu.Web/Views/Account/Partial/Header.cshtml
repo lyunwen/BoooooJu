@@ -1,0 +1,15 @@
+﻿@model BoooooJu.Web.Core.ViewModels.Partial.HeaderModel
+<div id="header">
+    <ul>
+        @if (Model != null && Model.IsSign)
+        {
+            <li><a href="##">@Model.NickName</a> </li>
+            <li><a href="##">注销</a></li>
+        }
+        else
+        {
+            <li>注册</li>
+            <li>登入</li>
+        }
+    </ul>
+</div>
