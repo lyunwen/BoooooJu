@@ -142,3 +142,5 @@
     <validation validateIntegratedModeConfiguration="false" />
   </system.webServer>
 </configuration>
+
+证书生成： makecert-sr localmachine -ss My -n CN=wcf服务端机器名 -sky exchange -pe –r
