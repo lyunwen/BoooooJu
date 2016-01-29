@@ -35,9 +35,9 @@ namespace BoooooJu.Web.Core.Common
         /// </summary>
         /// <param name="enumType"></param>
         /// <returns></returns>
-        public static List<KeyValuePair<String, String>> GetNameValueList(Type enumType)
+        public static List<KeyValuePair<string, string>> GetNameValueList(Type enumType)
         {
-            var keyValues = new List<KeyValuePair<String, String>>();
+            var keyValues = new List<KeyValuePair<string, string>>();
             Type type = enumType;
             FieldInfo[] fieldInfos = type.GetFields();
             foreach (var fieldInfo in fieldInfos)
