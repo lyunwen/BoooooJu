@@ -23,11 +23,10 @@
   </MetadataSources>
   <Metadata>
     <MetadataFile FileName="GetUser.disco" MetadataType="Disco" ID="aca6cddb-e654-46b2-9883-1b13768aa0a2" SourceId="1" SourceUrl="http://localhost:57315/GetUser.svc?disco" />
-    <MetadataFile FileName="GetUser.xsd" MetadataType="Schema" ID="5e391c51-473b-4d38-b4e0-94787fcd6826" SourceId="1" SourceUrl="http://localhost:57315/GetUser.svc?xsd=xsd3" />
     <MetadataFile FileName="GetUser1.xsd" MetadataType="Schema" ID="42e5bf84-7dce-44b8-8482-8dd2fc766056" SourceId="1" SourceUrl="http://localhost:57315/GetUser.svc?xsd=xsd2" />
-    <MetadataFile FileName="GetUser2.xsd" MetadataType="Schema" ID="cd1c8f4d-f00d-4db5-af39-872ebdc4d996" SourceId="1" SourceUrl="http://localhost:57315/GetUser.svc?xsd=xsd0" />
     <MetadataFile FileName="GetUser.wsdl" MetadataType="Wsdl" ID="17580aaa-7137-41e4-9b2b-3a40cc27861b" SourceId="1" SourceUrl="http://localhost:57315/GetUser.svc?wsdl" />
     <MetadataFile FileName="GetUser3.xsd" MetadataType="Schema" ID="73a40041-b0c5-4b07-a209-1146539560f7" SourceId="1" SourceUrl="http://localhost:57315/GetUser.svc?xsd=xsd1" />
+    <MetadataFile FileName="GetUser2.xsd" MetadataType="Schema" ID="cd1c8f4d-f00d-4db5-af39-872ebdc4d996" SourceId="1" SourceUrl="http://localhost:57315/GetUser.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

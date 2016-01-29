@@ -35,6 +35,7 @@ namespace BoooooJu.Service.Core.Addresses.Account
                     };
                     db.Entry(key).State = System.Data.Entity.EntityState.Added;
                     db.SaveChanges();
+                    scope.Complete();
                     result = user;
                 }
             }

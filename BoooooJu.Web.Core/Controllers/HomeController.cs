@@ -21,10 +21,20 @@ namespace BoooooJu.Web.Core.Controllers
             _setUserClient = SetUserClient; 
         }
         public  ActionResult Index()
-        { 
+        {
+
+            //_setUserClient.AlterPswdByAccountName("dfdf", "dfgdfg");
+
+
+
+
+
+
+
+
             SetUserService.SetUserClient client1 = new SetUserService.SetUserClient(); 
-            client1.ClientCredentials.UserName.UserName = "xiaozhuang";
-             client1.ClientCredentials.UserName.Password = "123456"; 
+            client1.ClientCredentials.UserName.UserName = "boooooju.com";
+             client1.ClientCredentials.UserName.Password = "123456";
             client1.RegisterByAccountName(new SetUserService.User()
             {
                 NickName = "zaizaiyou",
@@ -33,12 +43,17 @@ namespace BoooooJu.Web.Core.Controllers
                 Role = 0,
                 Signature = "世界这么大" + new Random().Next(1000, 9999)
             }, "lyw" + new Random().Next(100, 999), "qq123123");
+
+
+            
             GetUserService.GetUserClient client2 = new GetUserService.GetUserClient();
-            client2.ClientCredentials.UserName.UserName = "xiaozhuang";
+            client2.ClientCredentials.UserName.UserName = "boooooju.com";
             client2.ClientCredentials.UserName.Password = "123456";
             client2.SignByAccountName("lyw285", "qq123123");
-            var p = client2.GetUserById(50);
 
+
+            var pp = client2.GetDataByPrimaryKey(10);
+            var p = client2.GetUserById(50);
             return View();
         }
         private static bool ServerCertificateValidationCallback(

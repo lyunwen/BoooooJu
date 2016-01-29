@@ -10,12 +10,12 @@ namespace BoooooJu.Service.Core.Addresses.Base
 {
     public class BaseGetData<T> : IBaseGetData<T> where T : class
     {
-        public T GetDataByPrimaryKey(params object[] keyValues)
+        public T GetDataByPrimaryKey(int key)
         {
             T result = null;
             using (BoooooJuDB db = new BoooooJuDB())
             {
-                result = db.Set<T>().Find(keyValues);
+                result = db.Set<T>().Find(key);
             }
             return result;
         }

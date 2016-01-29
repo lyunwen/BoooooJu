@@ -25,7 +25,7 @@ namespace ServerWcfService.CustomValidators
             if (string.IsNullOrEmpty(password))
                 throw new ArgumentNullException("password");
             // check if the user is not xiaozhuang
-            if (userName != "xiaozhuang" || password != "123456")
+            if (userName != "boooooju.com" || password != "123456")
                 throw new SecurityTokenException("用户名或者密码错误！");
         }
     }

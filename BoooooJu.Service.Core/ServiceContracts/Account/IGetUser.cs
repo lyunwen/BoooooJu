@@ -9,8 +9,6 @@ namespace BoooooJu.Service.Core.Contracts.Account
     interface IGetUser : Base.IBaseGetData<User>
     {
         [OperationContract]
-        User GetUserById(int id);
-        [OperationContract]
         User GetUserByAccount(string accountName);
         [OperationContract]
         User GetUserByCellPhone(string cellPhone);

@@ -134,9 +134,6 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\GetUserService\GetUser.wsdl" />
-    <None Include="Service References\GetUserService\GetUser.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Service References\GetUserService\GetUser1.xsd">
       <SubType>Designer</SubType>
     </None>

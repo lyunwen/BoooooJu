@@ -143,13 +143,10 @@ namespace BoooooJu.Web.Core.GetUserService {
     public interface IGetUser {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBaseGetDataOf_User/GetDataByPrimaryKey", ReplyAction="http://tempuri.org/IBaseGetDataOf_User/GetDataByPrimaryKeyResponse")]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BoooooJu.Web.Core.GetUserService.User))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BoooooJu.Web.Core.GetUserService.User[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(object[]))]
-        BoooooJu.Web.Core.GetUserService.User GetDataByPrimaryKey(object[] keyValues);
+        BoooooJu.Web.Core.GetUserService.User GetDataByPrimaryKey(int key);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBaseGetDataOf_User/GetDataByPrimaryKey", ReplyAction="http://tempuri.org/IBaseGetDataOf_User/GetDataByPrimaryKeyResponse")]
-        System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User> GetDataByPrimaryKeyAsync(object[] keyValues);
+        System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User> GetDataByPrimaryKeyAsync(int key);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBaseGetDataOf_User/GetDataByUniqueKey", ReplyAction="http://tempuri.org/IBaseGetDataOf_User/GetDataByUniqueKeyResponse")]
         BoooooJu.Web.Core.GetUserService.User GetDataByUniqueKey(string key);
@@ -160,7 +157,6 @@ namespace BoooooJu.Web.Core.GetUserService {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBaseGetDataOf_User/GetDatasBy", ReplyAction="http://tempuri.org/IBaseGetDataOf_User/GetDatasByResponse")]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BoooooJu.Web.Core.GetUserService.User))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BoooooJu.Web.Core.GetUserService.User[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(object[]))]
         BoooooJu.Web.Core.GetUserService.User[] GetDatasBy(object page);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBaseGetDataOf_User/GetDatasBy", ReplyAction="http://tempuri.org/IBaseGetDataOf_User/GetDatasByResponse")]
@@ -187,7 +183,6 @@ namespace BoooooJu.Web.Core.GetUserService {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGetUser/GetUsers", ReplyAction="http://tempuri.org/IGetUser/GetUsersResponse")]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BoooooJu.Web.Core.GetUserService.User))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BoooooJu.Web.Core.GetUserService.User[]))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(object[]))]
         BoooooJu.Web.Core.GetUserService.User[] GetUsers(object page);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGetUser/GetUsers", ReplyAction="http://tempuri.org/IGetUser/GetUsersResponse")]
@@ -245,12 +240,12 @@ namespace BoooooJu.Web.Core.GetUserService {
                 base(binding, remoteAddress) {
         }
         
-        public BoooooJu.Web.Core.GetUserService.User GetDataByPrimaryKey(object[] keyValues) {
-            return base.Channel.GetDataByPrimaryKey(keyValues);
+        public BoooooJu.Web.Core.GetUserService.User GetDataByPrimaryKey(int key) {
+            return base.Channel.GetDataByPrimaryKey(key);
         }
         
-        public System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User> GetDataByPrimaryKeyAsync(object[] keyValues) {
-            return base.Channel.GetDataByPrimaryKeyAsync(keyValues);
+        public System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User> GetDataByPrimaryKeyAsync(int key) {
+            return base.Channel.GetDataByPrimaryKeyAsync(key);
         }
         
         public BoooooJu.Web.Core.GetUserService.User GetDataByUniqueKey(string key) {

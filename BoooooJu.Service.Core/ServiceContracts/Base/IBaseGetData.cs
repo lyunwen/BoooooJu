@@ -7,7 +7,7 @@ namespace BoooooJu.Service.Core.Contracts.Base
     public interface IBaseGetData<T> where T : class
     { 
         [OperationContract]
-        T GetDataByPrimaryKey(params object[] keyValues);
+        T GetDataByPrimaryKey(int key);
         [OperationContract]
         T GetDataByUniqueKey(string key);
         [OperationContract]

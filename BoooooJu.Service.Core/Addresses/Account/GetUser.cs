@@ -40,17 +40,6 @@ namespace BoooooJu.Service.Core.Addresses.Account
             return user;
         }
 
-        User IGetUser.GetUserById(int id)
-        {
-            User user = null;
-            using (BoooooJuDB db = new BoooooJuDB())
-            {
-                user = db.Set<User>().First(x => x.Id == id);
-                db.SaveChanges();
-            }
-            return user;
-        }
-
         List<User> IGetUser.GetUsers(IPage page)
         {
             List<Dal.User> users = null;

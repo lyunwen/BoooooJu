@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.ServiceModel.Description;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
@@ -24,8 +25,8 @@ namespace BoooooJu.Web.Core.App_Start
         }
         private void SetupResolveRules(ContainerBuilder builder)
         {
-            builder.RegisterType<SetUserClient>().As<ISetUser>();
-            builder.RegisterType<GetUserClient>().As<IGetUser>();
+            builder.RegisterType<SetUserClient>().As<ISetUser>().WithProperty("ClientCredentials", new ClientCredentials().UserName.UserName="");
+            builder.RegisterType<GetUserClient>().As<IGetUser>().WithProperty("ClientCredentials", new object());
         }
     }
 }
