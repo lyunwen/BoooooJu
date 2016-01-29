@@ -162,12 +162,6 @@ namespace BoooooJu.Web.Core.GetUserService {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBaseGetDataOf_User/GetDatasBy", ReplyAction="http://tempuri.org/IBaseGetDataOf_User/GetDatasByResponse")]
         System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User[]> GetDatasByAsync(object page);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGetUser/GetUserById", ReplyAction="http://tempuri.org/IGetUser/GetUserByIdResponse")]
-        BoooooJu.Web.Core.GetUserService.User GetUserById(int id);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGetUser/GetUserById", ReplyAction="http://tempuri.org/IGetUser/GetUserByIdResponse")]
-        System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User> GetUserByIdAsync(int id);
-        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGetUser/GetUserByAccount", ReplyAction="http://tempuri.org/IGetUser/GetUserByAccountResponse")]
         BoooooJu.Web.Core.GetUserService.User GetUserByAccount(string accountName);
         
@@ -262,14 +256,6 @@ namespace BoooooJu.Web.Core.GetUserService {
         
         public System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User[]> GetDatasByAsync(object page) {
             return base.Channel.GetDatasByAsync(page);
-        }
-        
-        public BoooooJu.Web.Core.GetUserService.User GetUserById(int id) {
-            return base.Channel.GetUserById(id);
-        }
-        
-        public System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User> GetUserByIdAsync(int id) {
-            return base.Channel.GetUserByIdAsync(id);
         }
         
         public BoooooJu.Web.Core.GetUserService.User GetUserByAccount(string accountName) {

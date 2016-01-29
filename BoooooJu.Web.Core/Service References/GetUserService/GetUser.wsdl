@@ -219,44 +219,6 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_GetUserById_Input_policy">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
-        </sp:SignedParts>
-        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-        </sp:EncryptedParts>
-      </wsp:All>
-    </wsp:ExactlyOne>
-  </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_GetUserById_output_policy">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
-        </sp:SignedParts>
-        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-        </sp:EncryptedParts>
-      </wsp:All>
-    </wsp:ExactlyOne>
-  </wsp:Policy>
   <wsp:Policy wsu:Id="InUserPoint_GetUserByAccount_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
@@ -548,12 +510,6 @@
   <wsdl:message name="IGetUser_GetDatasBy_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetDatasByResponse" />
   </wsdl:message>
-  <wsdl:message name="IGetUser_GetUserById_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetUserById" />
-  </wsdl:message>
-  <wsdl:message name="IGetUser_GetUserById_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetUserByIdResponse" />
-  </wsdl:message>
   <wsdl:message name="IGetUser_GetUserByAccount_InputMessage">
     <wsdl:part name="parameters" element="tns:GetUserByAccount" />
   </wsdl:message>
@@ -608,10 +564,6 @@
     <wsdl:operation name="GetDatasBy">
       <wsdl:input wsaw:Action="http://tempuri.org/IBaseGetDataOf_User/GetDatasBy" message="tns:IGetUser_GetDatasBy_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IBaseGetDataOf_User/GetDatasByResponse" message="tns:IGetUser_GetDatasBy_OutputMessage" />
-    </wsdl:operation>
-    <wsdl:operation name="GetUserById">
-      <wsdl:input wsaw:Action="http://tempuri.org/IGetUser/GetUserById" message="tns:IGetUser_GetUserById_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IGetUser/GetUserByIdResponse" message="tns:IGetUser_GetUserById_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetUserByAccount">
       <wsdl:input wsaw:Action="http://tempuri.org/IGetUser/GetUserByAccount" message="tns:IGetUser_GetUserByAccount_InputMessage" />
@@ -675,17 +627,6 @@
       </wsdl:input>
       <wsdl:output>
         <wsp:PolicyReference URI="#InUserPoint_GetDatasBy_output_policy" />
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="GetUserById">
-      <soap12:operation soapAction="http://tempuri.org/IGetUser/GetUserById" style="document" />
-      <wsdl:input>
-        <wsp:PolicyReference URI="#InUserPoint_GetUserById_Input_policy" />
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <wsp:PolicyReference URI="#InUserPoint_GetUserById_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
@@ -775,7 +716,7 @@
         <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
           <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
             <X509Data>
-              <X509Certificate>MIIB/zCCAWigAwIBAgIQhAXStcsdU4lByCYKknLNjTANBgkqhkiG9w0BAQQFADAXMRUwEwYDVQQDEwxib29vb29qdTIwMTAwHhcNMTYwMTI4MDk0MjUyWhcNMzkxMjMxMjM1OTU5WjAXMRUwEwYDVQQDEwxib29vb29qdTIwMTAwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANTX0UR3ra0dBpeSFQWTAQAa74In8EnOWBGvdVAnrxBPqHLN9wkt2k/okQRVzllIickeEbUUIQ+F4tGGVQ1SMOMM5QTX6wJKt+Z4FOhVrcjfza8uJmDmBMQFxk6T5KqNM7TyeqIJ2HPn8+i5/p+pIPnyfT0xLMlM9xqm18R0sT4ZAgMBAAGjTDBKMEgGA1UdAQRBMD+AEK3jLJVNbU9BUMTGJOZH0dehGTAXMRUwEwYDVQQDEwxib29vb29qdTIwMTCCEIQF0rXLHVOJQcgmCpJyzY0wDQYJKoZIhvcNAQEEBQADgYEAs4RQZRBeIUaA0GyyV6wl7NKFp1PvCzx52aM2yX4WuLA7skhI+pP+Vy0TH5qP1HDI3AJt2lJEELZQ3W+QBf6BK42w7q8x7toobsRPK0LWJoilaTb9wHNrbsL/Jhp9V9Al21YY5fYZ3ksRkZMG4NuEkCp/xRl5/mpucHZmoQ1R5BA=</X509Certificate>
+              <X509Certificate>MIIBvDCCAWagAwIBAgIQS0tH/Ekla69Bf5b0L84j4zANBgkqhkiG9w0BAQQFADAWMRQwEgYDVQQDEwtSb290IEFnZW5jeTAeFw0xNjAxMjkxNDA4MDBaFw0zOTEyMzEyMzU5NTlaMBcxFTATBgNVBAMTDGJvb29vb2p1MjAxMDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAsXv2tz4nXgmC/2M8XfzyFk2q999Jq118tfnhVq8qp5dCkPaxd/LqA7sbFz6HgxM2igPEwna8DhiR8wiDuE6VNacOplbxHuSuqlwc8ycdKSCxMrKK23DZZRKm1XpQ9zmiys2q+HPmrpB1KMMnxBSuQSzUfdMUOhzAvZhVdw/ULmECAwEAAaNLMEkwRwYDVR0BBEAwPoAQEuQJLQYdHU8AjWEh3BZkY6EYMBYxFDASBgNVBAMTC1Jvb3QgQWdlbmN5ghAGN2wAqgBkihHPuNSqXDX0MA0GCSqGSIb3DQEBBAUAA0EAY6jWm3Ub8Jl5brfi0WOSYlrzIQ91RR4RNbIS+k5mvWrXC+q588mFWclE4VPOWXuNzD9wYPYHYOTRaK6duJIUGw==</X509Certificate>
             </X509Data>
           </KeyInfo>
         </Identity>
