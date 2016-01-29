@@ -13,10 +13,10 @@ namespace BoooooJu.Web.Core.Controllers.Base
         /// 登入者主键
         /// </summary>
         public int Id { get; set; }
-        /// <summary>
-        /// 登入者帐户名
-        /// </summary>
-        public string AccountName { get; set; }
+        ///// <summary>
+        ///// 登入者帐户名
+        ///// </summary>
+        //public string AccountName { get; set; }
         /// <summary>
         /// 登入者昵称
         /// </summary>
