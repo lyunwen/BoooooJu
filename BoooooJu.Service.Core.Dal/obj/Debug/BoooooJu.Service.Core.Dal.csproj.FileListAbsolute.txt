@@ -48,5 +48,6 @@ F:\Git\BoooooJu\BoooooJu.Service.Core.Dal\bin\Debug\EntityFramework.xml
 F:\Git\BoooooJu\BoooooJu.Service.Core.Dal\bin\Debug\EntityFramework.SqlServer.xml
 F:\Git\BoooooJu\BoooooJu.Service.Core.Dal\bin\Debug\zh-Hans\EntityFramework.resources.dll
 F:\Git\BoooooJu\BoooooJu.Service.Core.Dal\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+F:\Git\BoooooJu\BoooooJu.Service.Core.Dal\obj\Debug\BoooooJu.Service.Core.Dal.csprojResolveAssemblyReference.cache
 F:\Git\BoooooJu\BoooooJu.Service.Core.Dal\obj\Debug\BoooooJu.Service.Core.Dal.dll
 F:\Git\BoooooJu\BoooooJu.Service.Core.Dal\obj\Debug\BoooooJu.Service.Core.Dal.pdb
