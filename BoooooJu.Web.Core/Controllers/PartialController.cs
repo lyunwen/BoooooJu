@@ -11,10 +11,7 @@ namespace BoooooJu.Web.Core.Controllers
     //存放 网页头部、尾部等通用局部界面
     public class PartialController : Base.BoooooJuController
     {
-        public PartialController()
-        {
-
-        }
+  
         public PartialViewResult Header()
         {
             HeaderModel model = null;

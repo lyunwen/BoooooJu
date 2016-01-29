@@ -13,17 +13,32 @@ using System.Web.Mvc;
 namespace BoooooJu.Web.Core.Controllers
 {
     public class AccountController : Base.BoooooJuController
-    { 
-        private readonly ISetUser _setUserClient;
-        private readonly IGetUser _getUserClient;
-        public AccountController(IGetUser getUserClient,ISetUser setUserClient)
+    {
+        private  SetUserClient _setUserClient
         {
-            _getUserClient = getUserClient;
-            _setUserClient = setUserClient;
+            get
+            {
+                var client = new SetUserClient();
+                client.ClientCredentials.UserName.UserName = "boooooju.com";
+                client.ClientCredentials.UserName.UserName = "123456";
+                return client;
+            }
         }
-        //登入
-        public ViewResult SignIn()
+        private  GetUserClient _getUserClient
         {
+            get
+            {
+                var client = new GetUserClient();
+                client.ClientCredentials.UserName.UserName = "boooooju.com";
+                client.ClientCredentials.UserName.UserName = "123456";
+                return client;
+            }
+        }
+
+        //登入
+        public ViewResult SignIn(string returnUrl = null)
+        {
+            ViewData["returnUrl"] = returnUrl;
             return View();
         }
         [HttpPost]
@@ -86,13 +101,14 @@ namespace BoooooJu.Web.Core.Controllers
             {
                 return View(model);
             }
-            _setUserClient.RegisterByAccountName(new SetUserService.User {
-                CreateTime =DateTime.Now,
-                 NickName=model.NickName,
-                  Sex=model.Sex,
-                   Signature=model.Signature,
-                    Role=1
-            }, model.AccountName,model.Pswd);
+            _setUserClient.RegisterByAccountName(new SetUserService.User
+            {
+                CreateTime = DateTime.Now,
+                NickName = model.NickName,
+                Sex = model.Sex,
+                Signature = model.Signature,
+                Role = 1
+            }, model.AccountName, model.Pswd);
             return View(model);
         }
     }

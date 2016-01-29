@@ -18,6 +18,7 @@ namespace BoooooJu.Web.Core.App_Start
             };
             PartialViewLocationFormats = new[]
             {
+                 "~/Views/{1}/{0}.cshtml",
                 "~/Views/{1}/Partial/{0}.cshtml",
             };
         }
