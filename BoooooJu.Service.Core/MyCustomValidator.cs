@@ -12,22 +12,10 @@ namespace ServerWcfService.CustomValidators
 {
     public class MyCustomValidator : UserNamePasswordValidator
     {
-        /// <summary>
-        /// Validates the user name and password combination.
-        /// </summary>
-        /// <param name="userName">The user name.</param>
-        /// <param name="password">The password.</param>
         public override void Validate(string userName, string password)
         {
-            // validate arguments
-            if (string.IsNullOrEmpty(userName))
-                throw new ArgumentNullException("userName");
-            if (string.IsNullOrEmpty(password))
-                throw new ArgumentNullException("password");
-            // check if the user is not xiaozhuang
             if (userName != "boooooju.com" || password != "123456")
                 throw new SecurityTokenException("用户名或者密码错误！");
         }
-    }
-
+    } 
 }

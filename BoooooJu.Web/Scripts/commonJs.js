@@ -37,3 +37,15 @@ function AutoSkip(tips, url, timeSpan) {
         }
     }, timeSpan);
 }
+
+function SignOut() {
+    $.ajax({
+        url: "/Account/SignOut",
+        type: "post",
+        success: function (e) {
+            if (e) {
+                location.reload();
+            }
+        }
+    });
+}

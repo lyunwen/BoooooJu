@@ -147,6 +147,7 @@
     <Content Include="Views\Account\Manage.cshtml" />
     <Content Include="Views\Account\Partial\UserPage.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\Partial\Header.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

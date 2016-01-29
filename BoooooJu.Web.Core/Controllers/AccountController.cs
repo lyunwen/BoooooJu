@@ -61,7 +61,7 @@ namespace BoooooJu.Web.Core.Controllers
         public JsonResult SignOut()
         {
             Session[Base.SessionConfig.BoooooJuer] = null;
-            return Json(new { success = false });
+            return Json(new { success = true });
         }
 
         [Filters.BoAuthorizeAttribute(Base.BoooooJuPermit.PermitG)]

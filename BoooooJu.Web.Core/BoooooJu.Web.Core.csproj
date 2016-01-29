@@ -103,6 +103,7 @@
     <Compile Include="Controllers\Base\CookieConfig.cs" />
     <Compile Include="Controllers\Base\SessionConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PartialController.cs" />
     <Compile Include="Filters\BoAuthorizeAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\GetUserService\Reference.cs">
@@ -115,6 +116,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\Partial\HeaderModel.cs" />
     <Compile Include="ViewModels\Account\RegisterModel.cs" />
     <Compile Include="ViewModels\Account\SignInModel.cs" />
     <Compile Include="ViewModels\Base\EmailAddressValidator.cs" />
