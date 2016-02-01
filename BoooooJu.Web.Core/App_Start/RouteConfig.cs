@@ -19,12 +19,6 @@ namespace BoooooJu.Web
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
                 namespaces:new string[] { "BoooooJu.Web.Core.Controllers" }
             );
-            routes.MapRoute(
-                "Manager_default3",
-                "Manager/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional },
-               namespaces: new string[] { "BoooooJu.Web.Core.Areas.Manager.Controllers" }
-            );
         }
     }
     //顾问角色路由

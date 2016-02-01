@@ -62,17 +62,17 @@ namespace BoooooJu.Web.Core.Controllers
                     LogonIp = GetIP()
                 };
                 if (user.Role == 127)
-                    return Json(new { success = true, url = "/Areas/SuperManager/Home/Index" });
+                    return Json(new { success = true, url = "/SuperManager/Home/Index" });
                 if ((user.Role & (int)BoooooJuPermit.Manager) > (int)BoooooJuPermit.Manager)
-                    return Json(new { success = true, url = "/Areas/Manager/Home/Index" });
+                    return Json(new { success = true, url = "/Manager/Home/Index" });
                 if ((user.Role & (int)BoooooJuPermit.Vendor) > (int)BoooooJuPermit.Vendor)
-                    return Json(new { success = true, url = "/Areas/Vendor/Home/Index" });
+                    return Json(new { success = true, url = "/Vendor/Home/Index" });
                 if ((user.Role & (int)BoooooJuPermit.Agent) > (int)BoooooJuPermit.Agent)
-                    return Json(new { success = true, url = "/Areas/Agent/Home/Index" });
+                    return Json(new { success = true, url = "/Agent/Home/Index" });
                 if ((user.Role & (int)BoooooJuPermit.Buyer) > (int)BoooooJuPermit.Buyer)
-                    return Json(new { success = true, url = "/Areas/Manager/Home/Index" });
+                    return Json(new { success = true, url = "/Manager/Home/Index" });
 
-                return Json(new { success = true, url = "/Areas/Manager/Home/Index" });
+                return Json(new { success = true, url = "/Manager/Home/Index" });
             }
             else
             {
