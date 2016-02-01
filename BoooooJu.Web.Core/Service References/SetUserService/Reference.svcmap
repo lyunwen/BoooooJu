@@ -19,15 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:57315/SetUser.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://120.24.76.23:57315/SetUser.svc/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="SetUser.xsd" MetadataType="Schema" ID="de8bdb58-9f7c-40d8-9dd4-3dde100b5027" SourceId="1" SourceUrl="http://localhost:57315/SetUser.svc?xsd=xsd2" />
-    <MetadataFile FileName="SetUser1.xsd" MetadataType="Schema" ID="0d608915-2331-4f7a-9810-4afa00f084ce" SourceId="1" SourceUrl="http://localhost:57315/SetUser.svc?xsd=xsd0" />
-    <MetadataFile FileName="SetUser.wsdl" MetadataType="Wsdl" ID="68a98739-291e-4456-8a6e-b600fd91e670" SourceId="1" SourceUrl="http://localhost:57315/SetUser.svc?wsdl" />
-    <MetadataFile FileName="SetUser2.xsd" MetadataType="Schema" ID="bc7414be-c20d-4544-8a35-4110c29520ed" SourceId="1" SourceUrl="http://localhost:57315/SetUser.svc?xsd=xsd3" />
-    <MetadataFile FileName="SetUser3.xsd" MetadataType="Schema" ID="c29af887-2105-4328-bd92-53f2cc990e83" SourceId="1" SourceUrl="http://localhost:57315/SetUser.svc?xsd=xsd1" />
-    <MetadataFile FileName="SetUser.disco" MetadataType="Disco" ID="c7495f4d-8f11-4757-ba49-4fd4b40a7040" SourceId="1" SourceUrl="http://localhost:57315/SetUser.svc?disco" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="dbcca01f-ef68-4f94-80d0-4e92f1dab5b2" SourceId="1" SourceUrl="http://120.24.76.23:57315/SetUser.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="e2480ccf-e32f-4495-8925-9d9c057da357" SourceId="1" SourceUrl="http://120.24.76.23:57315/SetUser.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="202dae57-cb65-4250-b63a-0117478a17c3" SourceId="1" SourceUrl="http://120.24.76.23:57315/SetUser.svc/mex" />
+    <MetadataFile FileName="BoooooJu.Service.Core.Dal.xsd" MetadataType="Schema" ID="40bd095b-89a5-423a-b422-bdbcd5b391e6" SourceId="1" SourceUrl="http://120.24.76.23:57315/SetUser.svc/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="c1e4218f-4d3e-4e95-afeb-74304e66fd0c" SourceId="1" SourceUrl="http://120.24.76.23:57315/SetUser.svc/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

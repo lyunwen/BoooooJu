@@ -3,25 +3,54 @@
     ViewBag.Title = "Register";
     Layout = "~/Views/Shared/_default.cshtml";
 }
-@using (Html.BeginForm())
-{
-    @Html.TextBoxFor(model=>model.NickName,new { placeholder = "昵称"})
-    @Html.ValidationMessageFor(model=>model.NickName)
+<form method="post" id="form">
+    <input name="AccountName" placeholder="用户账号" maxlength="12" min="5" />
+    <em id="VAccountName"></em>
+
+
+    <input name="Pswd" placeholder="用户密码" type="password" maxlength="16" min="5" />
+    <em id="VPswd"></em>
+
+
+    <input name="NickName" placeholder="昵称" maxlength="15" />
+    <em id="VNickName"></em>
 
     <label for="Sex">
-        <input type="radio" value="1" name="Sex" />
-        <input type="radio" value="2" name="Sex" />
+        <label>男：<input type="radio" value="1" name="Sex" checked /></label>
+        <label> 女： <input type="radio" value="2" name="Sex" /></label>
     </label>
-    @Html.TextBoxFor(model => model.CellPhone,new { placeholder ="手机号码"})
-    @Html.ValidationMessageFor(model => model.CellPhone)
 
-    @Html.TextBoxFor(model => model.EmailAddress,new { placeholder ="邮箱"})
-    @Html.ValidationMessageFor(model => model.EmailAddress)
+    <textarea name="Signature" placeholder="个性签名" maxlength="30"></textarea>
 
-    @Html.TextBoxFor(model => model.Pswd,new { placeholder ="密码"})
-    @Html.ValidationMessageFor(model => model.Pswd)
-
-    @Html.TextBoxFor(model => model.Pswd, new { placeholder = "个性签名" }) 
-
-    <input type="submit" value="提交" />
+    <input type="button" onclick="Submit()" value="提交" />
+</form>
+<div id="AutoSkip"></div>
+@section Js{
+    <script>
+        $(function () {
+            AutoSkipInit();
+        });
+        function FormValidate() {
+            var result = false;
+            result = true;
+            return result;
+        }
+        function Submit() {
+            if (FormValidate()) {
+                $.ajax({
+                    url: "",
+                    data: $("#form").serialize(),
+                    dataType: "json",
+                    type: "post",
+                    success: function (e) {
+                        if (e.success) {
+                            AutoSkip("恭喜您，注册成功！跳转中....", "/Account/SignIn")
+                        } else {
+                            AutoSkip("抱歉！注册失败....")
+                        }
+                    }
+                });
+            }
+        }
+    </script>
 }

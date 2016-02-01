@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BoooooJu.Service.Core</RootNamespace>
     <AssemblyName>BoooooJu.Service.Core</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -63,7 +64,7 @@
     <Compile Include="ServiceContracts\Base\IBaseSetData.cs" />
     <Compile Include="ServiceContracts\Account\ISetUser.cs" />
     <Compile Include="ServiceContracts\Account\IGetUser.cs" />
-    <Compile Include="MyCustomValidator.cs" />
+    <Compile Include="BoooooJuValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueryParameter\Base\IPage.cs" />
     <Compile Include="QueryParameter\Page.cs" />

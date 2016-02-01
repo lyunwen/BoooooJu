@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BoooooJu.Web.Core</RootNamespace>
     <AssemblyName>BoooooJu.Web.Core</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -95,8 +96,10 @@
     <Compile Include="App_Start\Bundles.cs" />
     <Compile Include="App_Start\IOCContainerConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Manager\Controllers\HomeController.cs" />
     <Compile Include="BoooooJuApplication.cs" />
     <Compile Include="Common\RemarkAttribute.cs" />
+    <Compile Include="Common\BoooooJuClientResolver.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Base\BoooooJuController.cs" />
     <Compile Include="Controllers\Base\BoooooJuer.cs" />
@@ -132,48 +135,53 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="Service References\GetUserService\BoooooJu.Service.Core.Dal.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\GetUserService\BoooooJu.Web.Core.GetUserService.User.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\GetUserService\GetUser.wsdl" />
-    <None Include="Service References\GetUserService\GetUser1.xsd">
+    <None Include="Service References\GetUserService\service.wsdl" />
+    <None Include="Service References\GetUserService\service.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\GetUserService\GetUser2.xsd">
+    <None Include="Service References\GetUserService\service1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\GetUserService\GetUser3.xsd">
+    <None Include="Service References\SetUserService\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SetUserService\BoooooJu.Service.Core.Dal.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\SetUserService\BoooooJu.Web.Core.SetUserService.User.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\SetUserService\SetUser.wsdl" />
-    <None Include="Service References\SetUserService\SetUser.xsd">
+    <None Include="Service References\SetUserService\service.wsdl" />
+    <None Include="Service References\SetUserService\service.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\SetUserService\SetUser1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\SetUserService\SetUser2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\SetUserService\SetUser3.xsd">
+    <None Include="Service References\SetUserService\service1.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Agent\Controllers\" />
+    <Folder Include="Areas\Agent\ViewModels\" />
+    <Folder Include="Areas\Manager\ViewModels\" />
+    <Folder Include="Areas\SuperManager\Controllers\" />
+    <Folder Include="Areas\SuperManager\ViewModels\" />
+    <Folder Include="Areas\Vendor\Controllers\" />
+    <Folder Include="Areas\Vendor\ViewModels\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\SetUserService\SetUser.disco" />
     <None Include="Service References\SetUserService\configuration91.svcinfo" />
     <None Include="Service References\SetUserService\configuration.svcinfo" />
     <None Include="Service References\SetUserService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Service References\GetUserService\GetUser.disco" />
     <None Include="Service References\GetUserService\configuration91.svcinfo" />
     <None Include="Service References\GetUserService\configuration.svcinfo" />
     <None Include="Service References\GetUserService\Reference.svcmap">
