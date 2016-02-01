@@ -16,9 +16,7 @@ namespace BoooooJu.Web.Core.ViewModels.Account
         public string NickName { get; set; }
         public string AccountName { get; set; }
         public byte Sex { get; set; }
-        public string Signature { get; set; }
-        public string EmailAddress { get; set; }
-        public string CellPhone { get; set; }
+        public string Signature { get; set; } 
         public string Pswd { get; set; }
 
     }
@@ -26,8 +24,8 @@ namespace BoooooJu.Web.Core.ViewModels.Account
     {
         public RegisterModelValidator()
         {
-            RuleFor(model => model.AccountName).NotEmpty().Length(2, 10).WithMessage("请输入2至10位长度昵称");
-            RuleFor(model => model.CellPhone).NotEmpty().MobilePhone();
+            RuleFor(model => model.NickName).NotEmpty().Length(2, 15);
+            RuleFor(model => model.AccountName).NotEmpty().Length(2, 10).WithMessage("请输入2至10位长度昵称"); 
             RuleFor(model => model.Pswd).NotEmpty().PasswordFormat();
         }
     }

@@ -135,33 +135,33 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="Service References\GetUserService\BoooooJu.Service.Core.Dal.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\GetUserService\BoooooJu.Web.Core.GetUserService.User.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\GetUserService\GetUser.wsdl" />
-    <None Include="Service References\GetUserService\GetUser1.xsd">
+    <None Include="Service References\GetUserService\service.wsdl" />
+    <None Include="Service References\GetUserService\service.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\GetUserService\GetUser2.xsd">
+    <None Include="Service References\GetUserService\service1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\GetUserService\GetUser3.xsd">
+    <None Include="Service References\SetUserService\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SetUserService\BoooooJu.Service.Core.Dal.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\SetUserService\BoooooJu.Web.Core.SetUserService.User.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\SetUserService\SetUser.wsdl" />
-    <None Include="Service References\SetUserService\SetUser.xsd">
+    <None Include="Service References\SetUserService\service.wsdl" />
+    <None Include="Service References\SetUserService\service.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\SetUserService\SetUser1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\SetUserService\SetUser2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\SetUserService\SetUser3.xsd">
+    <None Include="Service References\SetUserService\service1.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
@@ -176,14 +176,12 @@
     <Folder Include="Areas\Vendor\ViewModels\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\SetUserService\SetUser.disco" />
     <None Include="Service References\SetUserService\configuration91.svcinfo" />
     <None Include="Service References\SetUserService\configuration.svcinfo" />
     <None Include="Service References\SetUserService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Service References\GetUserService\GetUser.disco" />
     <None Include="Service References\GetUserService\configuration91.svcinfo" />
     <None Include="Service References\GetUserService\configuration.svcinfo" />
     <None Include="Service References\GetUserService\Reference.svcmap">

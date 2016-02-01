@@ -9,8 +9,8 @@ namespace BoooooJu.Web.Core.Controllers
     // [BoAuthorize(Base.BoooooJuPermit.All)]
     public class HomeController : Base.BoooooJuController
     {
-        ISetUser _setUserClient;
-        IGetUser _getUserClient;
+        private readonly ISetUser _setUserClient;
+        private readonly IGetUser _getUserClient;
 
         public HomeController(ISetUser setUserClient, IGetUser getUserClient)
         {
@@ -19,24 +19,8 @@ namespace BoooooJu.Web.Core.Controllers
         }
         public ActionResult Index()
         {
-
-            _setUserClient.RegisterByAccountName(new SetUserService.User()
-            {
-                NickName = "zaizaiyou",
-                Sex = 2,
-                CreateTime = DateTime.Now,
-                Role = 0,
-                Signature = "世界这么大" + new Random().Next(1000, 9999)
-            }, "lyw" + new Random().Next(100, 999), "qq123123");
+            var test = _getUserClient.GetDataByPrimaryKey(17);
             return View();
-            //private static bool ServerCertificateValidationCallback(
-            //  object sender,
-            //  X509Certificate certificate,
-            //  X509Chain chain,
-            //  SslPolicyErrors sslPolicyErrors)
-            //{
-            //    return true;
-            //}
         }
     }
 }

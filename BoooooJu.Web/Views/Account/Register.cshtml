@@ -4,24 +4,26 @@
     Layout = "~/Views/Shared/_default.cshtml";
 }
 @using (Html.BeginForm())
-{
-    @Html.TextBoxFor(model=>model.NickName,new { placeholder = "昵称"})
-    @Html.ValidationMessageFor(model=>model.NickName)
+{ 
+    @Html.TextBoxFor(model => model.NickName, new { placeholder = "用户账号" , maxlength = "10" })
+    @Html.ValidationMessageFor(model => model.NickName)
+
+
+    @Html.PasswordFor(model => model.NickName, new { placeholder = "用户密码", maxlength = "16" })
+    @Html.ValidationMessageFor(model => model.NickName)
+
+
+    @Html.TextBoxFor(model => model.NickName, new { placeholder = "昵称" , maxlength = "15" })
+    @Html.ValidationMessageFor(model => model.NickName)
 
     <label for="Sex">
-        <input type="radio" value="1" name="Sex" />
-        <input type="radio" value="2" name="Sex" />
-    </label>
-    @Html.TextBoxFor(model => model.CellPhone,new { placeholder ="手机号码"})
-    @Html.ValidationMessageFor(model => model.CellPhone)
+        <label>男：<input type="radio" value="1" name="Sex" checked /></label>
+        <label>
+            女： <input type="radio" value="2" name="Sex" />
+        </label>
+    </label>  
 
-    @Html.TextBoxFor(model => model.EmailAddress,new { placeholder ="邮箱"})
-    @Html.ValidationMessageFor(model => model.EmailAddress)
+        @Html.TextAreaFor(model => model.Pswd, new { placeholder = "个性签名", maxlength="30" })
 
-    @Html.TextBoxFor(model => model.Pswd,new { placeholder ="密码"})
-    @Html.ValidationMessageFor(model => model.Pswd)
-
-    @Html.TextBoxFor(model => model.Pswd, new { placeholder = "个性签名" }) 
-
-    <input type="submit" value="提交" />
+        <input type="submit" value="提交" />
 }
