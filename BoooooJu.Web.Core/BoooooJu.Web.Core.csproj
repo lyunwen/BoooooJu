@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BoooooJu.Web.Core</RootNamespace>
     <AssemblyName>BoooooJu.Web.Core</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -98,6 +99,7 @@
     <Compile Include="Areas\Manager\Controllers\HomeController.cs" />
     <Compile Include="BoooooJuApplication.cs" />
     <Compile Include="Common\RemarkAttribute.cs" />
+    <Compile Include="Common\BoooooJuClient.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Base\BoooooJuController.cs" />
     <Compile Include="Controllers\Base\BoooooJuer.cs" />

@@ -17,13 +17,13 @@
       <publishTime>01/22/2016 21:38:36</publishTime>
     </File>
     <File Include="bin/BoooooJu.Service.Core.Dal.dll">
-      <publishTime>01/27/2016 15:54:56</publishTime>
+      <publishTime>02/01/2016 14:39:32</publishTime>
     </File>
     <File Include="bin/BoooooJu.Service.Core.dll">
-      <publishTime>01/27/2016 15:54:57</publishTime>
+      <publishTime>02/01/2016 14:39:32</publishTime>
     </File>
     <File Include="bin/BoooooJu.Service.dll">
-      <publishTime>01/27/2016 15:54:57</publishTime>
+      <publishTime>02/01/2016 14:39:32</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>01/22/2016 21:38:36</publishTime>
@@ -58,8 +58,11 @@
     <File Include="bin/zh-Hans/EntityFramework.SqlServer.resources.dll">
       <publishTime>01/22/2016 21:38:36</publishTime>
     </File>
+    <File Include="config.txt">
+      <publishTime>01/30/2016 09:41:41</publishTime>
+    </File>
     <File Include="GetUser.svc">
-      <publishTime>01/25/2016 13:47:42</publishTime>
+      <publishTime>01/28/2016 17:12:22</publishTime>
     </File>
     <File Include="MySimpleService.svc">
       <publishTime>01/27/2016 11:20:16</publishTime>
@@ -74,13 +77,13 @@
       <publishTime>01/22/2016 21:38:36</publishTime>
     </File>
     <File Include="SetUser.svc">
-      <publishTime>01/25/2016 14:54:10</publishTime>
+      <publishTime>01/28/2016 17:08:33</publishTime>
     </File>
     <File Include="UserService.svc">
       <publishTime>01/18/2016 14:50:21</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/27/2016 15:54:58</publishTime>
+      <publishTime>02/01/2016 14:39:32</publishTime>
     </File>
   </ItemGroup>
 </Project>

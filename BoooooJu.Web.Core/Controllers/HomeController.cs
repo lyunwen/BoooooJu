@@ -1,42 +1,42 @@
-﻿using BoooooJu.Web.Core.Filters;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Net;
-using System.Net.Security;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Web.Mvc;
+using BoooooJu.Web.Core.Common;
+using BoooooJu.Web.Core.GetUserService;
+using BoooooJu.Web.Core.SetUserService;
 
 namespace BoooooJu.Web.Core.Controllers
 {
     // [BoAuthorize(Base.BoooooJuPermit.All)]
     public class HomeController : Base.BoooooJuController
     {
-        public  ActionResult Index()
-        {  
-            //SetUserService.SetUserClient client1 = new SetUserService.SetUserClient(); 
-            //client1.ClientCredentials.UserName.UserName = "boooooju.com";
-            // client1.ClientCredentials.UserName.Password = "123456";
-            //client1.RegisterByAccountName(new SetUserService.User()
-            //{
-            //    NickName = "zaizaiyou",
-            //    Sex = 2,
-            //    CreateTime = DateTime.Now,
-            //    Role = 0,
-            //    Signature = "世界这么大" + new Random().Next(1000, 9999)
-            //}, "lyw" + new Random().Next(100, 999), "qq123123"); 
-            return View();
+        ISetUser _setUserClient;
+        IGetUser _getUserClient;
+
+        public HomeController(ISetUser setUserClient, IGetUser getUserClient)
+        {
+            _setUserClient = new BoooooJuClient<ISetUser>(setUserClient).Client;
+            _getUserClient = new BoooooJuClient<IGetUser>(getUserClient).Client;
         }
-        //private static bool ServerCertificateValidationCallback(
-        //  object sender,
-        //  X509Certificate certificate,
-        //  X509Chain chain,
-        //  SslPolicyErrors sslPolicyErrors)
-        //{
-        //    return true;
-        //}
+        public ActionResult Index()
+        {
+
+            _setUserClient.RegisterByAccountName(new SetUserService.User()
+            {
+                NickName = "zaizaiyou",
+                Sex = 2,
+                CreateTime = DateTime.Now,
+                Role = 0,
+                Signature = "世界这么大" + new Random().Next(1000, 9999)
+            }, "lyw" + new Random().Next(100, 999), "qq123123");
+            return View();
+            //private static bool ServerCertificateValidationCallback(
+            //  object sender,
+            //  X509Certificate certificate,
+            //  X509Chain chain,
+            //  SslPolicyErrors sslPolicyErrors)
+            //{
+            //    return true;
+            //}
+        }
     }
 }

@@ -14,6 +14,11 @@ namespace BoooooJu.Web.Core.Controllers
 {
     public class AccountController : Base.BoooooJuController
     {
+        public AccountController(ISetUser setUserClient,IGetUser getUserClient)
+        {
+            //_setUserClient = setUserClient;
+            //_getUserClient = getUserClient;
+        }
         private  SetUserClient _setUserClient
         {
             get
