@@ -10,7 +10,7 @@ using System.ServiceModel;
 
 namespace BoooooJu.Web.Core.Common
 {
-    public class BoooooJuClientResolver<T> : System.ServiceModel.ClientBase<T> where T : class
+    public class BoooooJuClientResolver<T> : ClientBase<T> where T : class
     {
         public BoooooJuClientResolver(T t)
         {
@@ -22,7 +22,7 @@ namespace BoooooJu.Web.Core.Common
             }
             singleTon = t;
         }
-        public static T singleTon;
+        public T singleTon;
         public T Client
         {
             get
