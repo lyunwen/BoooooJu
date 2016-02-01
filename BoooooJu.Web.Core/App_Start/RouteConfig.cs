@@ -19,6 +19,12 @@ namespace BoooooJu.Web
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
                 namespaces:new string[] { "BoooooJu.Web.Core.Controllers" }
             );
+            routes.MapRoute(
+                "Manager_default3",
+                "Manager/{controller}/{action}/{id}",
+                new { action = "Index", id = UrlParameter.Optional },
+               namespaces: new string[] { "BoooooJu.Web.Core.Areas.Manager.Controllers" }
+            );
         }
     }
     //顾问角色路由
@@ -36,7 +42,7 @@ namespace BoooooJu.Web
         {
             context.MapRoute(
                  "Agent_default",
-                 "Agent/{controller}/{action}/{id}",
+                 "Areas/Agent/{controller}/{action}/{id}",
                  new {  action = "Index", id = UrlParameter.Optional },
                 namespaces: new string[] { "BoooooJu.Web.Core.Areas.Agent.Controllers" }
              );
@@ -57,7 +63,7 @@ namespace BoooooJu.Web
         {
             context.MapRoute(
                  "Vendor_default",
-                 "Vendor/{controller}/{action}/{id}",
+                 "Areas/Vendor/{controller}/{action}/{id}",
                  new { action = "Index", id = UrlParameter.Optional },
                 namespaces: new string[] { "BoooooJu.Web.Core.Areas.Vendor.Controllers" }
              );
@@ -99,7 +105,7 @@ namespace BoooooJu.Web
         {
             context.MapRoute(
                  "SuperManager_default",
-                 "SuperManager/{controller}/{action}/{id}",
+                  "Areas/SuperManager/{controller}/{action}/{id}",
                  new {  action = "Index", id = UrlParameter.Optional },
                 namespaces: new string[] { "BoooooJu.Web.Core.Areas.SuperManager.Controllers" }
              );
