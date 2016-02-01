@@ -8,7 +8,7 @@ using System.Web.Mvc;
 
 namespace BoooooJu.Web.Core.Areas.Manager.Controllers
 {
-    //[Filters.BoAuthorize(BoooooJuPermit.Manager)]
+    [Filters.BoAuthorize(BoooooJuPermit.Manager)]
     public class HomeController : BoooooJuController
     {
         public HomeController()

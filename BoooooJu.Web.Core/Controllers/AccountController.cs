@@ -1,14 +1,9 @@
-﻿
-using BoooooJu.Web.Core.Controllers.Base;
+﻿using BoooooJu.Web.Core.Controllers.Base;
 using BoooooJu.Web.Core.GetUserService;
 using BoooooJu.Web.Core.SetUserService;
 using BoooooJu.Web.Core.ViewModels.Account;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Web.Mvc;
 
 namespace BoooooJu.Web.Core.Controllers
