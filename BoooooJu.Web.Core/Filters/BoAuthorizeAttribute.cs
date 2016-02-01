@@ -33,7 +33,7 @@ namespace BoooooJu.Web.Core.Filters
                         filterContext.HttpContext.Response.Redirect("~/wwwroot/StaticHtml/NotAllow.Html?returnUrl=" + returnUrl);
                     }
                 }
-            } 
+            }
         }
     }
 }

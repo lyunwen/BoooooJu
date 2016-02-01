@@ -44,6 +44,6 @@ namespace BoooooJu.Web.Core.Controllers.Base
         [Remark("卖主")]
         Vendor = 4,
         [Remark("管理员")]
-        Manager = 127
+        Manager = 8
     }
 }
