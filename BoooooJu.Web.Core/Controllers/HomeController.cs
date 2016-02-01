@@ -14,8 +14,8 @@ namespace BoooooJu.Web.Core.Controllers
 
         public HomeController(ISetUser setUserClient, IGetUser getUserClient)
         {
-            _setUserClient = new BoooooJuClient<ISetUser>(setUserClient).Client;
-            _getUserClient = new BoooooJuClient<IGetUser>(getUserClient).Client;
+            _setUserClient = new BoooooJuClientResolver<ISetUser>(setUserClient).Client;
+            _getUserClient = new BoooooJuClientResolver<IGetUser>(getUserClient).Client;
         }
         public ActionResult Index()
         {

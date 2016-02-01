@@ -10,9 +10,9 @@ using System.ServiceModel;
 
 namespace BoooooJu.Web.Core.Common
 {
-    public class BoooooJuClient<T> : System.ServiceModel.ClientBase<T> where T : class
+    public class BoooooJuClientResolver<T> : System.ServiceModel.ClientBase<T> where T : class
     {
-        public BoooooJuClient(T t)
+        public BoooooJuClientResolver(T t)
         {
             var uuu = t as ClientBase<T>;
             if (uuu != null)

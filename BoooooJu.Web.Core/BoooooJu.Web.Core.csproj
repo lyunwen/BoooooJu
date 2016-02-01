@@ -99,7 +99,7 @@
     <Compile Include="Areas\Manager\Controllers\HomeController.cs" />
     <Compile Include="BoooooJuApplication.cs" />
     <Compile Include="Common\RemarkAttribute.cs" />
-    <Compile Include="Common\BoooooJuClient.cs" />
+    <Compile Include="Common\BoooooJuClientResolver.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Base\BoooooJuController.cs" />
     <Compile Include="Controllers\Base\BoooooJuer.cs" />
