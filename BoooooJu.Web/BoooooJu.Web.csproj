@@ -134,7 +134,7 @@
     <Content Include="Areas\SuperManager\web.config" />
     <Content Include="Areas\Vendor\web.config" />
     <Content Include="Areas\Agent\PersonCenter.cshtml" />
-    <Content Include="Areas\Manager\PersonCenter.cshtml" />
+    <Content Include="Areas\Manager\Home\Index.cshtml" />
     <Content Include="Areas\SuperManager\PersonCenter.cshtml" />
     <Content Include="Areas\Vendor\PersonCenter.cshtml" />
     <Content Include="Areas\Test\Views\web.config" />

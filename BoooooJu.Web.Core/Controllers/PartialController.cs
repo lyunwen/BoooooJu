@@ -11,17 +11,16 @@ namespace BoooooJu.Web.Core.Controllers
     //存放 网页头部、尾部等通用局部界面
     public class PartialController : Base.BoooooJuController
     {
-  
+
         public PartialViewResult Header()
         {
             HeaderModel model = null;
-            Base.BoooooJuer user = Session[Base.SessionConfig.BoooooJuer] as Base.BoooooJuer;
-            if (user != null)
+            if (boooooJuer != null)
             {
                 model = new HeaderModel
                 {
-                    Id = user.Id,
-                    NickName = user.NikeName,
+                    Id = boooooJuer.Id,
+                    NickName = boooooJuer.NickName,
                     IsSign = true
                 };
             }

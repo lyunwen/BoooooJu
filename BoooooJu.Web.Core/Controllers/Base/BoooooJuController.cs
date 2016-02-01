@@ -9,5 +9,12 @@ namespace BoooooJu.Web.Core.Controllers.Base
 {
     public class BoooooJuController : Controller
     {
+        internal BoooooJuer boooooJuer
+        {
+            get
+            {
+                return Session[SessionConfig.BoooooJuer] as BoooooJuer;
+            }
+        }
     }
 }

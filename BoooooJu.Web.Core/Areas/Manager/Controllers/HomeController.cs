@@ -15,7 +15,7 @@ namespace BoooooJu.Web.Core.Areas.Manager.Controllers
         {
 
         }
-        public ViewResult PersonCenter()
+        public ViewResult Index()
         {
             return View();
         }

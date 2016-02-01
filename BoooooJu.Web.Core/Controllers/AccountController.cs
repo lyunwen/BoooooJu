@@ -1,4 +1,5 @@
 ﻿
+using BoooooJu.Web.Core.Controllers.Base;
 using BoooooJu.Web.Core.GetUserService;
 using BoooooJu.Web.Core.SetUserService;
 using BoooooJu.Web.Core.ViewModels.Account;
@@ -14,32 +15,14 @@ namespace BoooooJu.Web.Core.Controllers
 {
     public class AccountController : Base.BoooooJuController
     {
-        public AccountController(ISetUser setUserClient,IGetUser getUserClient)
-        {
-            //_setUserClient = setUserClient;
-            //_getUserClient = getUserClient;
-        }
-        private  SetUserClient _setUserClient
-        {
-            get
-            {
-                var client = new SetUserClient();
-                client.ClientCredentials.UserName.UserName = "boooooju.com";
-                client.ClientCredentials.UserName.UserName = "123456";
-                return client;
-            }
-        }
-        private  GetUserClient _getUserClient
-        {
-            get
-            {
-                var client = new GetUserClient();
-                client.ClientCredentials.UserName.UserName = "boooooju.com";
-                client.ClientCredentials.UserName.UserName = "123456";
-                return client;
-            }
-        }
+        private readonly ISetUser _setUserClient;
+        private readonly IGetUser _getUserClient;
 
+        public AccountController(ISetUser setUserClient, IGetUser getUserClient)
+        {
+            _setUserClient = new Common.BoooooJuClientResolver<ISetUser>(setUserClient).Client;
+            _getUserClient = new Common.BoooooJuClientResolver<IGetUser>(getUserClient).Client;
+        }
         //登入
         public ViewResult SignIn(string returnUrl = null)
         {
@@ -69,7 +52,25 @@ namespace BoooooJu.Web.Core.Controllers
             }
             if (user != null)
             {
-                Session[Base.SessionConfig.BoooooJuer] = User;
+                Session[Base.SessionConfig.BoooooJuer] = new Base.BoooooJuer
+                {
+                    Id=user.Id,
+                    IsSuperAdmin = false,
+                    Logon = DateTime.Now,
+                    NickName = user.NickName,
+                    Permits = user.Role,
+                    LogonIp = GetIP()
+                };
+                if (user.Role == 127)
+                    return Json(new { success = true, url = "" });
+                if ((user.Role & (int)BoooooJuPermit.Manager) > (int)BoooooJuPermit.Manager)
+                    return Json(new { success = true, url = "" });
+                if ((user.Role & (int)BoooooJuPermit.Vendor) > (int)BoooooJuPermit.Vendor)
+                    return Json(new { success = true, url = "" });
+                if ((user.Role & (int)BoooooJuPermit.Agent) > (int)BoooooJuPermit.Agent)
+                    return Json(new { success = true, url = "" });
+                if ((user.Role & (int)BoooooJuPermit.Buyer) > (int)BoooooJuPermit.Buyer)
+                    return Json(new { success = true, url = "" });
                 return Json(new { success = true });
             }
             else
@@ -80,11 +81,11 @@ namespace BoooooJu.Web.Core.Controllers
 
         public JsonResult SignOut()
         {
-            Session[Base.SessionConfig.BoooooJuer] = null;
+            Session[SessionConfig.BoooooJuer] = null;
             return Json(new { success = true });
         }
 
-        [Filters.BoAuthorizeAttribute(Base.BoooooJuPermit.PermitG)]
+        [Filters.BoAuthorizeAttribute(BoooooJuPermit.Manager)]
         public ViewResult UserManage()
         {
             return View();
@@ -100,13 +101,13 @@ namespace BoooooJu.Web.Core.Controllers
             return View(model);
         }
         [HttpPost]
-        public ActionResult Register(RegisterModel model)
+        public JsonResult Register(RegisterModel model)
         {
             if (!ModelState.IsValid)
             {
-                return View(model);
+                return Json(new { success = false });
             }
-            _setUserClient.RegisterByAccountName(new SetUserService.User
+            var result = _setUserClient.RegisterByAccountName(new SetUserService.User
             {
                 CreateTime = DateTime.Now,
                 NickName = model.NickName,
@@ -114,7 +115,27 @@ namespace BoooooJu.Web.Core.Controllers
                 Signature = model.Signature,
                 Role = 1
             }, model.AccountName, model.Pswd);
-            return View(model);
+            if (result == null)
+            {
+                return Json(new { success = false });
+            }
+            else
+            {
+                return Json(new { success = true });
+            }
         }
+
+
+        #region    private method
+        private string GetIP()
+        {
+            string ip = string.Empty;
+            if (!string.IsNullOrEmpty(System.Web.HttpContext.Current.Request.ServerVariables["HTTP_VIA"]))
+                ip = Convert.ToString(System.Web.HttpContext.Current.Request.ServerVariables["HTTP_X_FORWARDED_FOR"]);
+            if (string.IsNullOrEmpty(ip))
+                ip = Convert.ToString(System.Web.HttpContext.Current.Request.ServerVariables["REMOTE_ADDR"]);
+            return ip;
+        }
+        #endregion
     }
 }

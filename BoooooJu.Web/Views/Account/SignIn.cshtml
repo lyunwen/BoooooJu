@@ -9,6 +9,8 @@
     @Html.TextBoxFor(model => model.SignName, new { placeholder = "请输入手机/邮箱/用户名" })
     @Html.PasswordFor(model => model.Pswd, new { placeholder = "请输入密码" })
     <button type="button" onclick="SignIn()">登入</button>
+    <a href="/Account/Register">注册</a>
+    <a href="/Account/UpdatePswd">修改密码</a> 
 }
 <div id="AutoSkip"></div>
 @section Js{
@@ -27,7 +29,7 @@
                 data: { SignName: signName, Pswd: pswd },
                 success: function (e) {
                     if (e.success) {
-                        alert(2);
+                        AutoSkip("恭喜你，登入成功！跳转中....", e.url);
                     } else {
                         AutoSkip("登入失败...")
                     }
