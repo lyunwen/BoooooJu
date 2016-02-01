@@ -14,11 +14,11 @@ namespace BoooooJu.Web.Core.Common
     {
         public BoooooJuClientResolver(T t)
         {
-            var uuu = t as ClientBase<T>;
-            if (uuu != null)
+            var tt = t as ClientBase<T>;
+            if (tt != null)
             {
-                uuu.ClientCredentials.UserName.UserName = "boooooju.com";
-                uuu.ClientCredentials.UserName.Password = "123456";
+                tt.ClientCredentials.UserName.UserName = "boooooju.com";
+                tt.ClientCredentials.UserName.Password = "123456";
             }
             singleTon = t;
         }
