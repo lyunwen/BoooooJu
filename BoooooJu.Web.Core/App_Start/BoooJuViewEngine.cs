@@ -21,6 +21,10 @@ namespace BoooooJu.Web.Core.App_Start
                  "~/Views/{1}/{0}.cshtml",
                 "~/Views/{1}/Partial/{0}.cshtml",
             };
+            AreaViewLocationFormats = new[]
+            {
+                 "~/Areas/{2}/{1}/{0}.cshtml"
+            };
         }
         public override ViewEngineResult FindView(ControllerContext controllerContext, string viewName, string masterName, bool useCache)
         {

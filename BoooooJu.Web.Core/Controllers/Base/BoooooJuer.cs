@@ -44,11 +44,11 @@ namespace BoooooJu.Web.Core.Controllers.Base
         //[Remark("游客")]
         //Guest = 0,
         [Remark("角色A")]
-        PermitA = 1,
+        Agent = 1,
         [Remark("角色B")]
-        PermitB = 2,
+        Vendor = 2,
         [Remark("角色C")]
-        PermitC = 4,
+        Manager = 4,
         [Remark("角色D")]
         PermitD = 8,
         [Remark("角色E")]

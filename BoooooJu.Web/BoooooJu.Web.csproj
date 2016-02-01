@@ -129,10 +129,20 @@
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <Content Include="wwwroot\StaticHtml\NotAllow.Html" />
     <Content Include="wwwroot\StaticHtml\Error.Html" />
+    <Content Include="Areas\Agent\web.config" />
+    <Content Include="Areas\Manager\web.config" />
+    <Content Include="Areas\SuperManager\web.config" />
+    <Content Include="Areas\Vendor\web.config" />
+    <Content Include="Areas\Agent\PersonCenter.cshtml" />
+    <Content Include="Areas\Manager\PersonCenter.cshtml" />
+    <Content Include="Areas\SuperManager\PersonCenter.cshtml" />
+    <Content Include="Areas\Vendor\PersonCenter.cshtml" />
+    <Content Include="Areas\Test\Views\web.config" />
     <None Include="Scripts\_references.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Areas\Test\TestAreaRegistration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -160,6 +170,11 @@
       <Project>{3b2c8dd0-d824-464a-be4e-51fb2cf7dc7a}</Project>
       <Name>BoooooJu.Web.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Areas\Test\Controllers\" />
+    <Folder Include="Areas\Test\Models\" />
+    <Folder Include="Areas\Test\Views\Shared\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

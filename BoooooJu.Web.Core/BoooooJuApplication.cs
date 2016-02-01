@@ -23,15 +23,9 @@ namespace BoooooJu.Web.Core
 
             DependencyResolver.SetResolver(new App_Start.IOCContainerConfig().Config());
             AreaRegistration.RegisterAllAreas();
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
- 
+            RouteConfig.RegisterRoutes(RouteTable.Routes);  
             ViewEngines.Engines.Clear();
-            ViewEngines.Engines.Add(new App_Start.BoooJuViewEngine());
-
-
-
-
-
+            ViewEngines.Engines.Add(new App_Start.BoooJuViewEngine());  
         }
     }
 }

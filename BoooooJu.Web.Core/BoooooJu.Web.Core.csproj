@@ -95,6 +95,7 @@
     <Compile Include="App_Start\Bundles.cs" />
     <Compile Include="App_Start\IOCContainerConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Manager\Controllers\HomeController.cs" />
     <Compile Include="BoooooJuApplication.cs" />
     <Compile Include="Common\RemarkAttribute.cs" />
     <Compile Include="Controllers\AccountController.cs" />
@@ -164,6 +165,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Agent\Controllers\" />
+    <Folder Include="Areas\Agent\ViewModels\" />
+    <Folder Include="Areas\Manager\ViewModels\" />
+    <Folder Include="Areas\SuperManager\Controllers\" />
+    <Folder Include="Areas\SuperManager\ViewModels\" />
+    <Folder Include="Areas\Vendor\Controllers\" />
+    <Folder Include="Areas\Vendor\ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\SetUserService\SetUser.disco" />
