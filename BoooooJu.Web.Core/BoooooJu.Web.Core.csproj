@@ -148,9 +148,6 @@
     <None Include="Service References\GetUserService\service1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\SetUserService\Arrays.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Service References\SetUserService\BoooooJu.Service.Core.Dal.xsd">
       <SubType>Designer</SubType>
     </None>
