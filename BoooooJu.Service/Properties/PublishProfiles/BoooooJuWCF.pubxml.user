@@ -17,13 +17,13 @@
       <publishTime>01/22/2016 21:38:36</publishTime>
     </File>
     <File Include="bin/BoooooJu.Service.Core.Dal.dll">
-      <publishTime>02/01/2016 14:39:32</publishTime>
+      <publishTime>02/01/2016 16:00:33</publishTime>
     </File>
     <File Include="bin/BoooooJu.Service.Core.dll">
-      <publishTime>02/01/2016 14:39:32</publishTime>
+      <publishTime>02/01/2016 16:00:33</publishTime>
     </File>
     <File Include="bin/BoooooJu.Service.dll">
-      <publishTime>02/01/2016 14:39:32</publishTime>
+      <publishTime>02/01/2016 16:00:33</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>01/22/2016 21:38:36</publishTime>
@@ -68,7 +68,7 @@
       <publishTime>01/27/2016 11:20:16</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>01/22/2016 21:38:36</publishTime>
+      <publishTime>02/01/2016 15:30:15</publishTime>
     </File>
     <File Include="scripts/ai.0.15.0-build58334.js">
       <publishTime>01/22/2016 21:38:36</publishTime>
@@ -83,7 +83,7 @@
       <publishTime>01/18/2016 14:50:21</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>02/01/2016 14:39:32</publishTime>
+      <publishTime>02/01/2016 16:00:33</publishTime>
     </File>
   </ItemGroup>
 </Project>
