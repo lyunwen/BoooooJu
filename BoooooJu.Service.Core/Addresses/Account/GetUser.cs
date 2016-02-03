@@ -47,7 +47,7 @@ namespace BoooooJu.Service.Core.Addresses.Account
                 return users;
             using (BoooooJuDB db = new BoooooJuDB())
             {
-                users = db.Users.Take((page.PageIndex - 1) * page.PageSize).Skip(page.PageSize).ToList();
+                users = db.Users.Take((page.PageIndex - 1) * page.PageSize).Skip(page.PageSize).OrderBy(m=>m.CreateTime).ToList();
             }
             return users;
         }

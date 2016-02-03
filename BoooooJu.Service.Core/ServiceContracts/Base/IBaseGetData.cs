@@ -11,6 +11,6 @@ namespace BoooooJu.Service.Core.Contracts.Base
         [OperationContract]
         T GetDataByUniqueKey(string key);
         [OperationContract]
-        List<T> GetDatasBy(QueryParameter.Base.IPage page);
+        List<T> GetDatas(QueryParameter.Page page);
     }
 }

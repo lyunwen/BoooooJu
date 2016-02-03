@@ -25,7 +25,7 @@ namespace BoooooJu.Service.Core.Addresses.Base
             throw new NotImplementedException();
         }
         
-        public List<T> GetDatasBy(IPage page)
+        public List<T> GetDatas(QueryParameter.Page page)
         {
             List<T> result = null;
             if (page == null)
