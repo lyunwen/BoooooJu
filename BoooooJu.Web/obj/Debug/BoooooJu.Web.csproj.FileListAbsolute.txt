@@ -150,7 +150,6 @@ F:\Git\BoooooJu\BoooooJu.Web\bin\System.Web.Webpages.Deployment.dll
 F:\Git\BoooooJu\BoooooJu.Web\bin\System.Web.Webpages.dll
 F:\Git\BoooooJu\BoooooJu.Web\bin\System.Web.Webpages.Razor.dll
 F:\Git\BoooooJu\BoooooJu.Web\bin\Autofac.dll
-F:\Git\BoooooJu\BoooooJu.Web\bin\Autofac.Integration.Mvc.dll
 F:\Git\BoooooJu\BoooooJu.Web\bin\BoooooJu.Web.Core.pdb
 F:\Git\BoooooJu\BoooooJu.Web\bin\Autofac.Configuration.xml
 F:\Git\BoooooJu\BoooooJu.Web\bin\Microsoft.AI.DependencyCollector.xml
@@ -166,7 +165,6 @@ F:\Git\BoooooJu\BoooooJu.Web\bin\System.Web.Webpages.Razor.xml
 F:\Git\BoooooJu\BoooooJu.Web\bin\System.Web.Helpers.xml
 F:\Git\BoooooJu\BoooooJu.Web\bin\System.Web.Mvc.xml
 F:\Git\BoooooJu\BoooooJu.Web\bin\Autofac.xml
-F:\Git\BoooooJu\BoooooJu.Web\bin\Autofac.Integration.Mvc.xml
 F:\Git\BoooooJu\BoooooJu.Web\bin\zh-Hans\System.Web.Razor.resources.dll
 F:\Git\BoooooJu\BoooooJu.Web\bin\zh-Hans\System.Web.Webpages.resources.dll
 F:\Git\BoooooJu\BoooooJu.Web\bin\zh-Hans\System.Web.Webpages.Deployment.resources.dll

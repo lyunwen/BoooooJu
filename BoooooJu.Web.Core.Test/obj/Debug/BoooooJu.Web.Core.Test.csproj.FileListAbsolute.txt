@@ -62,7 +62,6 @@ F:\Git\BoooooJu\BoooooJu.Web.Core.Test\bin\Debug\BoooooJu.Web.Core.Test.pdb
 F:\Git\BoooooJu\BoooooJu.Web.Core.Test\bin\Debug\BoooooJu.Web.Core.dll
 F:\Git\BoooooJu\BoooooJu.Web.Core.Test\bin\Debug\Autofac.dll
 F:\Git\BoooooJu\BoooooJu.Web.Core.Test\bin\Debug\System.Web.Mvc.dll
-F:\Git\BoooooJu\BoooooJu.Web.Core.Test\bin\Debug\Autofac.Integration.Mvc.dll
 F:\Git\BoooooJu\BoooooJu.Web.Core.Test\bin\Debug\System.Web.Razor.dll
 F:\Git\BoooooJu\BoooooJu.Web.Core.Test\bin\Debug\System.Web.WebPages.Razor.dll
 F:\Git\BoooooJu\BoooooJu.Web.Core.Test\bin\Debug\System.Web.WebPages.dll
@@ -71,7 +70,6 @@ F:\Git\BoooooJu\BoooooJu.Web.Core.Test\bin\Debug\System.Web.WebPages.Deployment.
 F:\Git\BoooooJu\BoooooJu.Web.Core.Test\bin\Debug\BoooooJu.Web.Core.pdb
 F:\Git\BoooooJu\BoooooJu.Web.Core.Test\bin\Debug\Autofac.xml
 F:\Git\BoooooJu\BoooooJu.Web.Core.Test\bin\Debug\System.Web.Mvc.xml
-F:\Git\BoooooJu\BoooooJu.Web.Core.Test\bin\Debug\Autofac.Integration.Mvc.xml
 F:\Git\BoooooJu\BoooooJu.Web.Core.Test\bin\Debug\System.Web.Razor.xml
 F:\Git\BoooooJu\BoooooJu.Web.Core.Test\bin\Debug\System.Web.WebPages.Razor.xml
 F:\Git\BoooooJu\BoooooJu.Web.Core.Test\bin\Debug\System.Web.WebPages.xml
