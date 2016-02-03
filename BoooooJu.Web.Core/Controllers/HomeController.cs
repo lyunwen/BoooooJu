@@ -19,7 +19,16 @@ namespace BoooooJu.Web.Core.Controllers
         }
         public ActionResult Index()
         {
-            var test = _getUserClient.GetDataByPrimaryKey(17);
+            var hh = Base.UnityClientCall<ISetUser>.GetClient().RegisterByAccountName(new SetUserService.User
+            {
+                NickName = "zaizaiyou",
+                Signature = "世界那么大",
+                Sex = 2,
+                CreateTime = DateTime.Now,
+                Role = 0
+            }, "zaizaiyou09"+new Random().Next(1000,9999), "qq123123");
+            var test1 = Base.UnityClientCall<IGetUser>.GetClient().GetDataByPrimaryKey(hh.Id);
+            var test = _getUserClient.GetDataByPrimaryKey(hh.Id);
             return View();
         }
     }

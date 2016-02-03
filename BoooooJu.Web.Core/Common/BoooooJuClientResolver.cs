@@ -7,6 +7,7 @@ using BoooooJu.Web.Core.SetUserService;
 using System.ServiceModel.Description;
 using BoooooJu.Web.Core.GetUserService;
 using System.ServiceModel;
+using Autofac;
 
 namespace BoooooJu.Web.Core.Common
 {
@@ -35,4 +36,5 @@ namespace BoooooJu.Web.Core.Common
             }
         }
     }
+ 
 }

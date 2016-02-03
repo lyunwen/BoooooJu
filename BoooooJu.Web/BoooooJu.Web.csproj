@@ -138,6 +138,7 @@
     <Content Include="Areas\Vendor\PersonCenter.cshtml" />
     <Content Include="Areas\Test\Views\web.config" />
     <Content Include="Areas\Manager\web.config" />
+    <None Include="Properties\PublishProfiles\BooooJu.Web.pubxml" />
     <None Include="Scripts\_references.js" />
     <Content Include="Web.config" />
   </ItemGroup>

@@ -19,13 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://120.24.76.23:57315/GetUser.svc/mex" Protocol="mex" SourceId="1" />
+    <MetadataSource Address="http://114.215.87.101:1239/GetUser.svc/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="0e432e1e-eaf7-490e-8c94-49033593a221" SourceId="1" SourceUrl="http://120.24.76.23:57315/GetUser.svc/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="9ae15e9a-8b6a-48cd-86b9-117f214ba60c" SourceId="1" SourceUrl="http://120.24.76.23:57315/GetUser.svc/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="6d3b3a0a-7a06-4081-82cf-68431ca4e21d" SourceId="1" SourceUrl="http://120.24.76.23:57315/GetUser.svc/mex" />
-    <MetadataFile FileName="BoooooJu.Service.Core.Dal.xsd" MetadataType="Schema" ID="d27705cd-6222-4120-8b19-e9a0bc1a34cb" SourceId="1" SourceUrl="http://120.24.76.23:57315/GetUser.svc/mex" />
+    <MetadataFile FileName="service1.wsdl" MetadataType="Wsdl" ID="b723ce78-a7f6-4552-89ac-9e8377268961" SourceId="1" SourceUrl="http://114.215.87.101:1239/GetUser.svc/mex" />
+    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="a201bb28-6de0-47f6-a233-5af65f5ac323" SourceId="1" SourceUrl="http://114.215.87.101:1239/GetUser.svc/mex" />
+    <MetadataFile FileName="service21.xsd" MetadataType="Schema" ID="fb0e2964-0e4f-44b8-aaac-50774ee07653" SourceId="1" SourceUrl="http://114.215.87.101:1239/GetUser.svc/mex" />
+    <MetadataFile FileName="BoooooJu.Service.Core.Dal1.xsd" MetadataType="Schema" ID="6202ce0f-6fd2-435c-932c-d2a0cc0b5045" SourceId="1" SourceUrl="http://114.215.87.101:1239/GetUser.svc/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

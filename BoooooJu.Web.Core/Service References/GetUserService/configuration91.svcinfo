@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="OGVFiZF3hzezZvODUS+nN09T46A=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="lF4MiRD1Lk0ukyPNlKehOmfE0iA=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="wsHttpBinding" name="InUserPoint1">
       <properties>
@@ -127,10 +127,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="InUserPoint1" contract="GetUserService.IGetUser" bindingType="wsHttpBinding" address="http://localhost:57315/GetUser.svc" bindingConfiguration="InUserPoint1">
+    <endpoint name="InUserPoint1" contract="GetUserService.IGetUser" bindingType="wsHttpBinding" address="http://localhost:1239/GetUser.svc" bindingConfiguration="InUserPoint1">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:57315/GetUser.svc</serializedValue>
+          <serializedValue>http://localhost:1239/GetUser.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -181,7 +181,7 @@
           <serializedValue>System.ServiceModel.Configuration.CertificateElement</serializedValue>
         </property>
         <property path="/identity/certificate/encodedValue" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>AwAAAAEAAAAUAAAA5DzPksbzBgI1rQwHC+czYNHvWi4gAAAAAQAAAAMCAAAwggH/MIIBaKADAgECAhBUWsY2LOBZgkZl958Ym/yOMA0GCSqGSIb3DQEBBAUAMBcxFTATBgNVBAMTDGJvb29vb2p1MjAxMDAeFw0xNjAyMDEwNjM5MDdaFw0zOTEyMzEyMzU5NTlaMBcxFTATBgNVBAMTDGJvb29vb2p1MjAxMDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA3Iy+26xvwBZdh/KNKMKa1fukOHWi8xDdWPRayj6qzJAa1pi8sgrpttArrKyjP26s4tO3mDl4Jv7CwftOe3a8SKwOj+iwjoB91sFfJdMqOmZYuDsdpsFBqb5kvFISXh/b29jWEHSI7OP704Rt1JKGvMZceVdQgHNlJ7Ut0rO2iIkCAwEAAaNMMEowSAYDVR0BBEEwP4AQeDfz8rGlowRTuTg9rQrxhqEZMBcxFTATBgNVBAMTDGJvb29vb2p1MjAxMIIQVFrGNizgWYJGZfefGJv8jjANBgkqhkiG9w0BAQQFAAOBgQCqLf4myAulHxgo3zHOAZPLwRY4BagSLIvN6EZdGDvz7gXVR6JmrmF1PL5pk25gmlCO5heqVNKc9u5aJZClioK6dMqdpEnqM47g/4BHvjn2orqV0fUJfhdfGrdOK4s2m+D/AZqvf/MRCDPWji1nMv6wA6dro/45g7D1sXBFJl+CvA==</serializedValue>
+          <serializedValue>AwAAAAEAAAAUAAAAZVNG6/awMbIEwCvK3kim/3oGQPcgAAAAAQAAAAMCAAAwggH/MIIBaKADAgECAhAGEYxjuq+ZrUNyIewJjHYdMA0GCSqGSIb3DQEBBAUAMBcxFTATBgNVBAMTDGJvb29vb2p1MjAxMDAeFw0xNjAyMDIwNzE3MjdaFw0zOTEyMzEyMzU5NTlaMBcxFTATBgNVBAMTDGJvb29vb2p1MjAxMDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA2z2Nn0SozlGP/6Go/fQHpO2IRr4o1L5iMB63OnV4WjOSrCWdWbzNYAQKptqvhJe6rYA9/NEU7OWIXX9zNXBe5DbnxeUu24o3CO70QRSmHpYCqROKwMkU06+UMU88g8nJsN5DbmIAtNuNakil7FtCWox2Hmi6ywuLhxzSBC7gdEMCAwEAAaNMMEowSAYDVR0BBEEwP4AQgq7Nwdzg2WWEPp5zKpDceaEZMBcxFTATBgNVBAMTDGJvb29vb2p1MjAxMIIQBhGMY7qvma1DciHsCYx2HTANBgkqhkiG9w0BAQQFAAOBgQCEUEw/x+pOUFd0/g8BW0bwHERgeMcC8gl/Lkd9BUW0F1HZR22pbbFmEh49bWAR/OI54Ydqhz+qDDl1IL4uR24xhbzLz7q4PHazd2N+GIYue8BsVbqllVjSQwqci+hRPnvVc3AHmY44vfWiaenreagKFCyZqRFeBJ8R6LR0Z3OIIQ==</serializedValue>
         </property>
         <property path="/identity/certificateReference" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.CertificateReferenceElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.CertificateReferenceElement</serializedValue>
