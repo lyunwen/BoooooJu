@@ -10,9 +10,11 @@ namespace BoooooJu.Web.Core.ViewModels.Account
     {
         //登入名（帐户名、手机号码、邮箱等）
         public string SignName { get; set; }
-        
+
         public string Pswd { get; set; }
         //上次尝试登入时间
-        public DateTime PreSignTime { get; set; } 
+        public DateTime PreSignTime { get; set; }
+        //登入返回地址
+        public string ReturnUrl { get; set; }
     }
 }

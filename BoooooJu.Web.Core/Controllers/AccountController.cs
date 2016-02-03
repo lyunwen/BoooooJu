@@ -10,14 +10,6 @@ namespace BoooooJu.Web.Core.Controllers
 {
     public class AccountController : Base.BoooooJuController
     {
-        private readonly ISetUser _setUserClient;
-        private readonly IGetUser _getUserClient;
-
-        public AccountController(ISetUser setUserClient, IGetUser getUserClient)
-        {
-            _setUserClient = new Common.BoooooJuClientResolver<ISetUser>(setUserClient).Client;
-            _getUserClient = new Common.BoooooJuClientResolver<IGetUser>(getUserClient).Client;
-        }
         //登入
         public ViewResult SignIn(string returnUrl = null)
         {
@@ -32,17 +24,17 @@ namespace BoooooJu.Web.Core.Controllers
                 return Json(new { success = false });
             if (Regex.IsMatch(model.SignName, @"^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$"))
             {
-                user = _getUserClient.SignByCellPhone(model.SignName, model.Pswd);
+                user =UnityClientCall<IGetUser>.GetClient().SignByCellPhone(model.SignName, model.Pswd);
             }
             else
             {
                 if (Regex.IsMatch(model.SignName, @"^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$"))
                 {
-                    user = _getUserClient.SignByEmaiAddress(model.SignName, model.Pswd);
+                    user = UnityClientCall<IGetUser>.GetClient().SignByEmaiAddress(model.SignName, model.Pswd);
                 }
                 else
                 {
-                    user = _getUserClient.SignByAccountName(model.SignName, model.Pswd);
+                    user = UnityClientCall<IGetUser>.GetClient().SignByAccountName(model.SignName, model.Pswd);
                 }
             }
             if (user != null)
@@ -93,8 +85,7 @@ namespace BoooooJu.Web.Core.Controllers
 
         public ActionResult Register()
         {
-            RegisterModel model = new RegisterModel();
-            return View(model);
+            return View();
         }
         [HttpPost]
         public JsonResult Register(RegisterModel model)
@@ -103,7 +94,7 @@ namespace BoooooJu.Web.Core.Controllers
             {
                 return Json(new { success = false });
             }
-            var result = _setUserClient.RegisterByAccountName(new SetUserService.User
+            var result = UnityClientCall<ISetUser>.GetClient().RegisterByAccountName(new SetUserService.User
             {
                 CreateTime = DateTime.Now,
                 NickName = model.NickName,

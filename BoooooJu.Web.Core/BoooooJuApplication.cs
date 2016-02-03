@@ -21,7 +21,7 @@ namespace BoooooJu.Web.Core
             ValidatorOptions.CascadeMode = CascadeMode.StopOnFirstFailure;
             FluentValidationModelValidatorProvider.Configure();
 
-            DependencyResolver.SetResolver(new App_Start.IOCContainerConfig().Config());
+           // DependencyResolver.SetResolver(new App_Start.IOCContainerConfig().Config());
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);  
             ViewEngines.Engines.Clear();
