@@ -181,7 +181,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_GetDatasBy_Input_policy">
+  <wsp:Policy wsu:Id="InUserPoint_GetDatas_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -200,7 +200,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_GetDatasBy_output_policy">
+  <wsp:Policy wsu:Id="InUserPoint_GetDatas_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -504,11 +504,11 @@
   <wsdl:message name="IGetUser_GetDataByUniqueKey_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetDataByUniqueKeyResponse" />
   </wsdl:message>
-  <wsdl:message name="IGetUser_GetDatasBy_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetDatasBy" />
+  <wsdl:message name="IGetUser_GetDatas_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatas" />
   </wsdl:message>
-  <wsdl:message name="IGetUser_GetDatasBy_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetDatasByResponse" />
+  <wsdl:message name="IGetUser_GetDatas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatasResponse" />
   </wsdl:message>
   <wsdl:message name="IGetUser_GetUserByAccount_InputMessage">
     <wsdl:part name="parameters" element="tns:GetUserByAccount" />
@@ -561,9 +561,9 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IBaseGetDataOf_User/GetDataByUniqueKey" message="tns:IGetUser_GetDataByUniqueKey_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IBaseGetDataOf_User/GetDataByUniqueKeyResponse" message="tns:IGetUser_GetDataByUniqueKey_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="GetDatasBy">
-      <wsdl:input wsaw:Action="http://tempuri.org/IBaseGetDataOf_User/GetDatasBy" message="tns:IGetUser_GetDatasBy_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IBaseGetDataOf_User/GetDatasByResponse" message="tns:IGetUser_GetDatasBy_OutputMessage" />
+    <wsdl:operation name="GetDatas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBaseGetDataOf_User/GetDatas" message="tns:IGetUser_GetDatas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBaseGetDataOf_User/GetDatasResponse" message="tns:IGetUser_GetDatas_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetUserByAccount">
       <wsdl:input wsaw:Action="http://tempuri.org/IGetUser/GetUserByAccount" message="tns:IGetUser_GetUserByAccount_InputMessage" />
@@ -619,14 +619,14 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetDatasBy">
-      <soap12:operation soapAction="http://tempuri.org/IBaseGetDataOf_User/GetDatasBy" style="document" />
+    <wsdl:operation name="GetDatas">
+      <soap12:operation soapAction="http://tempuri.org/IBaseGetDataOf_User/GetDatas" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#InUserPoint_GetDatasBy_Input_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_GetDatas_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#InUserPoint_GetDatasBy_output_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_GetDatas_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>

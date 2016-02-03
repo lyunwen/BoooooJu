@@ -29,17 +29,17 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="GetDatasBy">
+  <xs:element name="GetDatas">
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" name="page" nillable="true" type="xs:anyType" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="GetDatasByResponse">
+  <xs:element name="GetDatasResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" minOccurs="0" name="GetDatasByResult" nillable="true" type="q3:ArrayOfUser" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" minOccurs="0" name="GetDatasResult" nillable="true" type="q3:ArrayOfUser" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

@@ -73,7 +73,7 @@ namespace BoooooJu.Web.Core.Controllers
             return Json(new { success = true });
         }
 
-        [Filters.BoAuthorizeAttribute(BoooooJuPermit.Manager)]
+        [Filters.BoAuthorize(BoooooJuPermit.Manager)]
         public ViewResult UserManage()
         {
             return View();

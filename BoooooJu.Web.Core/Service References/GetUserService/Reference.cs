@@ -154,13 +154,13 @@ namespace BoooooJu.Web.Core.GetUserService {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBaseGetDataOf_User/GetDataByUniqueKey", ReplyAction="http://tempuri.org/IBaseGetDataOf_User/GetDataByUniqueKeyResponse")]
         System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User> GetDataByUniqueKeyAsync(string key);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBaseGetDataOf_User/GetDatasBy", ReplyAction="http://tempuri.org/IBaseGetDataOf_User/GetDatasByResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBaseGetDataOf_User/GetDatas", ReplyAction="http://tempuri.org/IBaseGetDataOf_User/GetDatasResponse")]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BoooooJu.Web.Core.GetUserService.User))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(BoooooJu.Web.Core.GetUserService.User[]))]
-        BoooooJu.Web.Core.GetUserService.User[] GetDatasBy(object page);
+        BoooooJu.Web.Core.GetUserService.User[] GetDatas(object page);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBaseGetDataOf_User/GetDatasBy", ReplyAction="http://tempuri.org/IBaseGetDataOf_User/GetDatasByResponse")]
-        System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User[]> GetDatasByAsync(object page);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBaseGetDataOf_User/GetDatas", ReplyAction="http://tempuri.org/IBaseGetDataOf_User/GetDatasResponse")]
+        System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User[]> GetDatasAsync(object page);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGetUser/GetUserByAccount", ReplyAction="http://tempuri.org/IGetUser/GetUserByAccountResponse")]
         BoooooJu.Web.Core.GetUserService.User GetUserByAccount(string accountName);
@@ -250,12 +250,12 @@ namespace BoooooJu.Web.Core.GetUserService {
             return base.Channel.GetDataByUniqueKeyAsync(key);
         }
         
-        public BoooooJu.Web.Core.GetUserService.User[] GetDatasBy(object page) {
-            return base.Channel.GetDatasBy(page);
+        public BoooooJu.Web.Core.GetUserService.User[] GetDatas(object page) {
+            return base.Channel.GetDatas(page);
         }
         
-        public System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User[]> GetDatasByAsync(object page) {
-            return base.Channel.GetDatasByAsync(page);
+        public System.Threading.Tasks.Task<BoooooJu.Web.Core.GetUserService.User[]> GetDatasAsync(object page) {
+            return base.Channel.GetDatasAsync(page);
         }
         
         public BoooooJu.Web.Core.GetUserService.User GetUserByAccount(string accountName) {

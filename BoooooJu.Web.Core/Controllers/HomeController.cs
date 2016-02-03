@@ -16,6 +16,7 @@ namespace BoooooJu.Web.Core.Controllers
         //}
         public ActionResult Index()
         {
+            Base.UnityClientCall<IGetUser>.GetClient();
           //  var test1 = Base.UnityClientCall<IGetUser>.GetClient().GetDataByPrimaryKey(1);
             return View();
         }
