@@ -11,6 +11,8 @@ using Autofac.Configuration;
 using BoooooJu.Web.Core.SetUserService;
 using FluentValidation;
 using FluentValidation.Mvc;
+using BoooooJu.Web.Core.App_Start;
+using System.Web.Optimization;
 
 namespace BoooooJu.Web.Core
 {
@@ -23,7 +25,8 @@ namespace BoooooJu.Web.Core
 
            // DependencyResolver.SetResolver(new App_Start.IOCContainerConfig().Config());
             AreaRegistration.RegisterAllAreas();
-            RouteConfig.RegisterRoutes(RouteTable.Routes);  
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
             ViewEngines.Engines.Clear();
             ViewEngines.Engines.Add(new App_Start.BoooJuViewEngine());  
         }
