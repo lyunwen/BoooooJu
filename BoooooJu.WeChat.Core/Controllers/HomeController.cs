@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Web.Mvc;
-using BoooooJu.Web.Core.Common;
-using BoooooJu.Web.Core.GetUserService;
-using BoooooJu.Web.Core.SetUserService;
+using BoooooJu.Web.Core.Common; 
 
 namespace BoooooJu.Web.Core.Controllers
 {

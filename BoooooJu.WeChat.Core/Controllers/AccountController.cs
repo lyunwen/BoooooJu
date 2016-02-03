@@ -1,7 +1,7 @@
 ﻿using BoooooJu.Web.Core.Controllers.Base;
-using BoooooJu.Web.Core.GetUserService;
-using BoooooJu.Web.Core.SetUserService;
 using BoooooJu.Web.Core.ViewModels.Account;
+using BoooooJu.WeChat.Core.GetUserService;
+using BoooooJu.WeChat.Core.SetUserService;
 using System;
 using System.Text.RegularExpressions;
 using System.Web.Mvc;
@@ -19,7 +19,7 @@ namespace BoooooJu.Web.Core.Controllers
         [HttpPost]
         public JsonResult SignIn(SignInModel model)
         {
-            GetUserService.User user = null;
+            WeChat.Core.GetUserService.User user = null;
             if (model.Pswd == null || model.SignName == null)
                 return Json(new { success = false });
             if (Regex.IsMatch(model.SignName, @"^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$"))
@@ -94,7 +94,7 @@ namespace BoooooJu.Web.Core.Controllers
             {
                 return Json(new { success = false });
             }
-            var result = UnityClientCall<ISetUser>.GetClient().RegisterByAccountName(new SetUserService.User
+            var result = UnityClientCall<ISetUser>.GetClient().RegisterByAccountName(new WeChat.Core.SetUserService.User
             {
                 CreateTime = DateTime.Now,
                 NickName = model.NickName,

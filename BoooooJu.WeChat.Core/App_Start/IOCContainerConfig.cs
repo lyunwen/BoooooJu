@@ -1,7 +1,5 @@
 ﻿using Autofac;
-using Autofac.Integration.Mvc;
-using BoooooJu.Web.Core.GetUserService;
-using BoooooJu.Web.Core.SetUserService;
+using Autofac.Integration.Mvc; 
 using System;
 using System.Collections.Generic;
 using System.Linq;

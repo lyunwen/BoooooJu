@@ -276,3 +276,10 @@ G:\C#\Program\BoooooJu.Web\bin\tr\FluentValidation.resources.dll
 G:\C#\Program\BoooooJu.Web\bin\zh-CN\FluentValidation.resources.dll
 G:\C#\Program\BoooooJu.Web\obj\Debug\BoooooJu.Web.dll
 G:\C#\Program\BoooooJu.Web\obj\Debug\BoooooJu.Web.pdb
+F:\Git\BoooooJu\BoooooJu.Web\bin\System.Web.Optimization.dll
+F:\Git\BoooooJu\BoooooJu.Web\bin\WebGrease.dll
+F:\Git\BoooooJu\BoooooJu.Web\bin\Newtonsoft.Json.dll
+F:\Git\BoooooJu\BoooooJu.Web\bin\Antlr3.Runtime.dll
+F:\Git\BoooooJu\BoooooJu.Web\bin\System.Web.Optimization.xml
+F:\Git\BoooooJu\BoooooJu.Web\bin\Newtonsoft.Json.xml
+F:\Git\BoooooJu\BoooooJu.Web\bin\Antlr3.Runtime.pdb

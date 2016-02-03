@@ -2,10 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using BoooooJu.Web.Core.SetUserService;
-using System.ServiceModel.Description;
-using BoooooJu.Web.Core.GetUserService;
+using System.Threading.Tasks; 
 using System.ServiceModel;
 using Autofac;
 

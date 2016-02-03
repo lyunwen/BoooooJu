@@ -166,3 +166,10 @@ G:\C#\Program\BoooooJu.Web.Core\bin\Debug\zh-Hans\System.Web.WebPages.Razor.reso
 G:\C#\Program\BoooooJu.Web.Core\obj\Debug\BoooooJu.Web.Core.dll
 G:\C#\Program\BoooooJu.Web.Core\obj\Debug\BoooooJu.Web.Core.pdb
 F:\Git\BoooooJu\BoooooJu.Web.Core\obj\Debug\BoooooJu.Web.Core.csprojResolveAssemblyReference.cache
+F:\Git\BoooooJu\BoooooJu.Web.Core\bin\Debug\Antlr3.Runtime.dll
+F:\Git\BoooooJu\BoooooJu.Web.Core\bin\Debug\Newtonsoft.Json.dll
+F:\Git\BoooooJu\BoooooJu.Web.Core\bin\Debug\System.Web.Optimization.dll
+F:\Git\BoooooJu\BoooooJu.Web.Core\bin\Debug\WebGrease.dll
+F:\Git\BoooooJu\BoooooJu.Web.Core\bin\Debug\Antlr3.Runtime.pdb
+F:\Git\BoooooJu\BoooooJu.Web.Core\bin\Debug\Newtonsoft.Json.xml
+F:\Git\BoooooJu\BoooooJu.Web.Core\bin\Debug\System.Web.Optimization.xml

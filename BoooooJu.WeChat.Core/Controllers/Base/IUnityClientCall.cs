@@ -1,6 +1,6 @@
 ﻿using Autofac;
-using BoooooJu.Web.Core.GetUserService;
-using BoooooJu.Web.Core.SetUserService;
+using BoooooJu.WeChat.Core.GetUserService;
+using BoooooJu.WeChat.Core.SetUserService;
 using System;
 using System.ServiceModel;
 

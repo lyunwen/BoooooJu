@@ -7,8 +7,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using Autofac;
 using Autofac.Integration.Mvc;
-using Autofac.Configuration;
-using BoooooJu.Web.Core.SetUserService;
+using Autofac.Configuration; 
 using FluentValidation;
 using FluentValidation.Mvc;
 
