@@ -7,11 +7,12 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using Autofac;
 using Autofac.Integration.Mvc;
-using Autofac.Configuration; 
+using Autofac.Configuration;
 using FluentValidation;
 using FluentValidation.Mvc;
+using BoooooJu.Web;
 
-namespace BoooooJu.Web.Core
+namespace BoooooJu.WeChat.Core
 {
     public class MvcApplication : System.Web.HttpApplication
     {

@@ -1,1 +1,1 @@
-﻿<%@ Application  Inherits="BoooooJu.Web.Core.MvcApplication" Language="C#" %>
+﻿<%@ Application  Inherits="BoooooJu.WeChat.Core.MvcApplication" Language="C#" %>

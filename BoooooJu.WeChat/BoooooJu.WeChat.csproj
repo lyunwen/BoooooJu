@@ -136,14 +136,12 @@
     <Content Include="Areas\Manager\Home\Index.cshtml" />
     <Content Include="Areas\SuperManager\PersonCenter.cshtml" />
     <Content Include="Areas\Vendor\PersonCenter.cshtml" />
-    <Content Include="Areas\Test\Views\web.config" />
     <Content Include="Areas\Manager\web.config" />
     <None Include="Properties\PublishProfiles\BooooJu.Web.pubxml" />
     <None Include="Scripts\_references.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Areas\Test\TestAreaRegistration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -167,15 +165,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BoooooJu.Web.Core\BoooooJu.Web.Core.csproj">
-      <Project>{3b2c8dd0-d824-464a-be4e-51fb2cf7dc7a}</Project>
-      <Name>BoooooJu.Web.Core</Name>
+    <ProjectReference Include="..\BoooooJu.WeChat.Core\BoooooJu.WeChat.Core.csproj">
+      <Project>{ed2c5982-96bf-4619-891f-5fc9c6ff6097}</Project>
+      <Name>BoooooJu.WeChat.Core</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Areas\Test\Controllers\" />
-    <Folder Include="Areas\Test\Models\" />
-    <Folder Include="Areas\Test\Views\Shared\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -192,7 +185,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>57104</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:57108/</IISUrl>
+          <IISUrl>http://localhost:57109/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

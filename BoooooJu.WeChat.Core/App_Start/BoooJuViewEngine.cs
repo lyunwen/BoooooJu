@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 
-namespace BoooooJu.Web.Core.App_Start
+namespace BoooooJu.WeChat.Core.App_Start
 {
    public class BoooJuViewEngine:RazorViewEngine
     {
