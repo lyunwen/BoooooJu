@@ -7,7 +7,7 @@
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword />
-    <_PublishTargetUrl>C:\Users\Administrator\Desktop\WCFService</_PublishTargetUrl>
+    <_PublishTargetUrl>ftp://114.215.87.101:12399/</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
@@ -20,10 +20,10 @@
       <publishTime>02/01/2016 16:00:33</publishTime>
     </File>
     <File Include="bin/BoooooJu.Service.Core.dll">
-      <publishTime>02/01/2016 16:00:33</publishTime>
+      <publishTime>02/03/2016 17:20:26</publishTime>
     </File>
     <File Include="bin/BoooooJu.Service.dll">
-      <publishTime>02/01/2016 16:00:33</publishTime>
+      <publishTime>02/03/2016 17:20:26</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>01/22/2016 21:38:36</publishTime>
@@ -83,7 +83,7 @@
       <publishTime>01/18/2016 14:50:21</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>02/01/2016 16:00:33</publishTime>
+      <publishTime>02/03/2016 17:20:27</publishTime>
     </File>
   </ItemGroup>
 </Project>
