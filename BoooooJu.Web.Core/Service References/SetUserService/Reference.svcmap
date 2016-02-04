@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://114.215.87.101:1239/SetUser.svc/mex" Protocol="mex" SourceId="1" />
+    <MetadataSource Address="http://114.215.87.101:20/SetUser.svc/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service1.wsdl" MetadataType="Wsdl" ID="d7317831-a957-4ff1-981c-86591185ac58" SourceId="1" SourceUrl="http://114.215.87.101:1239/SetUser.svc/mex" />
-    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="5d6c88fe-45d4-4bff-869e-a0a6f52d0749" SourceId="1" SourceUrl="http://114.215.87.101:1239/SetUser.svc/mex" />
-    <MetadataFile FileName="service21.xsd" MetadataType="Schema" ID="0d789d5f-c955-4893-93cd-945520835680" SourceId="1" SourceUrl="http://114.215.87.101:1239/SetUser.svc/mex" />
-    <MetadataFile FileName="BoooooJu.Service.Core.Dal1.xsd" MetadataType="Schema" ID="1ca83a98-79e6-44fe-b484-6cb042523857" SourceId="1" SourceUrl="http://114.215.87.101:1239/SetUser.svc/mex" />
-    <MetadataFile FileName="Arrays1.xsd" MetadataType="Schema" ID="516573de-bc42-4de2-8377-bb45cfef540f" SourceId="1" SourceUrl="http://114.215.87.101:1239/SetUser.svc/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="83355ac0-9373-44af-ace6-8dfe8470a8da" SourceId="1" SourceUrl="http://114.215.87.101:20/SetUser.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="c0b6444d-b1f5-49f9-8e88-1bbf78edd44c" SourceId="1" SourceUrl="http://114.215.87.101:20/SetUser.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="9ca82858-fa11-40ee-8864-544acd77bb08" SourceId="1" SourceUrl="http://114.215.87.101:20/SetUser.svc/mex" />
+    <MetadataFile FileName="BoooooJu.Service.Core.Dal.xsd" MetadataType="Schema" ID="b58e098b-26f7-458d-abb3-899570145e00" SourceId="1" SourceUrl="http://114.215.87.101:20/SetUser.svc/mex" />
+    <MetadataFile FileName="Arrays1.xsd" MetadataType="Schema" ID="24c7284a-d1d2-4c58-8f34-3ce4ef563539" SourceId="1" SourceUrl="http://114.215.87.101:20/SetUser.svc/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

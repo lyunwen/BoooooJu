@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="6icoLWkiwy+uhrVXeaAH0E2tUxc=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="T+4Zd3df+EfOjaYM/sBr0llR6fw=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="wsHttpBinding" name="InUserPoint">
       <properties>
@@ -127,10 +127,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="InUserPoint" contract="SetUserService.ISetUser" bindingType="wsHttpBinding" address="http://localhost:1239/SetUser.svc" bindingConfiguration="InUserPoint">
+    <endpoint name="InUserPoint" contract="SetUserService.ISetUser" bindingType="wsHttpBinding" address="http://localhost:20/SetUser.svc" bindingConfiguration="InUserPoint">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:1239/SetUser.svc</serializedValue>
+          <serializedValue>http://localhost:20/SetUser.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

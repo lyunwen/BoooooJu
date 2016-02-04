@@ -24,22 +24,31 @@ namespace BoooooJu.Web.Core.Controllers.Base
 
         }
         public readonly static IContainer container;
-
+        public static volatile T t = null;
+        private static object syncRoot = new object();
         public static T GetClient()
         {
-            T client = null;
-            client = container.Resolve<T>();
-            var foo = client as ClientBase<T>;
-            if (foo == null)
+            if (t == null)
             {
-                throw new ArgumentNullException("泛型参数非WFC终结点。");
+                lock (syncRoot)
+                {
+                    if (t == null)
+                    {
+                        t = container.Resolve<T>();
+                        var foo = t as ClientBase<T>;
+                        if (foo == null)
+                        {
+                            throw new ArgumentNullException("泛型参数非WFC终结点。");
+                        }
+                        else
+                        {
+                            foo.ClientCredentials.UserName.UserName = USERNAME;
+                            foo.ClientCredentials.UserName.Password = PASSWORD;
+                        }
+                    }
+                }
             }
-            else
-            {
-                foo.ClientCredentials.UserName.UserName = USERNAME;
-                foo.ClientCredentials.UserName.Password = PASSWORD;
-            }
-            return client;
+            return t;  
         }
     }
 }

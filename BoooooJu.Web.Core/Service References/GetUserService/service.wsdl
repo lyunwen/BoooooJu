@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SetUser" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="GetUser" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsp:Policy wsu:Id="InUserPoint_policy">
     <wsp:ExactlyOne>
       <wsp:All>
@@ -105,7 +105,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_Insert_Input_policy">
+  <wsp:Policy wsu:Id="InUserPoint_GetDataByPrimaryKey_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -124,7 +124,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_Insert_output_policy">
+  <wsp:Policy wsu:Id="InUserPoint_GetDataByPrimaryKey_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -143,7 +143,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_DeleteByPrimaryKey_Input_policy">
+  <wsp:Policy wsu:Id="InUserPoint_GetDataByUniqueKey_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -162,7 +162,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_DeleteByPrimaryKey_output_policy">
+  <wsp:Policy wsu:Id="InUserPoint_GetDataByUniqueKey_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -181,7 +181,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_UpdateByPrimaryKey_Input_policy">
+  <wsp:Policy wsu:Id="InUserPoint_GetDatas_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -200,7 +200,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_UpdateByPrimaryKey_output_policy">
+  <wsp:Policy wsu:Id="InUserPoint_GetDatas_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -219,7 +219,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_RegisterByAccountName_Input_policy">
+  <wsp:Policy wsu:Id="InUserPoint_GetUserByAccount_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -238,7 +238,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_RegisterByAccountName_output_policy">
+  <wsp:Policy wsu:Id="InUserPoint_GetUserByAccount_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -257,7 +257,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_RegisterByCellPhone_Input_policy">
+  <wsp:Policy wsu:Id="InUserPoint_GetUserByCellPhone_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -276,7 +276,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_RegisterByCellPhone_output_policy">
+  <wsp:Policy wsu:Id="InUserPoint_GetUserByCellPhone_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -295,7 +295,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_RegisterByEmailAddress_Input_policy">
+  <wsp:Policy wsu:Id="InUserPoint_GetUsers_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -314,7 +314,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_RegisterByEmailAddress_output_policy">
+  <wsp:Policy wsu:Id="InUserPoint_GetUsers_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -333,7 +333,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_RegisterByOpneId_Input_policy">
+  <wsp:Policy wsu:Id="InUserPoint_SignByAccountName_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -352,7 +352,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_RegisterByOpneId_output_policy">
+  <wsp:Policy wsu:Id="InUserPoint_SignByAccountName_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -371,7 +371,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_AlterPswdByAccountName_Input_policy">
+  <wsp:Policy wsu:Id="InUserPoint_SignByCellPhone_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -390,7 +390,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_AlterPswdByAccountName_output_policy">
+  <wsp:Policy wsu:Id="InUserPoint_SignByCellPhone_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -409,7 +409,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_AlterPswdByCellPhone_Input_policy">
+  <wsp:Policy wsu:Id="InUserPoint_SignByEmaiAddress_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -428,7 +428,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_AlterPswdByCellPhone_output_policy">
+  <wsp:Policy wsu:Id="InUserPoint_SignByEmaiAddress_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -447,7 +447,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_AlterPswdByEmailAddress_Input_policy">
+  <wsp:Policy wsu:Id="InUserPoint_SignByOpenId_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -466,45 +466,7 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_AlterPswdByEmailAddress_output_policy">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
-        </sp:SignedParts>
-        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-        </sp:EncryptedParts>
-      </wsp:All>
-    </wsp:ExactlyOne>
-  </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_AlterPswdByOpenId_Input_policy">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
-          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
-        </sp:SignedParts>
-        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <sp:Body />
-        </sp:EncryptedParts>
-      </wsp:All>
-    </wsp:ExactlyOne>
-  </wsp:Policy>
-  <wsp:Policy wsu:Id="InUserPoint_AlterPswdByOpenId_output_policy">
+  <wsp:Policy wsu:Id="InUserPoint_SignByOpenId_output_policy">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -528,251 +490,229 @@
       <xsd:import namespace="http://tempuri.org/" />
       <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import namespace="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal" />
-      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="ISetUser_Insert_InputMessage">
-    <wsdl:part name="parameters" element="tns:Insert" />
+  <wsdl:message name="IGetUser_GetDataByPrimaryKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataByPrimaryKey" />
   </wsdl:message>
-  <wsdl:message name="ISetUser_Insert_OutputMessage">
-    <wsdl:part name="parameters" element="tns:InsertResponse" />
+  <wsdl:message name="IGetUser_GetDataByPrimaryKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataByPrimaryKeyResponse" />
   </wsdl:message>
-  <wsdl:message name="ISetUser_DeleteByPrimaryKey_InputMessage">
-    <wsdl:part name="parameters" element="tns:DeleteByPrimaryKey" />
+  <wsdl:message name="IGetUser_GetDataByUniqueKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataByUniqueKey" />
   </wsdl:message>
-  <wsdl:message name="ISetUser_DeleteByPrimaryKey_OutputMessage">
-    <wsdl:part name="parameters" element="tns:DeleteByPrimaryKeyResponse" />
+  <wsdl:message name="IGetUser_GetDataByUniqueKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataByUniqueKeyResponse" />
   </wsdl:message>
-  <wsdl:message name="ISetUser_UpdateByPrimaryKey_InputMessage">
-    <wsdl:part name="parameters" element="tns:UpdateByPrimaryKey" />
+  <wsdl:message name="IGetUser_GetDatas_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatas" />
   </wsdl:message>
-  <wsdl:message name="ISetUser_UpdateByPrimaryKey_OutputMessage">
-    <wsdl:part name="parameters" element="tns:UpdateByPrimaryKeyResponse" />
+  <wsdl:message name="IGetUser_GetDatas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDatasResponse" />
   </wsdl:message>
-  <wsdl:message name="ISetUser_RegisterByAccountName_InputMessage">
-    <wsdl:part name="parameters" element="tns:RegisterByAccountName" />
+  <wsdl:message name="IGetUser_GetUserByAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByAccount" />
   </wsdl:message>
-  <wsdl:message name="ISetUser_RegisterByAccountName_OutputMessage">
-    <wsdl:part name="parameters" element="tns:RegisterByAccountNameResponse" />
+  <wsdl:message name="IGetUser_GetUserByAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByAccountResponse" />
   </wsdl:message>
-  <wsdl:message name="ISetUser_RegisterByCellPhone_InputMessage">
-    <wsdl:part name="parameters" element="tns:RegisterByCellPhone" />
+  <wsdl:message name="IGetUser_GetUserByCellPhone_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByCellPhone" />
   </wsdl:message>
-  <wsdl:message name="ISetUser_RegisterByCellPhone_OutputMessage">
-    <wsdl:part name="parameters" element="tns:RegisterByCellPhoneResponse" />
+  <wsdl:message name="IGetUser_GetUserByCellPhone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByCellPhoneResponse" />
   </wsdl:message>
-  <wsdl:message name="ISetUser_RegisterByEmailAddress_InputMessage">
-    <wsdl:part name="parameters" element="tns:RegisterByEmailAddress" />
+  <wsdl:message name="IGetUser_GetUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsers" />
   </wsdl:message>
-  <wsdl:message name="ISetUser_RegisterByEmailAddress_OutputMessage">
-    <wsdl:part name="parameters" element="tns:RegisterByEmailAddressResponse" />
+  <wsdl:message name="IGetUser_GetUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUsersResponse" />
   </wsdl:message>
-  <wsdl:message name="ISetUser_RegisterByOpneId_InputMessage">
-    <wsdl:part name="parameters" element="tns:RegisterByOpneId" />
+  <wsdl:message name="IGetUser_SignByAccountName_InputMessage">
+    <wsdl:part name="parameters" element="tns:SignByAccountName" />
   </wsdl:message>
-  <wsdl:message name="ISetUser_RegisterByOpneId_OutputMessage">
-    <wsdl:part name="parameters" element="tns:RegisterByOpneIdResponse" />
+  <wsdl:message name="IGetUser_SignByAccountName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SignByAccountNameResponse" />
   </wsdl:message>
-  <wsdl:message name="ISetUser_AlterPswdByAccountName_InputMessage">
-    <wsdl:part name="parameters" element="tns:AlterPswdByAccountName" />
+  <wsdl:message name="IGetUser_SignByCellPhone_InputMessage">
+    <wsdl:part name="parameters" element="tns:SignByCellPhone" />
   </wsdl:message>
-  <wsdl:message name="ISetUser_AlterPswdByAccountName_OutputMessage">
-    <wsdl:part name="parameters" element="tns:AlterPswdByAccountNameResponse" />
+  <wsdl:message name="IGetUser_SignByCellPhone_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SignByCellPhoneResponse" />
   </wsdl:message>
-  <wsdl:message name="ISetUser_AlterPswdByCellPhone_InputMessage">
-    <wsdl:part name="parameters" element="tns:AlterPswdByCellPhone" />
+  <wsdl:message name="IGetUser_SignByEmaiAddress_InputMessage">
+    <wsdl:part name="parameters" element="tns:SignByEmaiAddress" />
   </wsdl:message>
-  <wsdl:message name="ISetUser_AlterPswdByCellPhone_OutputMessage">
-    <wsdl:part name="parameters" element="tns:AlterPswdByCellPhoneResponse" />
+  <wsdl:message name="IGetUser_SignByEmaiAddress_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SignByEmaiAddressResponse" />
   </wsdl:message>
-  <wsdl:message name="ISetUser_AlterPswdByEmailAddress_InputMessage">
-    <wsdl:part name="parameters" element="tns:AlterPswdByEmailAddress" />
+  <wsdl:message name="IGetUser_SignByOpenId_InputMessage">
+    <wsdl:part name="parameters" element="tns:SignByOpenId" />
   </wsdl:message>
-  <wsdl:message name="ISetUser_AlterPswdByEmailAddress_OutputMessage">
-    <wsdl:part name="parameters" element="tns:AlterPswdByEmailAddressResponse" />
+  <wsdl:message name="IGetUser_SignByOpenId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SignByOpenIdResponse" />
   </wsdl:message>
-  <wsdl:message name="ISetUser_AlterPswdByOpenId_InputMessage">
-    <wsdl:part name="parameters" element="tns:AlterPswdByOpenId" />
-  </wsdl:message>
-  <wsdl:message name="ISetUser_AlterPswdByOpenId_OutputMessage">
-    <wsdl:part name="parameters" element="tns:AlterPswdByOpenIdResponse" />
-  </wsdl:message>
-  <wsdl:portType name="ISetUser">
-    <wsdl:operation name="Insert">
-      <wsdl:input wsaw:Action="http://tempuri.org/IBaseSetDataOf_User/Insert" message="tns:ISetUser_Insert_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IBaseSetDataOf_User/InsertResponse" message="tns:ISetUser_Insert_OutputMessage" />
+  <wsdl:portType name="IGetUser">
+    <wsdl:operation name="GetDataByPrimaryKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBaseGetDataOf_User/GetDataByPrimaryKey" message="tns:IGetUser_GetDataByPrimaryKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBaseGetDataOf_User/GetDataByPrimaryKeyResponse" message="tns:IGetUser_GetDataByPrimaryKey_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="DeleteByPrimaryKey">
-      <wsdl:input wsaw:Action="http://tempuri.org/IBaseSetDataOf_User/DeleteByPrimaryKey" message="tns:ISetUser_DeleteByPrimaryKey_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IBaseSetDataOf_User/DeleteByPrimaryKeyResponse" message="tns:ISetUser_DeleteByPrimaryKey_OutputMessage" />
+    <wsdl:operation name="GetDataByUniqueKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBaseGetDataOf_User/GetDataByUniqueKey" message="tns:IGetUser_GetDataByUniqueKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBaseGetDataOf_User/GetDataByUniqueKeyResponse" message="tns:IGetUser_GetDataByUniqueKey_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="UpdateByPrimaryKey">
-      <wsdl:input wsaw:Action="http://tempuri.org/IBaseSetDataOf_User/UpdateByPrimaryKey" message="tns:ISetUser_UpdateByPrimaryKey_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IBaseSetDataOf_User/UpdateByPrimaryKeyResponse" message="tns:ISetUser_UpdateByPrimaryKey_OutputMessage" />
+    <wsdl:operation name="GetDatas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBaseGetDataOf_User/GetDatas" message="tns:IGetUser_GetDatas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBaseGetDataOf_User/GetDatasResponse" message="tns:IGetUser_GetDatas_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="RegisterByAccountName">
-      <wsdl:input wsaw:Action="http://tempuri.org/ISetUser/RegisterByAccountName" message="tns:ISetUser_RegisterByAccountName_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ISetUser/RegisterByAccountNameResponse" message="tns:ISetUser_RegisterByAccountName_OutputMessage" />
+    <wsdl:operation name="GetUserByAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGetUser/GetUserByAccount" message="tns:IGetUser_GetUserByAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGetUser/GetUserByAccountResponse" message="tns:IGetUser_GetUserByAccount_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="RegisterByCellPhone">
-      <wsdl:input wsaw:Action="http://tempuri.org/ISetUser/RegisterByCellPhone" message="tns:ISetUser_RegisterByCellPhone_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ISetUser/RegisterByCellPhoneResponse" message="tns:ISetUser_RegisterByCellPhone_OutputMessage" />
+    <wsdl:operation name="GetUserByCellPhone">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGetUser/GetUserByCellPhone" message="tns:IGetUser_GetUserByCellPhone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGetUser/GetUserByCellPhoneResponse" message="tns:IGetUser_GetUserByCellPhone_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="RegisterByEmailAddress">
-      <wsdl:input wsaw:Action="http://tempuri.org/ISetUser/RegisterByEmailAddress" message="tns:ISetUser_RegisterByEmailAddress_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ISetUser/RegisterByEmailAddressResponse" message="tns:ISetUser_RegisterByEmailAddress_OutputMessage" />
+    <wsdl:operation name="GetUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGetUser/GetUsers" message="tns:IGetUser_GetUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGetUser/GetUsersResponse" message="tns:IGetUser_GetUsers_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="RegisterByOpneId">
-      <wsdl:input wsaw:Action="http://tempuri.org/ISetUser/RegisterByOpneId" message="tns:ISetUser_RegisterByOpneId_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ISetUser/RegisterByOpneIdResponse" message="tns:ISetUser_RegisterByOpneId_OutputMessage" />
+    <wsdl:operation name="SignByAccountName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGetUser/SignByAccountName" message="tns:IGetUser_SignByAccountName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGetUser/SignByAccountNameResponse" message="tns:IGetUser_SignByAccountName_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="AlterPswdByAccountName">
-      <wsdl:input wsaw:Action="http://tempuri.org/ISetUser/AlterPswdByAccountName" message="tns:ISetUser_AlterPswdByAccountName_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ISetUser/AlterPswdByAccountNameResponse" message="tns:ISetUser_AlterPswdByAccountName_OutputMessage" />
+    <wsdl:operation name="SignByCellPhone">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGetUser/SignByCellPhone" message="tns:IGetUser_SignByCellPhone_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGetUser/SignByCellPhoneResponse" message="tns:IGetUser_SignByCellPhone_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="AlterPswdByCellPhone">
-      <wsdl:input wsaw:Action="http://tempuri.org/ISetUser/AlterPswdByCellPhone" message="tns:ISetUser_AlterPswdByCellPhone_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ISetUser/AlterPswdByCellPhoneResponse" message="tns:ISetUser_AlterPswdByCellPhone_OutputMessage" />
+    <wsdl:operation name="SignByEmaiAddress">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGetUser/SignByEmaiAddress" message="tns:IGetUser_SignByEmaiAddress_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGetUser/SignByEmaiAddressResponse" message="tns:IGetUser_SignByEmaiAddress_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="AlterPswdByEmailAddress">
-      <wsdl:input wsaw:Action="http://tempuri.org/ISetUser/AlterPswdByEmailAddress" message="tns:ISetUser_AlterPswdByEmailAddress_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ISetUser/AlterPswdByEmailAddressResponse" message="tns:ISetUser_AlterPswdByEmailAddress_OutputMessage" />
-    </wsdl:operation>
-    <wsdl:operation name="AlterPswdByOpenId">
-      <wsdl:input wsaw:Action="http://tempuri.org/ISetUser/AlterPswdByOpenId" message="tns:ISetUser_AlterPswdByOpenId_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ISetUser/AlterPswdByOpenIdResponse" message="tns:ISetUser_AlterPswdByOpenId_OutputMessage" />
+    <wsdl:operation name="SignByOpenId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGetUser/SignByOpenId" message="tns:IGetUser_SignByOpenId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGetUser/SignByOpenIdResponse" message="tns:IGetUser_SignByOpenId_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
-  <wsdl:binding name="InUserPoint" type="tns:ISetUser">
+  <wsdl:binding name="InUserPoint" type="tns:IGetUser">
     <wsp:PolicyReference URI="#InUserPoint_policy" />
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="Insert">
-      <soap12:operation soapAction="http://tempuri.org/IBaseSetDataOf_User/Insert" style="document" />
+    <wsdl:operation name="GetDataByPrimaryKey">
+      <soap12:operation soapAction="http://tempuri.org/IBaseGetDataOf_User/GetDataByPrimaryKey" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#InUserPoint_Insert_Input_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_GetDataByPrimaryKey_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#InUserPoint_Insert_output_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_GetDataByPrimaryKey_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="DeleteByPrimaryKey">
-      <soap12:operation soapAction="http://tempuri.org/IBaseSetDataOf_User/DeleteByPrimaryKey" style="document" />
+    <wsdl:operation name="GetDataByUniqueKey">
+      <soap12:operation soapAction="http://tempuri.org/IBaseGetDataOf_User/GetDataByUniqueKey" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#InUserPoint_DeleteByPrimaryKey_Input_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_GetDataByUniqueKey_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#InUserPoint_DeleteByPrimaryKey_output_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_GetDataByUniqueKey_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="UpdateByPrimaryKey">
-      <soap12:operation soapAction="http://tempuri.org/IBaseSetDataOf_User/UpdateByPrimaryKey" style="document" />
+    <wsdl:operation name="GetDatas">
+      <soap12:operation soapAction="http://tempuri.org/IBaseGetDataOf_User/GetDatas" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#InUserPoint_UpdateByPrimaryKey_Input_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_GetDatas_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#InUserPoint_UpdateByPrimaryKey_output_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_GetDatas_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="RegisterByAccountName">
-      <soap12:operation soapAction="http://tempuri.org/ISetUser/RegisterByAccountName" style="document" />
+    <wsdl:operation name="GetUserByAccount">
+      <soap12:operation soapAction="http://tempuri.org/IGetUser/GetUserByAccount" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#InUserPoint_RegisterByAccountName_Input_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_GetUserByAccount_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#InUserPoint_RegisterByAccountName_output_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_GetUserByAccount_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="RegisterByCellPhone">
-      <soap12:operation soapAction="http://tempuri.org/ISetUser/RegisterByCellPhone" style="document" />
+    <wsdl:operation name="GetUserByCellPhone">
+      <soap12:operation soapAction="http://tempuri.org/IGetUser/GetUserByCellPhone" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#InUserPoint_RegisterByCellPhone_Input_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_GetUserByCellPhone_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#InUserPoint_RegisterByCellPhone_output_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_GetUserByCellPhone_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="RegisterByEmailAddress">
-      <soap12:operation soapAction="http://tempuri.org/ISetUser/RegisterByEmailAddress" style="document" />
+    <wsdl:operation name="GetUsers">
+      <soap12:operation soapAction="http://tempuri.org/IGetUser/GetUsers" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#InUserPoint_RegisterByEmailAddress_Input_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_GetUsers_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#InUserPoint_RegisterByEmailAddress_output_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_GetUsers_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="RegisterByOpneId">
-      <soap12:operation soapAction="http://tempuri.org/ISetUser/RegisterByOpneId" style="document" />
+    <wsdl:operation name="SignByAccountName">
+      <soap12:operation soapAction="http://tempuri.org/IGetUser/SignByAccountName" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#InUserPoint_RegisterByOpneId_Input_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_SignByAccountName_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#InUserPoint_RegisterByOpneId_output_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_SignByAccountName_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="AlterPswdByAccountName">
-      <soap12:operation soapAction="http://tempuri.org/ISetUser/AlterPswdByAccountName" style="document" />
+    <wsdl:operation name="SignByCellPhone">
+      <soap12:operation soapAction="http://tempuri.org/IGetUser/SignByCellPhone" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#InUserPoint_AlterPswdByAccountName_Input_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_SignByCellPhone_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#InUserPoint_AlterPswdByAccountName_output_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_SignByCellPhone_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="AlterPswdByCellPhone">
-      <soap12:operation soapAction="http://tempuri.org/ISetUser/AlterPswdByCellPhone" style="document" />
+    <wsdl:operation name="SignByEmaiAddress">
+      <soap12:operation soapAction="http://tempuri.org/IGetUser/SignByEmaiAddress" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#InUserPoint_AlterPswdByCellPhone_Input_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_SignByEmaiAddress_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#InUserPoint_AlterPswdByCellPhone_output_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_SignByEmaiAddress_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="AlterPswdByEmailAddress">
-      <soap12:operation soapAction="http://tempuri.org/ISetUser/AlterPswdByEmailAddress" style="document" />
+    <wsdl:operation name="SignByOpenId">
+      <soap12:operation soapAction="http://tempuri.org/IGetUser/SignByOpenId" style="document" />
       <wsdl:input>
-        <wsp:PolicyReference URI="#InUserPoint_AlterPswdByEmailAddress_Input_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_SignByOpenId_Input_policy" />
         <soap12:body use="literal" />
       </wsdl:input>
       <wsdl:output>
-        <wsp:PolicyReference URI="#InUserPoint_AlterPswdByEmailAddress_output_policy" />
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="AlterPswdByOpenId">
-      <soap12:operation soapAction="http://tempuri.org/ISetUser/AlterPswdByOpenId" style="document" />
-      <wsdl:input>
-        <wsp:PolicyReference URI="#InUserPoint_AlterPswdByOpenId_Input_policy" />
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <wsp:PolicyReference URI="#InUserPoint_AlterPswdByOpenId_output_policy" />
+        <wsp:PolicyReference URI="#InUserPoint_SignByOpenId_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
-  <wsdl:service name="SetUser">
+  <wsdl:service name="GetUser">
     <wsdl:port name="InUserPoint" binding="tns:InUserPoint">
-      <soap12:address location="http://localhost:1239/SetUser.svc" />
+      <soap12:address location="http://localhost:20/GetUser.svc" />
       <wsa10:EndpointReference>
-        <wsa10:Address>http://localhost:1239/SetUser.svc</wsa10:Address>
+        <wsa10:Address>http://localhost:20/GetUser.svc</wsa10:Address>
         <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
           <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
             <X509Data>

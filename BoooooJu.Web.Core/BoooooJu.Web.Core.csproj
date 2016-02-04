@@ -121,7 +121,7 @@
     <Compile Include="Controllers\Base\BoooooJuController.cs" />
     <Compile Include="Controllers\Base\BoooooJuer.cs" />
     <Compile Include="Controllers\Base\CookieConfig.cs" />
-    <Compile Include="Controllers\Base\IUnityClientCall.cs" />
+    <Compile Include="Controllers\Base\UnityClientCall.cs" />
     <Compile Include="Controllers\Base\SessionConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PartialController.cs" />
@@ -153,33 +153,33 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <None Include="Service References\GetUserService\BoooooJu.Service.Core.Dal1.xsd">
+    <None Include="Service References\GetUserService\BoooooJu.Service.Core.Dal.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\GetUserService\BoooooJu.Web.Core.GetUserService.User.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\GetUserService\service1.wsdl" />
-    <None Include="Service References\GetUserService\service2.xsd">
+    <None Include="Service References\GetUserService\service.wsdl" />
+    <None Include="Service References\GetUserService\service.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\GetUserService\service21.xsd">
+    <None Include="Service References\GetUserService\service1.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\SetUserService\Arrays1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\SetUserService\BoooooJu.Service.Core.Dal1.xsd">
+    <None Include="Service References\SetUserService\BoooooJu.Service.Core.Dal.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\SetUserService\BoooooJu.Web.Core.SetUserService.User.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\SetUserService\service1.wsdl" />
-    <None Include="Service References\SetUserService\service2.xsd">
+    <None Include="Service References\SetUserService\service.wsdl" />
+    <None Include="Service References\SetUserService\service.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\SetUserService\service21.xsd">
+    <None Include="Service References\SetUserService\service1.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

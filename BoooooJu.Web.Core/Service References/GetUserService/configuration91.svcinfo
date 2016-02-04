@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="lF4MiRD1Lk0ukyPNlKehOmfE0iA=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="pE+HpYJrpQ7zP4JlqTC8UbpNCEA=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="wsHttpBinding" name="InUserPoint1">
       <properties>
@@ -127,10 +127,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="InUserPoint1" contract="GetUserService.IGetUser" bindingType="wsHttpBinding" address="http://localhost:1239/GetUser.svc" bindingConfiguration="InUserPoint1">
+    <endpoint name="InUserPoint1" contract="GetUserService.IGetUser" bindingType="wsHttpBinding" address="http://localhost:20/GetUser.svc" bindingConfiguration="InUserPoint1">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:1239/GetUser.svc</serializedValue>
+          <serializedValue>http://localhost:20/GetUser.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
