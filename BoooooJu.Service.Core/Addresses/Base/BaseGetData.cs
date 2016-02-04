@@ -8,7 +8,7 @@ using System.ServiceModel;
 
 namespace BoooooJu.Service.Core.Addresses.Base
 {
-    public class BaseGetData<T> : IBaseGetData<T> where T : class
+    public abstract class BaseGetData<T> : IBaseGetData<T> where T : class
     {
         public T GetDataByPrimaryKey(int key)
         {
@@ -25,7 +25,7 @@ namespace BoooooJu.Service.Core.Addresses.Base
             throw new NotImplementedException();
         }
         
-        public List<T> GetDatas(QueryParameter.Page page)
+        public List<T> GetDatas(QueryParameter.Page<T> page, QueryParameter.Where<T> wheres)
         {
             List<T> result = null;
             if (page == null)
