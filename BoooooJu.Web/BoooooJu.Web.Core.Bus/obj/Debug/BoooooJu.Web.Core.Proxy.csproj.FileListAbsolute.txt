@@ -1,0 +1,3 @@
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Bus\obj\Debug\BoooooJu.Web.Core.Proxy.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Bus\obj\Debug\BoooooJu.Web.Core.Bus.dll
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Bus\obj\Debug\BoooooJu.Web.Core.Bus.pdb

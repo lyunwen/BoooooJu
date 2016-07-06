@@ -1,0 +1,4 @@
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Dto\bin\Debug\BoooooJu.Web.Core.Dto.dll
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Dto\bin\Debug\BoooooJu.Web.Core.Dto.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Dto\obj\Debug\BoooooJu.Web.Core.Dto.dll
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Dto\obj\Debug\BoooooJu.Web.Core.Dto.pdb

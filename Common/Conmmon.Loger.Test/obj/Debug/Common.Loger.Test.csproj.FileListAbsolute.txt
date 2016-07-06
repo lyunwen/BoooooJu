@@ -1,0 +1,12 @@
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\bin\Debug\Common.Loger.Test.dll
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\bin\Debug\Common.Loger.Test.pdb
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\bin\Debug\Autofac.dll
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\bin\Debug\Autofac.xml
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\obj\Debug\Common.Loger.Test.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\obj\Debug\Common.Loger.Test.dll
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\obj\Debug\Common.Loger.Test.pdb
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\bin\Debug\Common.Logger.dll
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\bin\Debug\Common.Logger.pdb
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml

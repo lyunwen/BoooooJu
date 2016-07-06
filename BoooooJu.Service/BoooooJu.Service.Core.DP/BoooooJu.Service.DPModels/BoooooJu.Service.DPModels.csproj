@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60A582CF-F63A-4A54-8450-131C43B322F1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BoooooJu.Service.DPModels</RootNamespace>
+    <AssemblyName>BoooooJu.Service.DPModels</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBModels\Article.cs" />
+    <Compile Include="DBModels\CICRole.cs" />
+    <Compile Include="DBModels\CICUser.cs" />
+    <Compile Include="DBModels\CICUserRole.cs" />
+    <Compile Include="DBModels\Classify.cs" />
+    <Compile Include="DBModels\DC_Food.cs" />
+    <Compile Include="DBModels\DC_Order.cs" />
+    <Compile Include="DBModels\DC_User.cs" />
+    <Compile Include="DBModels\Dynamic.cs" />
+    <Compile Include="DBModels\Goods.cs" />
+    <Compile Include="DBModels\Goods_Count.cs" />
+    <Compile Include="DBModels\Goods_Size.cs" />
+    <Compile Include="DBModels\Goods_Style.cs" />
+    <Compile Include="DBModels\User_Store.cs" />
+    <Compile Include="OBModels\OBDoods.cs" />
+    <Compile Include="OBModels\OBOrder.cs" />
+    <Compile Include="OBModels\UserInfo.cs" />
+    <Compile Include="DBModels\Picture.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryParameter\Base\IPage.cs" />
+    <Compile Include="QueryParameter\Page.cs" />
+    <Compile Include="QueryParameter\Rank\DC_OBOrder_Rank.cs" />
+    <Compile Include="QueryParameter\Rank\User_Rank.cs" />
+    <Compile Include="DBModels\User.cs" />
+    <Compile Include="DBModels\UserKey.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal.Rank" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal.Rank" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="DC_OBOrder_Rank">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="OrderId" />
+      <xs:enumeration value="OrderTime" />
+      <xs:enumeration value="UpdateTime" />
+      <xs:enumeration value="UserId" />
+      <xs:enumeration value="UserName" />
+      <xs:enumeration value="FoodId" />
+      <xs:enumeration value="FoodName" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DC_OBOrder_Rank" nillable="true" type="tns:DC_OBOrder_Rank" />
+</xs:schema>

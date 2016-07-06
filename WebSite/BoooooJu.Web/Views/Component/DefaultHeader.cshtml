@@ -1,0 +1,32 @@
+﻿@if (Model != null)
+{
+    <link href="~/wwwroot/Components/defaultHeader/style@(Model.ShowStyle).css" rel="stylesheet" />
+    <link href="~/wwwroot/Components/defaultHeader/css.css" rel="stylesheet" />
+    <div class="mobile">
+        <div class="mobile-inner">
+            <div class="mobile-inner-header">
+                <div class="mobile-inner-header-icon mobile-inner-header-icon-out"><span></span><span></span></div>
+            </div>
+            <div class="mobile-inner-nav">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Blog</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <img src="~/wwwroot/Components/defaultHeader/photo1.jpg" /> 
+        </div>
+    </div>
+    <script>
+        jQuery(function () {
+            $(".mobile-inner-header-icon").click(function () {
+                $(this).toggleClass("mobile-inner-header-icon-click mobile-inner-header-icon-out");
+                $(".mobile-inner-nav").slideToggle(250);
+            });
+            $(".mobile-inner-nav a").each(function (index) {
+                $(this).css({ 'animation-delay': (index / 10) + 's' });
+            });
+        });
+    </script>
+}

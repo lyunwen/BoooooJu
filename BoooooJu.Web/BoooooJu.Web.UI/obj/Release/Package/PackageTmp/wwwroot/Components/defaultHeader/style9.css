@@ -1,0 +1,26 @@
+﻿.mobile-inner-nav {
+    overflow: hidden;
+}
+
+    .mobile-inner-nav a {
+        -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: ReturnToNormal;
+        animation-name: ReturnToNormal;
+    }
+
+@-webkit-keyframes ReturnToNormal {
+    100% {
+        -webkit-transform: translateX(0%) rotate(0deg);
+        transform: translateX(0%) rotate(0deg);
+    }
+}
+
+@keyframes ReturnToNormal {
+    100% {
+        -webkit-transform: translateX(0%) rotate(0deg);
+        transform: translateX(0%) rotate(0deg);
+    }
+}

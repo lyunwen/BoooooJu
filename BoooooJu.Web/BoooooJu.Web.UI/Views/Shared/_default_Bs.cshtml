@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1">
+    <meta content="@(ViewBag.KeyWords ?? "KeyWords")" name=keywords>
+    <meta content="@(ViewBag.Descripition ?? "Descripition")" name=description>
+    <title>@(ViewBag.Title ?? "Title")</title>
+    @Scripts.Render("~/Base/Js")  
+    @RenderSection("Head", required: false)
+</head>
+<body>
+    @RenderBody()
+</body>
+@RenderSection("Foot", required: false)
+</html>

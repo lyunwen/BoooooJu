@@ -1,0 +1,53 @@
+﻿.mobile-inner-nav a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border: none !important;
+}
+
+    .mobile-inner-nav a:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        z-index: 1;
+        background-color: rgba(255,255,255,0.3);
+        -webkit-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: ReturnToNormal;
+        animation-name: ReturnToNormal;
+    }
+
+@-webkit-keyframes ReturnToNormal {
+    0% {
+        -webkit-transform: scale(0.1,1);
+        -ms-transform: scale(0.1,1);
+        transform: translate: scale(0.1,1);
+    }
+
+
+    100% {
+        -webkit-transform: scaleX(1,1);
+        -ms-transform: scale(1,1);
+        transform: translate: scaleX(1,1);
+    }
+}
+
+@keyframes ReturnToNormal {
+    0% {
+        -webkit-transform: scale(0.1,1);
+        -ms-transform: scale(0.1,1);
+        transform: translate: scale(0.1,1);
+    }
+
+
+    100% {
+        -webkit-transform: scaleX(1,1);
+        -ms-transform: scale(1,1);
+        transform: translate: scaleX(1,1);
+    }
+}

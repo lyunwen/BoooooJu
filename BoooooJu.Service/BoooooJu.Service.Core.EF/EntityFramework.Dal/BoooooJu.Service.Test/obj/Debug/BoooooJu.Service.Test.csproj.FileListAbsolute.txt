@@ -1,0 +1,6 @@
+F:\Git\SVN\BoooooJu.Service.Test\bin\Debug\BoooooJu.Service.Test.dll
+F:\Git\SVN\BoooooJu.Service.Test\bin\Debug\BoooooJu.Service.Test.pdb
+F:\Git\SVN\BoooooJu.Service.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+F:\Git\SVN\BoooooJu.Service.Test\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+F:\Git\SVN\BoooooJu.Service.Test\obj\Debug\BoooooJu.Service.Test.dll
+F:\Git\SVN\BoooooJu.Service.Test\obj\Debug\BoooooJu.Service.Test.pdb

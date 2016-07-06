@@ -1,0 +1,10 @@
+X:\Projetcts\BoooooJu\Common\Common.Extensions\Z.Core\bin\Debug\Z.Core.XML
+X:\Projetcts\BoooooJu\Common\Common.Extensions\Z.Core\bin\Debug\Z.Core.dll
+X:\Projetcts\BoooooJu\Common\Common.Extensions\Z.Core\bin\Debug\Z.Core.pdb
+X:\Projetcts\BoooooJu\Common\Common.Extensions\Z.Core\obj\Debug\Z.Core.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\Common\Common.Extensions\Z.Core\obj\Debug\Z.Core.dll
+X:\Projetcts\BoooooJu\Common\Common.Extensions\Z.Core\obj\Debug\Z.Core.pdb
+X:\Projetcts\BoooooJu\Bin\Debug\Z.Core.XML
+X:\Projetcts\BoooooJu\Bin\Z.Core.dll
+X:\Projetcts\BoooooJu\Bin\Z.Core.pdb
+X:\Projetcts\BoooooJu\Bin\Z.Core.XML

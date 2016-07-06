@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/System.Collections.Generic" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.QueryParameter" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal.OBModels" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="KeyValuePairOfPageArrayOfOBDC_Order7_SApTP5k">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="KeyValuePairOf{0}{1}{#}" Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Page" Namespace="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.QueryParameter" />
+          <GenericParameter Name="ArrayOfOBDC_Order" Namespace="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal.OBModels" />
+        </GenericType>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.QueryParameter" name="key" nillable="true" type="q1:Page" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal.OBModels" name="value" nillable="true" type="q2:ArrayOfOBDC_Order" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="KeyValuePairOfPageArrayOfOBDC_Order7_SApTP5k" nillable="true" type="tns:KeyValuePairOfPageArrayOfOBDC_Order7_SApTP5k" />
+</xs:schema>

@@ -1,0 +1,1 @@
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.EF\BoooooJu.Service.EFCore\obj\Debug\BoooooJu.Service.EFCore.csprojResolveAssemblyReference.cache

@@ -1,0 +1,86 @@
+﻿@model BoooooJu.Web.Core.ViewModels.Account.RegisterModel
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_default.cshtml";
+}
+@section Head{
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <link href="~/wwwroot/css/page/register.css" rel="stylesheet" />
+    @Scripts.Render("~/Js/Validate")
+}
+<div class="formDiv" id="formDiv">
+    <form id="form" class="form-horizontal" method="post">
+        <div class="form-group">
+            <input id="AccountName" name="AccountName" type="text" class="form-control" placeholder="账户账号，注册成功后不可修改，可用于账户登陆。">
+            <span class="text-danger" style="display:none"></span>
+        </div>
+        <div class="form-group passwordGroup">
+            <input id="Pswd" name="Pswd" type="password" class="form-control" placeholder="请设置6-18位，首位为字母密码">
+            <span class="text-danger" style="display:none"></span>
+        </div>
+        <div class="form-group">
+            <span>注册即视为同意<span class="next"><a href="##">《XXXXXX》</a></span></span>
+        </div>
+        <div class="form-group submit">
+            <button type="button" onclick="Register()" class="btn btn-default active">注册</button>
+        </div>
+    </form>
+    <a href="@Url.Action("login","Customer")" class="hasUser">已有帐号，直接登录</a>
+</div>
+<div id="AutoSkip"></div>
+@section Js{
+    <script>
+        $(function () {
+            AutoSkipInit();
+        });
+        function FormValidate() {
+            var result = true;
+            var accountName = $('input[name=AccountName]').val();
+            if (!accountName.match(/^[a-zA-Z]\w{3,11}$/)) {
+                $('input[name=AccountName]').next().html("请设置4-11位，首位为字母账号名").show();
+                result = false;
+            } else {
+                $('input[name=AccountName]').next().hide();
+
+                $.ajax({
+                    url: "/Account/FindUserByAccountName",
+                    data: { accountName: accountName },
+                    type: "post",
+                    dataType: "json",
+                    async:false,
+                    success: function (e) {
+                        if (!e.success) {
+                            $('input[name=AccountName]').next().html("用户名已经存在，请重新填写").show();
+                            result = false;
+                        } else {
+                            $('input[name=AccountName]').next().hide();
+                        }
+                    }
+                });
+            }
+            var pswd = $('input[name=Pswd]').val();
+            if (!pswd.match(/^[a-zA-Z]\w{5,17}$/)) {
+                $('input[name=Pswd]').next().html("请设置6-18位，首位为字母密码").show();
+                result = false;
+            }
+            return result;
+        }
+        function Register() {
+            if (FormValidate()) {
+                $.ajax({
+                    url: "/Account/Register",
+                    data: $("#form").serialize(),
+                    dataType: "json",
+                    type: "post",
+                    success: function (e) {
+                        if (e.success) {
+                            AutoSkip("恭喜您，注册成功！跳转中....", "/Account/SignIn")
+                        } else {
+                            AutoSkip("抱歉！注册失败....")
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+}

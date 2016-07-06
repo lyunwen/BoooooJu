@@ -1,0 +1,13 @@
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\BoooooJu.Service.DPCore\bin\Debug\BoooooJu.Service.DPCore.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\BoooooJu.Service.DPCore\bin\Debug\BoooooJu.Service.DPCore.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\BoooooJu.Service.DPCore\bin\Debug\BoooooJu.Service.DPModels.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\BoooooJu.Service.DPCore\bin\Debug\BoooooJu.Service.ICore.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\BoooooJu.Service.DPCore\bin\Debug\Dapper.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\BoooooJu.Service.DPCore\bin\Debug\Dapper.Mapper.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\BoooooJu.Service.DPCore\bin\Debug\BoooooJu.Service.ICore.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\BoooooJu.Service.DPCore\bin\Debug\BoooooJu.Service.DPModels.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\BoooooJu.Service.DPCore\bin\Debug\Dapper.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\BoooooJu.Service.DPCore\bin\Debug\Dapper.xml
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\BoooooJu.Service.DPCore\obj\Debug\BoooooJu.Service.DPCore.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\BoooooJu.Service.DPCore\obj\Debug\BoooooJu.Service.DPCore.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\BoooooJu.Service.DPCore\obj\Debug\BoooooJu.Service.DPCore.pdb

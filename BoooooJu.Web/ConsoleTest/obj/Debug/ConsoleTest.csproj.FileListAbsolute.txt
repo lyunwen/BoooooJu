@@ -1,0 +1,6 @@
+X:\Projetcts\BoooooJu\BoooooJu.Web\ConsoleTest\bin\Debug\ConsoleTest.exe.config
+X:\Projetcts\BoooooJu\BoooooJu.Web\ConsoleTest\bin\Debug\ConsoleTest.exe
+X:\Projetcts\BoooooJu\BoooooJu.Web\ConsoleTest\bin\Debug\ConsoleTest.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Web\ConsoleTest\obj\Debug\ConsoleTest.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\BoooooJu.Web\ConsoleTest\obj\Debug\ConsoleTest.exe
+X:\Projetcts\BoooooJu\BoooooJu.Web\ConsoleTest\obj\Debug\ConsoleTest.pdb

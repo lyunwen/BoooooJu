@@ -1,0 +1,33 @@
+﻿body{overflow: hidden;}
+/*.formDiv form .form-group  div{margin-bottom: 15px;}*/
+.formDiv form .form-group  div:nth-child(1){width: 55%;margin-right: 5%;}
+.formDiv form .form-group  div:nth-child(2){width: 40%;}
+
+.formDiv form div.passwordGroup .check {
+    position: absolute;
+    right: -63px;
+    bottom: -13px;
+}
+label{margin-top: 5px;margin-bottom: 0;font-size: 12px;}
+.form-group {
+    margin-bottom: 15px;
+    display: block;
+    overflow: hidden;
+}
+.formDiv form .form-group .checkNum{border: 1px solid #01A33E;color: #01A33E;}
+
+.formDiv form .form-group input{font-size: 12px;}
+.formDiv form .form-group button{font-size: 12px;}
+
+/*.seekPwd{*/
+    /*overflow: hidden;margin-bottom: 0;}*/
+@media screen and (min-width: 400px){
+    body .lbl{right: 55%;}
+}
+@media screen and (width: 320px){
+    body .lbl{right: 66%;}
+}
+ .submit button{width:100%;}
+.formDiv{padding:0 20px;}
+.formDiv{margin-top:20px;}
+.formDiv form div.passwordGroup  .passwordCheck{bottom: 9px;}

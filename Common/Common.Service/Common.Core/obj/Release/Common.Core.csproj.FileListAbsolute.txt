@@ -1,0 +1,4 @@
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core\bin\Release\BoooooJu.CommonService.Core.dll
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core\bin\Release\BoooooJu.CommonService.Core.pdb
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core\obj\Release\BoooooJu.CommonService.Core.dll
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core\obj\Release\BoooooJu.CommonService.Core.pdb

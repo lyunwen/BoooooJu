@@ -1,0 +1,12 @@
+X:\Projetcts\BoooooJu\EntityModelCreater\bin\Debug\BoooooJu.Service.Api.Dal.DBModels.dll
+X:\Projetcts\BoooooJu\EntityModelCreater\bin\Debug\BoooooJu.Service.Api.Dal.DBModels.pdb
+X:\Projetcts\BoooooJu\EntityModelCreater\obj\Debug\EntityModelCreater.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\EntityModelCreater\obj\Debug\BoooooJu.Service.Api.Dal.DBModels.dll
+X:\Projetcts\BoooooJu\EntityModelCreater\obj\Debug\BoooooJu.Service.Api.Dal.DBModels.pdb
+X:\Projetcts\BoooooJu\EntityModelCreater\bin\Debug\BoooooJu.Service.Api.Dal.DBModels.dll.config
+X:\Projetcts\BoooooJu\EntityModelCreater\bin\Debug\EntityFramework.dll
+X:\Projetcts\BoooooJu\EntityModelCreater\bin\Debug\EntityFramework.SqlServer.dll
+X:\Projetcts\BoooooJu\EntityModelCreater\bin\Debug\EntityFramework.xml
+X:\Projetcts\BoooooJu\EntityModelCreater\bin\Debug\EntityFramework.SqlServer.xml
+X:\Projetcts\BoooooJu\EntityModelCreater\bin\Debug\zh-Hans\EntityFramework.resources.dll
+X:\Projetcts\BoooooJu\EntityModelCreater\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll

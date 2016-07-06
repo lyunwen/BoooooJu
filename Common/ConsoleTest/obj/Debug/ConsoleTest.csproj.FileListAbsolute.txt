@@ -1,0 +1,8 @@
+F:\Git\SVN\ConsoleTest\bin\Debug\ConsoleTest.exe.config
+F:\Git\SVN\ConsoleTest\bin\Debug\ConsoleTest.exe
+F:\Git\SVN\ConsoleTest\bin\Debug\ConsoleTest.pdb
+F:\Git\SVN\ConsoleTest\bin\Debug\Common.Loger.dll
+F:\Git\SVN\ConsoleTest\bin\Debug\Common.Loger.pdb
+F:\Git\SVN\ConsoleTest\obj\Debug\ConsoleTest.csprojResolveAssemblyReference.cache
+F:\Git\SVN\ConsoleTest\obj\Debug\ConsoleTest.exe
+F:\Git\SVN\ConsoleTest\obj\Debug\ConsoleTest.pdb

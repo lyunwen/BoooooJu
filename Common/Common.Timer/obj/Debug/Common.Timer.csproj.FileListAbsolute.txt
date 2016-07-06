@@ -1,0 +1,5 @@
+X:\Projetcts\BoooooJu\Common\Common.Timer\bin\Debug\Common.Timer.dll
+X:\Projetcts\BoooooJu\Common\Common.Timer\bin\Debug\Common.Timer.pdb
+X:\Projetcts\BoooooJu\Common\Common.Timer\obj\Debug\Common.Timer.dll
+X:\Projetcts\BoooooJu\Common\Common.Timer\obj\Debug\Common.Timer.pdb
+X:\Projetcts\BoooooJu\Common\Common.Timer\obj\Debug\Common.Timer.csprojResolveAssemblyReference.cache

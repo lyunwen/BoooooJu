@@ -1,0 +1,5 @@
+X:\Projetcts\BoooooJu\BoooooJu.WeChat\BoooooJu.WeChat.Core.Bus\bin\Debug\BoooooJu.WeChat.Core.Bus.dll
+X:\Projetcts\BoooooJu\BoooooJu.WeChat\BoooooJu.WeChat.Core.Bus\bin\Debug\BoooooJu.WeChat.Core.Bus.pdb
+X:\Projetcts\BoooooJu\BoooooJu.WeChat\BoooooJu.WeChat.Core.Bus\obj\Debug\BoooooJu.WeChat.Core.Bus.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\BoooooJu.WeChat\BoooooJu.WeChat.Core.Bus\obj\Debug\BoooooJu.WeChat.Core.Bus.dll
+X:\Projetcts\BoooooJu\BoooooJu.WeChat\BoooooJu.WeChat.Core.Bus\obj\Debug\BoooooJu.WeChat.Core.Bus.pdb

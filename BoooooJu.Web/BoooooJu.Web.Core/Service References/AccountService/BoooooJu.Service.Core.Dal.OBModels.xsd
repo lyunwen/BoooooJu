@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal.OBModels" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BoooooJu.Service.Core.Dal.OBModels" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="User_Rank">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Id" />
+      <xs:enumeration value="NickName" />
+      <xs:enumeration value="Sex" />
+      <xs:enumeration value="CreateTime" />
+      <xs:enumeration value="Role" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="User_Rank" nillable="true" type="tns:User_Rank" />
+</xs:schema>

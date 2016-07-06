@@ -1,0 +1,154 @@
+﻿SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+/****************************************************************************************
+-----   功能说明：分页通用存储过程
+-----   处理说明：
+-----   参数说明：
+
+-----   创建人：
+-----   创建日期：2013/1/9
+-----   修改人：
+-----   修改日期：
+-----   修改说明：
+****************************************************************************************/
+ALTER PROCEDURE [dbo].[Proc_Plat_Paged]
+	@TblName			NVARCHAR(4000),				--表名
+	@Columns			NVARCHAR(4000) = '*',		--字段名(全部字段为*)
+	@OrderExpress		NVARCHAR(4000),				--排序字段(必须!支持多字段，逗号隔开)
+	@SqlWhere			NVARCHAR(4000) = NULL,		--条件语句(不用加where)
+	@PageIndex			INT = 1 ,					--指定当前为第几页
+	@PageSize			INT,						--每页多少条记录
+	@IsStatCounts		INT = 1,					--是否统计记录数(0不统计，1统计)
+	@Counts				INT = 0 OUTPUT,				--查询到的记录数
+	@TotalPage			INT = 0 OUTPUT				--返回总页数
+AS
+BEGIN
+	SET NOCOUNT ON	
+	DECLARE @sql NVARCHAR(4000)
+	DECLARE @totalRecord INT
+	SET @totalRecord = 0
+	--计算总记录数
+	IF(@IsStatCounts = 1)
+	BEGIN 
+		IF (@SqlWhere IS NULL OR LEN(@SqlWhere) < 1)
+		BEGIN
+			SET @sql = 'SELECT @totalRecord = COUNT(*) FROM ' + @TblName
+		END
+		ELSE
+			SET @sql = 'SELECT @totalRecord = COUNT(*) FROM ' + @TblName + ' WHERE ' + @SqlWhere
+
+		EXEC sp_executesql @sql, N'@totalRecord INT OUTPUT', @totalRecord OUTPUT--计算总记录数 
+		SET  @Counts = @totalRecord
+
+		--计算总页数
+		SELECT @TotalPage = CEILING((@totalRecord + 0.0) / @PageSize) 
+	END     
+
+
+	IF (@SqlWhere IS NULL OR LEN(@SqlWhere) < 1)
+		SET @sql = 'SELECT * FROM (SELECT ROW_NUMBER() OVER(ORDER BY ' + @OrderExpress + ') AS RowNO,' + @Columns + ' FROM ' + @TblName 
+	ELSE
+		SET @sql = 'SELECT * FROM (SELECT ROW_NUMBER() OVER(ORDER BY ' + @OrderExpress + ') AS RowNO,' + @Columns + ' FROM ' + @TblName + ' WHERE ' + @SqlWhere    
+		
+	--处理页数超出范围情况
+	IF @PageIndex <= 0 
+		SET @PageIndex = 1
+		
+	--IF @PageIndex > @TotalPage
+	--	SET @PageIndex = @TotalPage
+	
+	--处理开始点和结束点
+	DECLARE @startRecord INT
+	DECLARE @endRecord INT
+
+	SET @startRecord = (@PageIndex - 1) * @PageSize + 1
+	SET @endRecord = @startRecord + @PageSize - 1
+
+     --继续合成sql语句
+	SET @sql = @sql + ') AS selectTable WHERE RowNO BETWEEN ' + CONVERT(VARCHAR(50), @startRecord) + ' AND ' +   CONVERT(VARCHAR(50), @endRecord)
+	--PRINT @sql
+	EXEC sp_executesql @sql
+END
+
+
+
+
+
+USE [ZKDB]
+GO
+/****** Object:  StoredProcedure [dbo].[Proc_CMNT_CommentArchiveBOFindPaged]    Script Date: 06/07/2016 10:19:49 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+/****************************************************************************************
+-----   功能说明：分页查找文章评论
+-----   处理说明：
+-----   参数说明：
+
+-----   创建人：
+-----   创建日期：2016-04-28 09:30
+-----   修改人：
+-----   修改日期：
+-----   修改说明：
+****************************************************************************************/
+ALTER PROCEDURE [dbo].[Proc_CMNT_CommentArchiveBOFindPaged]
+(
+	@Columns		        NVARCHAR(4000),
+	@OrderExpress	        NVARCHAR(4000),
+	@SqlWhere		        NVARCHAR(4000),
+	@PageIndex		        INT,
+	@PageSize		        INT,
+	@IsStatCounts	        INT,
+	@Counts			    INT OUTPUT
+)
+AS
+BEGIN	
+	DECLARE	@TotalPage INT
+		
+	EXEC [dbo].[Proc_Plat_Paged]
+		@TblName = N'(SELECT 
+						tb_commentArchive.*,
+						tb_user.Avatar,
+	 
+						tb_up.CreateOn AS UpCommentArchivCreateOn,
+						tb_up.UserID AS UpCommentUserID,
+						tb_up.Type AS HadUpComment
+	
+						FROM CMNT_CommentArchive AS tb_commentArchive 
+						LEFT JOIN AM_User  tb_user ON tb_commentArchive.UserID=tb_user.ID
+						LEFT JOIN (SELECT * FROM CMNT_UpCommentArchive WHERE ID 
+						IN(SELECT MAX(a.ID) ID FROM CMNT_UpCommentArchive a GROUP BY a.UserID, a.CommentArchiveID)) AS tb_up ON tb_up.CommentArchiveID=tb_commentArchive.ID ) a',
+		@Columns = @Columns,
+		@OrderExpress = @OrderExpress,
+		@SqlWhere = @SqlWhere,
+		@PageIndex = @PageIndex,
+		@PageSize = @PageSize,
+		@IsStatCounts = @IsStatCounts,
+		@Counts = @Counts OUTPUT,
+		@TotalPage = @TotalPage OUTPUT
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

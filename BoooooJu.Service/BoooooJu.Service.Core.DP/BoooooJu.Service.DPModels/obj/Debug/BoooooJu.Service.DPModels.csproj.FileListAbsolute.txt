@@ -1,0 +1,6 @@
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\BoooooJu.Service.DPModels\bin\Debug\BoooooJu.Service.DPModels.dll.config
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\BoooooJu.Service.DPModels\bin\Debug\BoooooJu.Service.DPModels.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\BoooooJu.Service.DPModels\bin\Debug\BoooooJu.Service.DPModels.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\BoooooJu.Service.DPModels\obj\Debug\BoooooJu.Service.DPModels.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\BoooooJu.Service.DPModels\obj\Debug\BoooooJu.Service.DPModels.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\BoooooJu.Service.DPModels\obj\Debug\BoooooJu.Service.DPModels.csprojResolveAssemblyReference.cache

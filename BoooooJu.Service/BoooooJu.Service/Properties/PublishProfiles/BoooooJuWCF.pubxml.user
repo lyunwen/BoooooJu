@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>F:\SVN\BoooooJu\WebSite\BoooooJu.Service</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Account/AccountService.svc">
+      <publishTime>03/28/2016 23:01:40</publishTime>
+    </File>
+    <File Include="bin/BoooooJu.Service.dll">
+      <publishTime>03/31/2016 21:06:10</publishTime>
+    </File>
+    <File Include="bin/BoooooJu.Service.DPCore.dll">
+      <publishTime>03/31/2016 21:06:10</publishTime>
+    </File>
+    <File Include="bin/BoooooJu.Service.DPModels.dll">
+      <publishTime>03/31/2016 21:06:10</publishTime>
+    </File>
+    <File Include="bin/BoooooJu.Service.ICore.dll">
+      <publishTime>03/31/2016 21:06:10</publishTime>
+    </File>
+    <File Include="bin/Dapper.dll">
+      <publishTime>03/24/2016 00:33:59</publishTime>
+    </File>
+    <File Include="Diancan/DiancanService.svc">
+      <publishTime>03/28/2016 23:01:40</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/31/2016 21:06:10</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

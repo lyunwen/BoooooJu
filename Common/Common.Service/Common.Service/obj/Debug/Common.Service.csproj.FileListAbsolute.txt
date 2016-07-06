@@ -1,0 +1,6 @@
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Service\bin\BoooooJu.CommonService.dll.config
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Service\bin\BoooooJu.CommonService.dll
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Service\bin\BoooooJu.CommonService.pdb
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Service\obj\Debug\BoooooJu.CommonService.dll
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Service\obj\Debug\BoooooJu.CommonService.pdb
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Service\obj\Debug\Common.Service.csprojResolveAssemblyReference.cache

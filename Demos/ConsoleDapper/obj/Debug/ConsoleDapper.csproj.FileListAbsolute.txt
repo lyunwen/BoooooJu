@@ -1,0 +1,9 @@
+X:\Projetcts\BoooooJu\Demos\ConsoleDapper\bin\Debug\ConsoleDapper.exe.config
+X:\Projetcts\BoooooJu\Demos\ConsoleDapper\bin\Debug\ConsoleDapper.exe
+X:\Projetcts\BoooooJu\Demos\ConsoleDapper\bin\Debug\ConsoleDapper.pdb
+X:\Projetcts\BoooooJu\Demos\ConsoleDapper\bin\Debug\Dapper.dll
+X:\Projetcts\BoooooJu\Demos\ConsoleDapper\bin\Debug\Dapper.Mapper.dll
+X:\Projetcts\BoooooJu\Demos\ConsoleDapper\bin\Debug\Dapper.xml
+X:\Projetcts\BoooooJu\Demos\ConsoleDapper\obj\Debug\ConsoleDapper.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\Demos\ConsoleDapper\obj\Debug\ConsoleDapper.exe
+X:\Projetcts\BoooooJu\Demos\ConsoleDapper\obj\Debug\ConsoleDapper.pdb

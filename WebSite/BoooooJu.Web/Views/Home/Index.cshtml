@@ -1,0 +1,5 @@
+﻿@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_default.cshtml";
+}
+@Html.Action("DefaultHeader", "Component",new { style=new Random().Next(0,9)})

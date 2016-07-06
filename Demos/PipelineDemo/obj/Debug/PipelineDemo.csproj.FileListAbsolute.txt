@@ -1,0 +1,5 @@
+X:\Projetcts\BoooooJu\Demos\PipelineDemo\bin\Debug\PipelineDemo.exe.config
+X:\Projetcts\BoooooJu\Demos\PipelineDemo\bin\Debug\PipelineDemo.exe
+X:\Projetcts\BoooooJu\Demos\PipelineDemo\bin\Debug\PipelineDemo.pdb
+X:\Projetcts\BoooooJu\Demos\PipelineDemo\obj\Debug\PipelineDemo.exe
+X:\Projetcts\BoooooJu\Demos\PipelineDemo\obj\Debug\PipelineDemo.pdb

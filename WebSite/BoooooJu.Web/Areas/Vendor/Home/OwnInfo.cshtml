@@ -1,0 +1,32 @@
+﻿@model BoooooJu.Web.Core.Areas.Vendor.ViewModels.OwnInfoModel
+@{
+    ViewBag.Title = "OwnInfo";
+    Layout = "~/Views/Shared/_default.cshtml";
+}
+@if (Model == null)
+{
+    return;
+}
+<!-- 编辑资料-->
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <p class="panel-title">
+            个人资料
+            <a class="pull-right" href="#">
+                <span class="glyphicon glyphicon-pencil"></span>
+            </a>
+        </p>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item"><label>账&emsp;&emsp;号</label><span>@Model.AccountName</span> </li>
+        <li class="list-group-item"><label>昵&emsp;&emsp;称</label><span>@Model.NickName</span></li>
+        <li class="list-group-item"><label>性&emsp;&emsp;别</label><span>@Model.Sex</span></li>
+        <li class="list-group-item"><label>手机号码</label><span>@Model.MobilePhone</span></li>
+        <li class="list-group-item"><label>邮箱地址</label><span>@Model.EmailAddress</span></li>
+        <li class="list-group-item"><label>所在城市</label><span>@Model.City</span></li>
+    </ul>
+    <div class="panel-body">
+        <label>个性签名:</label>
+        <div style="word-wrap: break-word;word-break:break-all;"> @Model.Signature </div>
+    </div>
+</div>

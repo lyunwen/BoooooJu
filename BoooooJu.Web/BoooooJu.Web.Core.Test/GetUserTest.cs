@@ -1,0 +1,1 @@
+﻿using System; using Microsoft.VisualStudio.TestTools.UnitTesting;  namespace BoooooJu.Web.Core.Test {     [TestClass]     public class GetUserTest     {         [TestMethod]         public void TestMethod1()         {                        }     } } 

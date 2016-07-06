@@ -1,0 +1,5 @@
+X:\Projetcts\BoooooJu\Common\Common.Extensions\Z.Core\bin\Release\Z.Core.dll
+X:\Projetcts\BoooooJu\Common\Common.Extensions\Z.Core\bin\Release\Z.Core.pdb
+X:\Projetcts\BoooooJu\Common\Common.Extensions\Z.Core\obj\Release\Z.Core.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\Common\Common.Extensions\Z.Core\obj\Release\Z.Core.dll
+X:\Projetcts\BoooooJu\Common\Common.Extensions\Z.Core\obj\Release\Z.Core.pdb

@@ -1,0 +1,6 @@
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Dto\bin\Debug\BoooooJu.Service.Api.Dto.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Dto\bin\Debug\BoooooJu.Service.Api.Dto.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Dto\obj\Debug\BoooooJu.Service.Api.Dto.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Dto\obj\Debug\BoooooJu.Service.Api.Dto.pdb
+X:\Projetcts\BoooooJu\Bin\BoooooJu.Service.Api.Dto.dll
+X:\Projetcts\BoooooJu\Bin\BoooooJu.Service.Api.Dto.pdb

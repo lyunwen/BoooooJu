@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web.Mvc;
+
+namespace BoooooJu.WeChat.Core.Controllers.Base
+{
+    public class BoooooJuController : Controller
+    {
+        internal BoooooJuer boooooJuer
+        {
+            get
+            {
+                return Session[SessionConfig.BoooooJuer] as BoooooJuer;
+            }
+        }
+    }
+}

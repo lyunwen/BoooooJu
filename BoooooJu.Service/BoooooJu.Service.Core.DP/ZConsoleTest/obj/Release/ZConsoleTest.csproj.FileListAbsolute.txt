@@ -1,0 +1,15 @@
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\ZConsoleTest\bin\Release\ZConsoleTest.exe.config
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\ZConsoleTest\bin\Release\ZConsoleTest.exe
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\ZConsoleTest\bin\Release\ZConsoleTest.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\ZConsoleTest\bin\Release\BoooooJu.Service.DPCore.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\ZConsoleTest\bin\Release\BoooooJu.Service.DPModels.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\ZConsoleTest\bin\Release\BoooooJu.Service.ICore.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\ZConsoleTest\bin\Release\Dapper.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\ZConsoleTest\bin\Release\BoooooJu.Service.DPCore.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\ZConsoleTest\bin\Release\BoooooJu.Service.DPModels.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\ZConsoleTest\bin\Release\BoooooJu.Service.ICore.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\ZConsoleTest\bin\Release\Dapper.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\ZConsoleTest\bin\Release\Dapper.xml
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\ZConsoleTest\obj\Release\ZConsoleTest.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\ZConsoleTest\obj\Release\ZConsoleTest.exe
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.DP\ZConsoleTest\obj\Release\ZConsoleTest.pdb

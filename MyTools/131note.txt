@@ -1,0 +1,41 @@
+makecert -sr localmachine -ss My -n CN=boooooju2010 -sky exchange -pe -r
+
+boooooju2010Ωªªª√‹‘ø:DAgECAhCEBdK1yx1TiUHIJgqScs
+
+sql2008µ»»Î√‹¬Î :T23ew@nn
+                 data source=114.215.87.101;initial catalog=BoooooJu;user id=booojuer;password=boooooju.com;MultipleActiveResultSets=True;App=EntityFramework
+
+svn’ ∫≈:liuyunwen T23eW@svn
+
+window’ ∫≈:boooooju T23eW@nn
+
+
+BoooooJu.Service
+   Http:114.215.87.101:9200
+
+ 
+   Ftp:114.215.87.101:9201
+
+
+   Https:114.215.87.101:9202
+
+BoooooJu.Web
+   Http:114.215.87.101:9000
+
+
+   Ftp:114.215.87.101:9001
+
+    
+   Https:114.215.87.101:9002
+
+BoooooJu.WeChat
+  Http:114.215.87.101:9100
+
+
+  Ftp:114.215.87.101:9101
+
+
+  Https:114.215.87.101:9102
+
+-----------
+Õ≥“ªftp’ ∫≈£∫boooooju T23eW@of

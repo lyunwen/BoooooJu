@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>X:\Projetcts\BoooooJu\WebSite\BoooooJu.Web</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Areas/Agent/PersonCenter.cshtml">
+      <publishTime>03/23/2016 22:46:12</publishTime>
+    </File>
+    <File Include="Areas/Agent/web.config">
+      <publishTime>03/23/2016 22:46:12</publishTime>
+    </File>
+    <File Include="Areas/Buyer/Home/Index.cshtml">
+      <publishTime>03/23/2016 22:46:12</publishTime>
+    </File>
+    <File Include="Areas/Buyer/web.config">
+      <publishTime>03/23/2016 22:46:12</publishTime>
+    </File>
+    <File Include="Areas/Manager/Home/Index.cshtml">
+      <publishTime>03/23/2016 22:46:12</publishTime>
+    </File>
+    <File Include="Areas/Manager/Home/OwnInfo.cshtml">
+      <publishTime>03/23/2016 22:46:12</publishTime>
+    </File>
+    <File Include="Areas/Manager/Home/VendorManage.cshtml">
+      <publishTime>03/23/2016 22:46:12</publishTime>
+    </File>
+    <File Include="Areas/Manager/Manage/AgentManage.cshtml">
+      <publishTime>03/23/2016 22:46:12</publishTime>
+    </File>
+    <File Include="Areas/Manager/web.config">
+      <publishTime>03/23/2016 22:46:12</publishTime>
+    </File>
+    <File Include="Areas/SuperManager/PersonCenter.cshtml">
+      <publishTime>03/23/2016 22:46:12</publishTime>
+    </File>
+    <File Include="Areas/SuperManager/web.config">
+      <publishTime>03/23/2016 22:46:12</publishTime>
+    </File>
+    <File Include="Areas/Vendor/Home/Index.cshtml">
+      <publishTime>03/23/2016 22:46:12</publishTime>
+    </File>
+    <File Include="Areas/Vendor/Home/OwnInfo.cshtml">
+      <publishTime>03/23/2016 22:46:12</publishTime>
+    </File>
+    <File Include="Areas/Vendor/PersonCenter.cshtml">
+      <publishTime>03/23/2016 22:46:12</publishTime>
+    </File>
+    <File Include="Areas/Vendor/web.config">
+      <publishTime>03/23/2016 22:46:12</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>03/23/2016 22:48:06</publishTime>
+    </File>
+    <File Include="bin/Autofac.dll">
+      <publishTime>03/24/2016 09:46:00</publishTime>
+    </File>
+    <File Include="bin/BoooooJu.Web.Core.dll">
+      <publishTime>04/04/2016 02:11:47</publishTime>
+    </File>
+    <File Include="bin/BoooooJu.Web.UI.dll">
+      <publishTime>04/04/2016 02:11:49</publishTime>
+    </File>
+    <File Include="bin/Common.Loger.dll">
+      <publishTime>04/03/2016 20:37:22</publishTime>
+    </File>
+    <File Include="bin/cs/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:18</publishTime>
+    </File>
+    <File Include="bin/da/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:18</publishTime>
+    </File>
+    <File Include="bin/de/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:18</publishTime>
+    </File>
+    <File Include="bin/es/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:18</publishTime>
+    </File>
+    <File Include="bin/fa/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:18</publishTime>
+    </File>
+    <File Include="bin/fi/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:18</publishTime>
+    </File>
+    <File Include="bin/FluentValidation.dll">
+      <publishTime>03/24/2016 21:24:18</publishTime>
+    </File>
+    <File Include="bin/FluentValidation.Mvc.dll">
+      <publishTime>03/25/2016 23:40:22</publishTime>
+    </File>
+    <File Include="bin/fr/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:18</publishTime>
+    </File>
+    <File Include="bin/it/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:18</publishTime>
+    </File>
+    <File Include="bin/ko/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:19</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>03/23/2016 22:54:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>03/23/2016 22:51:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/mk/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:19</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/23/2016 22:53:32</publishTime>
+    </File>
+    <File Include="bin/nl/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:19</publishTime>
+    </File>
+    <File Include="bin/pl/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:19</publishTime>
+    </File>
+    <File Include="bin/pt/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:19</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/ru/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:19</publishTime>
+    </File>
+    <File Include="bin/SuperSocket.Common.dll">
+      <publishTime>03/23/2016 22:54:12</publishTime>
+    </File>
+    <File Include="bin/SuperSocket.SocketBase.dll">
+      <publishTime>03/23/2016 22:54:12</publishTime>
+    </File>
+    <File Include="bin/SuperSocket.SocketEngine.dll">
+      <publishTime>03/23/2016 22:54:12</publishTime>
+    </File>
+    <File Include="bin/SuperWebSocket.dll">
+      <publishTime>03/23/2016 22:54:12</publishTime>
+    </File>
+    <File Include="bin/sv/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>03/23/2016 22:51:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>03/23/2016 22:51:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>03/23/2016 22:51:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>03/23/2016 22:51:06</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>03/23/2016 22:51:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>03/23/2016 22:51:13</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>03/23/2016 22:51:12</publishTime>
+    </File>
+    <File Include="bin/tr/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:19</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>03/23/2016 22:54:21</publishTime>
+    </File>
+    <File Include="bin/zh-CN/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:19</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Helpers.resources.dll">
+      <publishTime>03/23/2016 22:51:13</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Mvc.resources.dll">
+      <publishTime>03/23/2016 22:51:00</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Razor.resources.dll">
+      <publishTime>03/23/2016 22:51:06</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Webpages.Deployment.resources.dll">
+      <publishTime>03/23/2016 22:51:13</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Webpages.Razor.resources.dll">
+      <publishTime>03/23/2016 22:51:13</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Webpages.resources.dll">
+      <publishTime>03/23/2016 22:51:13</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>03/23/2016 22:46:12</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/04/2016 01:35:09</publishTime>
+    </File>
+    <File Include="Properties/DataSources/BoooooJu.Web.Core.ServiceReference.User.datasource">
+      <publishTime>03/23/2016 22:46:12</publishTime>
+    </File>
+    <File Include="Scripts/additional-methods.js">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Scripts/additional-methods.min.js">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Scripts/commonJs.js">
+      <publishTime>03/29/2016 23:12:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>04/04/2016 01:35:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>04/04/2016 01:35:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>04/04/2016 01:35:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.js">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.js">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.map">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.bootstrap.js">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.bootstrap.min.js">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.bootstrap.min.js.map">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>04/04/2016 01:35:09</publishTime>
+    </File>
+    <File Include="Scripts/npm.js">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Scripts/Page.js">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Scripts/WebSortKetTransport.js">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Views/Account/Manage.cshtml">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Views/Account/Partial/UserPage.cshtml">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Views/Account/SignIn.cshtml">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Views/Component/DefaultHeader.cshtml">
+      <publishTime>04/04/2016 02:00:02</publishTime>
+    </File>
+    <File Include="Views/Diancan/Order.cshtml">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>04/04/2016 02:11:37</publishTime>
+    </File>
+    <File Include="Views/Home/Test.cshtml">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Views/Partial/Footer.cshtml">
+      <publishTime>04/03/2016 20:53:22</publishTime>
+    </File>
+    <File Include="Views/Partial/Header.cshtml">
+      <publishTime>04/03/2016 23:26:01</publishTime>
+    </File>
+    <File Include="Views/Shared/_default.cshtml">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>04/04/2016 01:35:05</publishTime>
+    </File>
+    <File Include="Views/Test/WebSorketTest.cshtml">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>04/04/2016 01:35:05</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/04/2016 02:11:49</publishTime>
+    </File>
+    <File Include="wwwroot/Components/autoSkip/autoSkip.js">
+      <publishTime>03/23/2016 22:46:18</publishTime>
+    </File>
+    <File Include="wwwroot/Components/defaultHeader/css.css">
+      <publishTime>04/03/2016 20:29:16</publishTime>
+    </File>
+    <File Include="wwwroot/Components/defaultHeader/js.js">
+      <publishTime>04/04/2016 01:21:34</publishTime>
+    </File>
+    <File Include="wwwroot/Components/defaultHeader/photo1.jpg">
+      <publishTime>04/03/2016 20:30:58</publishTime>
+    </File>
+    <File Include="wwwroot/Components/defaultHeader/style0.css">
+      <publishTime>04/04/2016 01:49:59</publishTime>
+    </File>
+    <File Include="wwwroot/Components/defaultHeader/style1.css">
+      <publishTime>04/04/2016 02:03:20</publishTime>
+    </File>
+    <File Include="wwwroot/Components/defaultHeader/style10.css">
+      <publishTime>04/04/2016 02:07:21</publishTime>
+    </File>
+    <File Include="wwwroot/Components/defaultHeader/style11.css">
+      <publishTime>04/04/2016 02:07:44</publishTime>
+    </File>
+    <File Include="wwwroot/Components/defaultHeader/style12.css">
+      <publishTime>04/04/2016 02:08:12</publishTime>
+    </File>
+    <File Include="wwwroot/Components/defaultHeader/style13.css">
+      <publishTime>04/04/2016 02:08:33</publishTime>
+    </File>
+    <File Include="wwwroot/Components/defaultHeader/style14.css">
+      <publishTime>04/04/2016 02:08:47</publishTime>
+    </File>
+    <File Include="wwwroot/Components/defaultHeader/style2.css">
+      <publishTime>04/04/2016 02:03:53</publishTime>
+    </File>
+    <File Include="wwwroot/Components/defaultHeader/style3.css">
+      <publishTime>04/04/2016 02:04:25</publishTime>
+    </File>
+    <File Include="wwwroot/Components/defaultHeader/style4.css">
+      <publishTime>04/04/2016 02:05:15</publishTime>
+    </File>
+    <File Include="wwwroot/Components/defaultHeader/style5.css">
+      <publishTime>04/04/2016 02:05:37</publishTime>
+    </File>
+    <File Include="wwwroot/Components/defaultHeader/style6.css">
+      <publishTime>04/04/2016 02:05:57</publishTime>
+    </File>
+    <File Include="wwwroot/Components/defaultHeader/style7.css">
+      <publishTime>04/04/2016 02:06:17</publishTime>
+    </File>
+    <File Include="wwwroot/Components/defaultHeader/style8.css">
+      <publishTime>04/04/2016 02:06:42</publishTime>
+    </File>
+    <File Include="wwwroot/Components/defaultHeader/style9.css">
+      <publishTime>04/04/2016 02:06:58</publishTime>
+    </File>
+    <File Include="wwwroot/Components/pageLoading/css.css">
+      <publishTime>03/23/2016 22:46:20</publishTime>
+    </File>
+    <File Include="wwwroot/Components/pageLoading/js.js">
+      <publishTime>04/04/2016 01:22:18</publishTime>
+    </File>
+    <File Include="wwwroot/css/component/footer.css">
+      <publishTime>04/03/2016 20:29:16</publishTime>
+    </File>
+    <File Include="wwwroot/css/component/header.css">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="wwwroot/css/component/htmleaf-demo.css">
+      <publishTime>04/03/2016 20:30:35</publishTime>
+    </File>
+    <File Include="wwwroot/css/component/normalize.css">
+      <publishTime>04/03/2016 20:30:35</publishTime>
+    </File>
+    <File Include="wwwroot/css/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>03/23/2016 22:46:16</publishTime>
+    </File>
+    <File Include="wwwroot/css/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>03/23/2016 22:46:16</publishTime>
+    </File>
+    <File Include="wwwroot/css/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>03/23/2016 22:46:16</publishTime>
+    </File>
+    <File Include="wwwroot/css/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>03/23/2016 22:46:16</publishTime>
+    </File>
+    <File Include="wwwroot/css/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>03/23/2016 22:46:16</publishTime>
+    </File>
+    <File Include="wwwroot/css/fonts/icomoon.eot">
+      <publishTime>04/03/2016 20:31:14</publishTime>
+    </File>
+    <File Include="wwwroot/css/fonts/icomoon.svg">
+      <publishTime>04/03/2016 20:31:14</publishTime>
+    </File>
+    <File Include="wwwroot/css/fonts/icomoon.ttf">
+      <publishTime>04/03/2016 20:31:14</publishTime>
+    </File>
+    <File Include="wwwroot/css/fonts/icomoon.woff">
+      <publishTime>04/03/2016 20:31:14</publishTime>
+    </File>
+    <File Include="wwwroot/css/page/register.css">
+      <publishTime>03/23/2016 22:46:16</publishTime>
+    </File>
+    <File Include="wwwroot/css/public/bootstrap-theme.css">
+      <publishTime>03/23/2016 22:46:17</publishTime>
+    </File>
+    <File Include="wwwroot/css/public/bootstrap-theme.css.map">
+      <publishTime>03/23/2016 22:46:17</publishTime>
+    </File>
+    <File Include="wwwroot/css/public/bootstrap-theme.min.css">
+      <publishTime>03/23/2016 22:46:17</publishTime>
+    </File>
+    <File Include="wwwroot/css/public/bootstrap-theme.min.css.map">
+      <publishTime>03/23/2016 22:46:17</publishTime>
+    </File>
+    <File Include="wwwroot/css/public/bootstrap.css">
+      <publishTime>03/23/2016 22:46:17</publishTime>
+    </File>
+    <File Include="wwwroot/css/public/bootstrap.css.map">
+      <publishTime>03/23/2016 22:46:17</publishTime>
+    </File>
+    <File Include="wwwroot/css/public/bootstrap.min.css">
+      <publishTime>03/23/2016 22:46:17</publishTime>
+    </File>
+    <File Include="wwwroot/css/public/bootstrap.min.css.map">
+      <publishTime>03/23/2016 22:46:17</publishTime>
+    </File>
+    <File Include="wwwroot/images/icons/icon_bzs04.png">
+      <publishTime>03/23/2016 22:46:18</publishTime>
+    </File>
+    <File Include="wwwroot/images/icons/icon_center.png">
+      <publishTime>03/23/2016 22:46:18</publishTime>
+    </File>
+    <File Include="wwwroot/images/icons/icon_fenlei.png">
+      <publishTime>03/23/2016 22:46:18</publishTime>
+    </File>
+    <File Include="wwwroot/images/icons/icon_guancha.png">
+      <publishTime>03/23/2016 22:46:18</publishTime>
+    </File>
+    <File Include="wwwroot/images/icons/icon_new.png">
+      <publishTime>03/23/2016 22:46:18</publishTime>
+    </File>
+    <File Include="wwwroot/images/icons/icon_zhanhui.png">
+      <publishTime>03/23/2016 22:46:18</publishTime>
+    </File>
+    <File Include="wwwroot/images/icons/icon_zhanzhuang.png">
+      <publishTime>03/23/2016 22:46:18</publishTime>
+    </File>
+    <File Include="wwwroot/images/icons/wdzk_icon_dianpin.png">
+      <publishTime>03/23/2016 22:46:18</publishTime>
+    </File>
+    <File Include="wwwroot/images/icons/wdzk_icon_guancha.png">
+      <publishTime>03/23/2016 22:46:18</publishTime>
+    </File>
+    <File Include="wwwroot/images/icons/wdzk_icon_guanzhu.png">
+      <publishTime>03/23/2016 22:46:18</publishTime>
+    </File>
+    <File Include="wwwroot/images/icons/wdzk_icon_order.png">
+      <publishTime>03/23/2016 22:46:18</publishTime>
+    </File>
+    <File Include="wwwroot/images/icons/wdzk_icon_qianbao.png">
+      <publishTime>03/23/2016 22:46:18</publishTime>
+    </File>
+    <File Include="wwwroot/images/icons/wdzk_icon_quqiu.png">
+      <publishTime>03/23/2016 22:46:18</publishTime>
+    </File>
+    <File Include="wwwroot/images/icons/wdzk_icon_tickes.png">
+      <publishTime>03/23/2016 22:46:18</publishTime>
+    </File>
+    <File Include="wwwroot/images/icons/wdzk_icon_xiaoxi.png">
+      <publishTime>03/23/2016 22:46:18</publishTime>
+    </File>
+    <File Include="wwwroot/images/icons/wdzk_icon_xinxi.png">
+      <publishTime>03/23/2016 22:46:18</publishTime>
+    </File>
+    <File Include="wwwroot/images/icons/wdzk_icon_youhui.png">
+      <publishTime>03/23/2016 22:46:18</publishTime>
+    </File>
+    <File Include="wwwroot/images/photo1.jpg">
+      <publishTime>04/03/2016 20:30:58</publishTime>
+    </File>
+    <File Include="wwwroot/jsComponents/autoSkip/autoSkip.js">
+      <publishTime>03/23/2016 22:46:18</publishTime>
+    </File>
+    <File Include="wwwroot/jsComponents/pageLoading/pageLoading.css">
+      <publishTime>03/23/2016 22:46:20</publishTime>
+    </File>
+    <File Include="wwwroot/jsComponents/pageLoading/pageLoading.js">
+      <publishTime>03/23/2016 22:46:20</publishTime>
+    </File>
+    <File Include="wwwroot/StaticHtml/Error.Html">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+    <File Include="wwwroot/StaticHtml/NotAllow.Html">
+      <publishTime>03/23/2016 22:46:15</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

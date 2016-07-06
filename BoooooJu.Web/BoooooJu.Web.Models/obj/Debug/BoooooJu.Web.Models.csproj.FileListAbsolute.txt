@@ -1,0 +1,12 @@
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Models\bin\Debug\BoooooJu.Web.Models.dll
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Models\bin\Debug\BoooooJu.Web.Models.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Models\bin\Debug\ServiceStack.Common.dll
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Models\bin\Debug\ServiceStack.Interfaces.dll
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Models\bin\Debug\ServiceStack.Redis.dll
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Models\bin\Debug\ServiceStack.Text.dll
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Models\bin\Debug\ServiceStack.Common.xml
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Models\bin\Debug\ServiceStack.Redis.xml
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Models\bin\Debug\ServiceStack.Text.xml
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Models\obj\Debug\BoooooJu.Web.Models.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Models\obj\Debug\BoooooJu.Web.Models.dll
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Models\obj\Debug\BoooooJu.Web.Models.pdb

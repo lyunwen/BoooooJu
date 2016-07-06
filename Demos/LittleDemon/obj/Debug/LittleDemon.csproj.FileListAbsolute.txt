@@ -1,0 +1,6 @@
+X:\Projetcts\BoooooJu\Demos\LittleDemon\bin\Debug\LittleDemon.exe.config
+X:\Projetcts\BoooooJu\Demos\LittleDemon\bin\Debug\LittleDemon.exe
+X:\Projetcts\BoooooJu\Demos\LittleDemon\bin\Debug\LittleDemon.pdb
+X:\Projetcts\BoooooJu\Demos\LittleDemon\obj\Debug\LittleDemon.exe
+X:\Projetcts\BoooooJu\Demos\LittleDemon\obj\Debug\LittleDemon.pdb
+X:\Projetcts\BoooooJu\Demos\LittleDemon\obj\Debug\LittleDemon.csprojResolveAssemblyReference.cache

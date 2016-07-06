@@ -1,0 +1,7 @@
+X:\Projetcts\BoooooJu\Common\Common.Logger\bin\Debug\Common.Logger.dll
+X:\Projetcts\BoooooJu\Common\Common.Logger\bin\Debug\Common.Logger.pdb
+X:\Projetcts\BoooooJu\Common\Common.Logger\obj\Debug\Common.Logger.dll
+X:\Projetcts\BoooooJu\Common\Common.Logger\obj\Debug\Common.Logger.pdb
+X:\Projetcts\BoooooJu\Common\Common.Logger\obj\Debug\Common.Logger.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\Bin\Common.Logger.dll
+X:\Projetcts\BoooooJu\Bin\Common.Logger.pdb

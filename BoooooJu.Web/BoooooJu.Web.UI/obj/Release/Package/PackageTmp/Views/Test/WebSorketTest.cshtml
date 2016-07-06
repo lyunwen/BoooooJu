@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "WebSorketTest";
+    Layout = "~/Views/Shared/_default.cshtml";
+}
+@section Head{
+<script src="~/Scripts/WebSortKetTransport.js"></script> 
+}
+<input type="button" value="Connection" onclick="connection()" />
+<br />
+<input name="msg" type="text"/><label>ResiveData:<span></span></label>
+<br />
+<input type="button" value="Send" onclick="sendMessage()" />
+<h2>WebSorketTest</h2>
+@section Js{
+    <script type="text/javascript">
+        $(function () { Socket_Init("userName", "123456", "ws://192.168.1.36:2012"); });
+        function sendMessage() { 
+            var o = Socket_SendMessage($('input[name=msg]').val()); 
+        }
+    </script>
+}

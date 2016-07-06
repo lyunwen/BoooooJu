@@ -1,0 +1,4 @@
+F:\SVN\BoooooJu\Common.Loger\bin\Release\Common.Loger.dll
+F:\SVN\BoooooJu\Common.Loger\bin\Release\Common.Loger.pdb
+F:\SVN\BoooooJu\Common.Loger\obj\Release\Common.Loger.dll
+F:\SVN\BoooooJu\Common.Loger\obj\Release\Common.Loger.pdb

@@ -1,0 +1,4 @@
+F:\Git\SVN\Common.Loger\bin\Debug\Common.Loger.dll
+F:\Git\SVN\Common.Loger\bin\Debug\Common.Loger.pdb
+F:\Git\SVN\Common.Loger\obj\Debug\Common.Loger.dll
+F:\Git\SVN\Common.Loger\obj\Debug\Common.Loger.pdb

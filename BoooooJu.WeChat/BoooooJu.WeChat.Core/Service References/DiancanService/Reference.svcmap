@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f769dbae-cab0-4449-b4ff-7f86b972d239" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://120.24.185.131:9300/Diancan/DiancanService.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="9984d808-e193-4926-a42e-314a2b8519f5" SourceId="1" SourceUrl="http://120.24.185.131:9300/Diancan/DiancanService.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="8aa71da3-5d85-438c-a398-369adb51a78e" SourceId="1" SourceUrl="http://120.24.185.131:9300/Diancan/DiancanService.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="fc7409cf-5423-4344-bdf9-447cea948fc7" SourceId="1" SourceUrl="http://120.24.185.131:9300/Diancan/DiancanService.svc/mex" />
+    <MetadataFile FileName="BoooooJu.Service.DPModels.xsd" MetadataType="Schema" ID="be085e20-4478-4cce-9a0f-1cf0d00c9b09" SourceId="1" SourceUrl="http://120.24.185.131:9300/Diancan/DiancanService.svc/mex" />
+    <MetadataFile FileName="BoooooJu.Service.Core.QueryParameter.xsd" MetadataType="Schema" ID="d1208f75-1fec-49c7-a9be-21b62115a903" SourceId="1" SourceUrl="http://120.24.185.131:9300/Diancan/DiancanService.svc/mex" />
+    <MetadataFile FileName="BoooooJu.Service.Core.QueryParameter.Base.xsd" MetadataType="Schema" ID="e10dce8d-06f9-471d-a35d-f64d5fd6063a" SourceId="1" SourceUrl="http://120.24.185.131:9300/Diancan/DiancanService.svc/mex" />
+    <MetadataFile FileName="BoooooJu.Service.Core.Dal.Rank.xsd" MetadataType="Schema" ID="6e61e111-b3aa-484a-8ff8-12853d764e65" SourceId="1" SourceUrl="http://120.24.185.131:9300/Diancan/DiancanService.svc/mex" />
+    <MetadataFile FileName="System.Collections.Generic.xsd" MetadataType="Schema" ID="43994033-b786-4b3e-b680-70ec752e184c" SourceId="1" SourceUrl="http://120.24.185.131:9300/Diancan/DiancanService.svc/mex" />
+    <MetadataFile FileName="BoooooJu.Service.Core.Dal.OBModels.xsd" MetadataType="Schema" ID="964ccfe1-0057-4e9c-9c71-fe890f91e71f" SourceId="1" SourceUrl="http://120.24.185.131:9300/Diancan/DiancanService.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

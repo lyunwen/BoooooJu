@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>F:\SVN\BoooooJu\WebSite\BoooooJu.WeChat</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>01/22/2016 21:38:36</publishTime>
+    </File>
+    <File Include="Areas/Agent/PersonCenter.cshtml">
+      <publishTime>03/23/2016 22:46:35</publishTime>
+    </File>
+    <File Include="Areas/Agent/web.config">
+      <publishTime>03/23/2016 22:46:35</publishTime>
+    </File>
+    <File Include="Areas/Manager/Home/Index.cshtml">
+      <publishTime>03/23/2016 22:46:35</publishTime>
+    </File>
+    <File Include="Areas/Manager/web.config">
+      <publishTime>03/23/2016 22:46:35</publishTime>
+    </File>
+    <File Include="Areas/SuperManager/PersonCenter.cshtml">
+      <publishTime>03/23/2016 22:46:35</publishTime>
+    </File>
+    <File Include="Areas/SuperManager/web.config">
+      <publishTime>03/23/2016 22:46:35</publishTime>
+    </File>
+    <File Include="Areas/Test/Views/web.config">
+      <publishTime>02/01/2016 09:49:47</publishTime>
+    </File>
+    <File Include="Areas/Vendor/PersonCenter.cshtml">
+      <publishTime>03/23/2016 22:46:35</publishTime>
+    </File>
+    <File Include="Areas/Vendor/web.config">
+      <publishTime>03/23/2016 22:46:35</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>01/22/2016 21:38:36</publishTime>
+    </File>
+    <File Include="bin/Autofac.Configuration.dll">
+      <publishTime>03/23/2016 22:48:11</publishTime>
+    </File>
+    <File Include="bin/Autofac.dll">
+      <publishTime>03/24/2016 09:46:00</publishTime>
+    </File>
+    <File Include="bin/Autofac.Integration.Mvc.dll">
+      <publishTime>01/22/2016 21:38:36</publishTime>
+    </File>
+    <File Include="bin/BoooooJu.Web.Core.dll">
+      <publishTime>02/03/2016 13:21:19</publishTime>
+    </File>
+    <File Include="bin/BoooooJu.Web.dll">
+      <publishTime>02/03/2016 13:21:22</publishTime>
+    </File>
+    <File Include="bin/BoooooJu.WeChat.Core.dll">
+      <publishTime>07/04/2016 23:21:18</publishTime>
+    </File>
+    <File Include="bin/BoooooJu.WeChat.UI.dll">
+      <publishTime>07/04/2016 23:21:20</publishTime>
+    </File>
+    <File Include="bin/Common.Loger.dll">
+      <publishTime>04/09/2016 01:21:30</publishTime>
+    </File>
+    <File Include="bin/Common.Logger.dll">
+      <publishTime>07/04/2016 21:48:09</publishTime>
+    </File>
+    <File Include="bin/cs/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:18</publishTime>
+    </File>
+    <File Include="bin/da/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:18</publishTime>
+    </File>
+    <File Include="bin/de/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:18</publishTime>
+    </File>
+    <File Include="bin/es/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:18</publishTime>
+    </File>
+    <File Include="bin/fa/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:18</publishTime>
+    </File>
+    <File Include="bin/fi/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:18</publishTime>
+    </File>
+    <File Include="bin/FluentValidation.dll">
+      <publishTime>03/24/2016 21:24:18</publishTime>
+    </File>
+    <File Include="bin/FluentValidation.Mvc.dll">
+      <publishTime>03/25/2016 23:40:22</publishTime>
+    </File>
+    <File Include="bin/fr/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:18</publishTime>
+    </File>
+    <File Include="bin/it/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:18</publishTime>
+    </File>
+    <File Include="bin/ko/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:19</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>01/22/2016 21:38:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>01/22/2016 21:38:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>01/22/2016 21:38:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>01/22/2016 21:38:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>01/22/2016 21:38:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>01/22/2016 21:38:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>01/22/2016 21:38:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>03/23/2016 22:51:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/mk/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:19</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/23/2016 22:53:04</publishTime>
+    </File>
+    <File Include="bin/nl/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:19</publishTime>
+    </File>
+    <File Include="bin/pl/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:19</publishTime>
+    </File>
+    <File Include="bin/pt/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:19</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>03/23/2016 22:52:40</publishTime>
+    </File>
+    <File Include="bin/ru/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:19</publishTime>
+    </File>
+    <File Include="bin/sv/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>03/23/2016 22:51:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.resources.dll">
+      <publishTime>03/23/2016 22:51:13</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>03/23/2016 22:51:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>03/23/2016 22:51:06</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.resources.dll">
+      <publishTime>03/23/2016 22:51:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>03/23/2016 22:51:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>03/23/2016 22:51:13</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>03/23/2016 22:51:13</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>03/23/2016 22:51:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>03/23/2016 22:51:13</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.resources.dll">
+      <publishTime>03/23/2016 22:51:13</publishTime>
+    </File>
+    <File Include="bin/tr/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:19</publishTime>
+    </File>
+    <File Include="bin/Z.Core.dll">
+      <publishTime>07/04/2016 21:49:53</publishTime>
+    </File>
+    <File Include="bin/zh-CN/FluentValidation.resources.dll">
+      <publishTime>03/24/2016 21:24:19</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Helpers.resources.dll">
+      <publishTime>03/23/2016 22:51:13</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Mvc.resources.dll">
+      <publishTime>03/23/2016 22:51:00</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Razor.resources.dll">
+      <publishTime>03/23/2016 22:51:06</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Webpages.Deployment.resources.dll">
+      <publishTime>03/23/2016 22:51:13</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Webpages.Razor.resources.dll">
+      <publishTime>03/23/2016 22:51:13</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Webpages.resources.dll">
+      <publishTime>03/23/2016 22:51:13</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>03/23/2016 22:46:35</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>03/24/2016 21:24:51</publishTime>
+    </File>
+    <File Include="Properties/DataSources/BoooooJu.Web.Core.ServiceReference.User.datasource">
+      <publishTime>03/23/2016 22:46:35</publishTime>
+    </File>
+    <File Include="Scripts/commonJs.js">
+      <publishTime>03/23/2016 22:46:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.js">
+      <publishTime>03/23/2016 22:46:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.min.js">
+      <publishTime>03/23/2016 22:46:36</publishTime>
+    </File>
+    <File Include="Views/Account/Manage.cshtml">
+      <publishTime>03/23/2016 22:46:36</publishTime>
+    </File>
+    <File Include="Views/Account/Partial/UserPage.cshtml">
+      <publishTime>03/23/2016 22:46:36</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>03/23/2016 22:46:36</publishTime>
+    </File>
+    <File Include="Views/Account/SignIn.cshtml">
+      <publishTime>03/23/2016 22:46:36</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>03/23/2016 22:46:36</publishTime>
+    </File>
+    <File Include="Views/Partial/Header.cshtml">
+      <publishTime>03/23/2016 22:46:36</publishTime>
+    </File>
+    <File Include="Views/Shared/_default.cshtml">
+      <publishTime>03/23/2016 22:46:36</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>03/23/2016 22:46:36</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/04/2016 23:21:20</publishTime>
+    </File>
+    <File Include="wwwroot/StaticHtml/Error.Html">
+      <publishTime>03/23/2016 22:47:42</publishTime>
+    </File>
+    <File Include="wwwroot/StaticHtml/NotAllow.Html">
+      <publishTime>03/23/2016 22:47:42</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

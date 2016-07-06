@@ -1,0 +1,11 @@
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.DB\obj\Debug\BoooooJu.Web.Core.DB.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.DB\bin\Debug\BoooooJu.Web.Core.DB.dll
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.DB\bin\Debug\BoooooJu.Web.Core.DB.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.DB\bin\Debug\BoooooJu.Web.Models.dll
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.DB\bin\Debug\Dapper.dll
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.DB\bin\Debug\Dapper.Mapper.dll
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.DB\bin\Debug\BoooooJu.Web.Models.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.DB\bin\Debug\Dapper.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.DB\bin\Debug\Dapper.xml
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.DB\obj\Debug\BoooooJu.Web.Core.DB.dll
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.DB\obj\Debug\BoooooJu.Web.Core.DB.pdb

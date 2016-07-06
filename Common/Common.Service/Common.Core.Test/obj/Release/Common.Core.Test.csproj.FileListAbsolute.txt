@@ -1,0 +1,9 @@
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core.Test\bin\Release\Common.Core.Test.dll
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core.Test\bin\Release\Common.Core.Test.pdb
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core.Test\bin\Release\BoooooJu.CommonService.Core.dll
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core.Test\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core.Test\bin\Release\BoooooJu.CommonService.Core.pdb
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core.Test\bin\Release\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core.Test\obj\Release\Common.Core.Test.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core.Test\obj\Release\Common.Core.Test.dll
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core.Test\obj\Release\Common.Core.Test.pdb

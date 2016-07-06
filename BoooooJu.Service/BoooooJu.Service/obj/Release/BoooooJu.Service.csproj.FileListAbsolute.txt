@@ -1,0 +1,15 @@
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service\bin\BoooooJu.Service.dll.config
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service\bin\BoooooJu.Service.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service\bin\BoooooJu.Service.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service\bin\BoooooJu.Service.DPCore.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service\bin\BoooooJu.Service.ICore.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service\bin\BoooooJu.Service.DPModels.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service\bin\Dapper.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service\bin\BoooooJu.Service.DPCore.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service\bin\BoooooJu.Service.ICore.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service\bin\BoooooJu.Service.DPModels.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service\bin\Dapper.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service\bin\Dapper.xml
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service\obj\Release\BoooooJu.Service.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service\obj\Release\BoooooJu.Service.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service\obj\Release\BoooooJu.Service.pdb

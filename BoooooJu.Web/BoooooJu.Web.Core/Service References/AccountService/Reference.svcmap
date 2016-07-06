@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9a4fd6cf-6a2b-43bf-92dd-ada74e679190" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://120.24.185.131:9300/Account/AccountService.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="1ed4829e-a695-4a83-b5d5-b8613d7672b6" SourceId="1" SourceUrl="http://120.24.185.131:9300/Account/AccountService.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="f8572b2e-d0c0-4b4d-b50a-a0cae6503d75" SourceId="1" SourceUrl="http://120.24.185.131:9300/Account/AccountService.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="a26d043a-c3d8-427d-b60e-4f123ad17595" SourceId="1" SourceUrl="http://120.24.185.131:9300/Account/AccountService.svc/mex" />
+    <MetadataFile FileName="BoooooJu.Service.DPModels.OBModels.xsd" MetadataType="Schema" ID="45794eee-ee69-4b85-87fb-911ee145f55d" SourceId="1" SourceUrl="http://120.24.185.131:9300/Account/AccountService.svc/mex" />
+    <MetadataFile FileName="BoooooJu.Service.Core.QueryParameter.xsd" MetadataType="Schema" ID="9b424b8c-bdae-4489-a243-685e6ac2d8f7" SourceId="1" SourceUrl="http://120.24.185.131:9300/Account/AccountService.svc/mex" />
+    <MetadataFile FileName="BoooooJu.Service.Core.QueryParameter.Base.xsd" MetadataType="Schema" ID="865e73d4-465c-4a37-a0eb-db5da4aabff0" SourceId="1" SourceUrl="http://120.24.185.131:9300/Account/AccountService.svc/mex" />
+    <MetadataFile FileName="BoooooJu.Service.Core.Dal.OBModels.xsd" MetadataType="Schema" ID="eb4d8426-8d4d-4a5e-8a85-8e0c010cba37" SourceId="1" SourceUrl="http://120.24.185.131:9300/Account/AccountService.svc/mex" />
+    <MetadataFile FileName="System.Collections.Generic.xsd" MetadataType="Schema" ID="c0434079-31f3-49a6-ac3a-c0aeb66610ea" SourceId="1" SourceUrl="http://120.24.185.131:9300/Account/AccountService.svc/mex" />
+    <MetadataFile FileName="BoooooJu.Service.DPModels.xsd" MetadataType="Schema" ID="e85c053d-1981-4d01-aa15-8bb977255d02" SourceId="1" SourceUrl="http://120.24.185.131:9300/Account/AccountService.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

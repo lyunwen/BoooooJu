@@ -1,0 +1,5 @@
+X:\Projetcts\BoooooJu\Demos\LittleDemon\bin\Release\LittleDemon.exe.config
+X:\Projetcts\BoooooJu\Demos\LittleDemon\bin\Release\LittleDemon.exe
+X:\Projetcts\BoooooJu\Demos\LittleDemon\bin\Release\LittleDemon.pdb
+X:\Projetcts\BoooooJu\Demos\LittleDemon\obj\Release\LittleDemon.exe
+X:\Projetcts\BoooooJu\Demos\LittleDemon\obj\Release\LittleDemon.pdb

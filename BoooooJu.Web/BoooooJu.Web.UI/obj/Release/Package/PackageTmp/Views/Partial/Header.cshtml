@@ -1,0 +1,106 @@
+﻿<style> 
+       .mobile-inner-nav a {
+        -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: returnToNormal;
+        animation-name: returnToNormal;
+    }
+
+    @@-webkit-keyframes returnToNormal {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+        }
+
+        100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+
+    @@keyframes returnToNormal {
+        0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+        }
+
+        100% {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+    /*.mobile-inner-nav a{
+		-webkit-animation-duration: 0.5s;
+		animation-duration: 0.5s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+		-webkit-animation-name: returnToNormal;
+		animation-name: returnToNormal;
+	}
+		
+			
+	@@-webkit-keyframes returnToNormal {
+	  from {
+	    opacity: 0;
+	    -webkit-transform: translate3d(0, 100%, 0);
+	    transform: translate3d(0, 100%, 0);
+	  }
+
+	  to {
+	    opacity: 1;
+	    -webkit-transform: none;
+	    transform: none;
+	  }
+	}
+
+	@@keyframes returnToNormal {
+	  from {
+	    opacity: 0;
+	    -webkit-transform: translate3d(0, 100%, 0);
+	    transform: translate3d(0, 100%, 0);
+	  }
+
+	  to {
+	    opacity: 1;
+	    -webkit-transform: none;
+	    transform: none;
+	  }
+	}*/
+</style>
+<link rel="stylesheet" type="text/css" href="~/wwwroot/css/component/htmleaf-demo.css" /> 
+<link rel="stylesheet" type="text/css" href="~/wwwroot/css/component/normalize.css">
+<link rel="stylesheet" type="text/css" href="~/wwwroot/css/component/footer.css">
+<div class="mobile">
+    <div class="mobile-inner">
+        <div class="mobile-inner-header">
+            <div class="mobile-inner-header-icon mobile-inner-header-icon-out"><span></span><span></span></div>
+        </div>
+        <div class="mobile-inner-nav">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <img src="~/wwwroot/images/photo1.jpg" />
+        
+    </div>
+</div>
+<script>
+    $(window).load(function () {
+        $(".mobile-inner-header-icon").click(function () {
+            $(this).toggleClass("mobile-inner-header-icon-click mobile-inner-header-icon-out");
+            $(".mobile-inner-nav").slideToggle(250);
+        });
+        $(".mobile-inner-nav a").each(function (index) {
+            $(this).css({ 'animation-delay': (index / 10) + 's' });
+        });
+    }); 
+</script>

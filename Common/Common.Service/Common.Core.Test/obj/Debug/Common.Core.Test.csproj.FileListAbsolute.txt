@@ -1,0 +1,10 @@
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core.Test\bin\Debug\Common.Core.Test.dll
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core.Test\bin\Debug\Common.Core.Test.pdb
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core.Test\bin\Debug\BoooooJu.CommonService.Core.dll
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core.Test\bin\Debug\BoooooJu.CommonService.Core.pdb
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core.Test\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core.Test\obj\Debug\Common.Core.Test.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core.Test\obj\Debug\Common.Core.Test.dll
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core.Test\obj\Debug\Common.Core.Test.pdb
+X:\Projetcts\BoooooJu\Common\Common.Service\Common.Core.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml

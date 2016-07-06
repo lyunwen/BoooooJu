@@ -1,0 +1,9 @@
+X:\Projetcts\BoooooJu\Common\DataDrager\bin\Release\DataDrager.exe.config
+X:\Projetcts\BoooooJu\Common\DataDrager\bin\Release\DataDrager.exe
+X:\Projetcts\BoooooJu\Common\DataDrager\bin\Release\DataDrager.pdb
+X:\Projetcts\BoooooJu\Common\DataDrager\obj\Release\Common.DataGrabber.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\Common\DataDrager\obj\Release\DataDrager.DataGrabber.resources
+X:\Projetcts\BoooooJu\Common\DataDrager\obj\Release\DataDrager.Properties.Resources.resources
+X:\Projetcts\BoooooJu\Common\DataDrager\obj\Release\Common.DataGrabber.csproj.GenerateResource.Cache
+X:\Projetcts\BoooooJu\Common\DataDrager\obj\Release\DataDrager.exe
+X:\Projetcts\BoooooJu\Common\DataDrager\obj\Release\DataDrager.pdb

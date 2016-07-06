@@ -1,0 +1,15 @@
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Bus\bin\Debug\BoooooJu.Web.Core.Bus.dll
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Bus\bin\Debug\BoooooJu.Web.Core.Bus.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Bus\obj\Debug\BoooooJu.Web.Core.Bus.dll
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Bus\obj\Debug\BoooooJu.Web.Core.Bus.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Bus\obj\Debug\BoooooJu.Web.Core.Bus.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Bus\bin\Debug\Common.Logger.dll
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Bus\bin\Debug\BoooooJu.Web.Core.Dal.dll
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Bus\bin\Debug\BoooooJu.Web.Core.Dal.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Bus\bin\Debug\Dapper.dll
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Bus\bin\Debug\Dapper.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Bus\bin\Debug\Dapper.xml
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Bus\bin\Debug\Autofac.dll
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Bus\bin\Debug\Autofac.xml
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Bus\bin\Debug\BoooooJu.Service.Api.Dto.dll
+X:\Projetcts\BoooooJu\BoooooJu.Web\BoooooJu.Web.Core.Bus\bin\Debug\BoooooJu.Service.Api.Dto.pdb

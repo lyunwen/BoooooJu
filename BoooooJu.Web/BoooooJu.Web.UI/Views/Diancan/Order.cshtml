@@ -1,0 +1,285 @@
+﻿@model BoooooJu.Web.Core.DiancanService.DC_User
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_default.cshtml";
+}
+@section Head{
+    @Scripts.Render("~/Js/Page")
+}
+<div class="container">
+    <div class="nav">
+        @{ if (ViewBag.User != null)
+            {
+                <span class="glyphicon glyphicon-user"> @ViewBag.User.Name </span>
+                if (ViewBag.TodayOrder == null)
+                {
+                    <span>您今天尚未点餐，快点点！</span>
+                }
+                else
+                {
+                    <span>您今天的晚餐是：@ViewBag.TodayOrder.FoodId</span><span><a href="###" onclick="CancelOrder()">不吃了...</a></span>
+                }
+            }
+        }
+    </div>
+    <div id="foodArea">
+        <div class="checkbox">
+            @if (ViewBag.Foods != null)
+            {
+                foreach (var food in ViewBag.Foods)
+                {
+                    <label>  <input name="foodInp" data-price="@food.Price" data-id="@food.Id" type="radio" /> @food.Name</label>
+                }
+            }
+        </div>
+        <button class="btn-block" onclick="PlaceOrder()">点这个！</button>
+    </div>
+    <h2>点餐记录</h2>
+    <div class="input-group">
+        <div class="input-group">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default"
+                        tabindex="-1">
+                    查询条件
+                </button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                    <span class="caret"></span>
+                    <span class="sr-only">切换下拉菜单</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">大名</a></li>
+                    <li><a href="#">菜名</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">全部吧！</a></li>
+                </ul>
+            </div><!-- /btn-group -->
+            <input type="text" class="form-control">
+        </div><!-- /input-group --> <br>
+    </div><!-- /input-group -->
+    <table class="table table-striped table-hover" id="AgentTable">
+        <thead>
+            <tr>
+                <th data-orderBy="OrderId" data-sort="0">订单序列号</th>
+                <th data-orderBy="UserName" data-sort="0">大名</th>
+                <th data-orderBy="FoodName" data-sort="0">菜名</th>
+                <th data-orderBy="OrderTime" data-sort="0">点餐时间</th>
+                <th data-orderBy="UpdateTime" data-sort="0">修改时间</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="Agents"></tbody>
+    </table>
+    <ul id="demo" class="pagination"></ul>
+    <div class="input-group">
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="button" onclick="Gooo()">
+                Goto
+            </button>
+        </span>
+        <input id="Goto" type="text" class="form-control">
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="button" onclick="destory()">
+                Destory
+            </button>
+        </span>
+    </div>
+</div>
+
+<!-- 按钮触发模态框 -->
+<button style="display:none;" class="btn btn-primary btn-lg" data-toggle="modal"
+        data-target="#myModal">
+    开始演示模态框
+</button>
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">
+                    初次见面，请注册(登入)你的账号吧！
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="input-group">
+                    <span class="input-group-addon">大名：</span>
+                    <input name="AccountName" type="text" class="form-control" placeholder="别跟人家一样，也不能没有~">
+                </div>
+                <br>
+                <div class="input-group">
+                    <span class="input-group-addon">密码：</span>
+                    <input name="Password" type="text" class="form-control danger" placeholder="也不能没有~">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="Register()"  type="button" class="btn btn-default">
+                    注册
+                </button>
+                <button type="button" onclick="SignIn()" class="btn btn-primary">
+                    登入
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+@section Js{
+    <script>
+        var GlobalIsEnd = false;
+        var GlobalQueryParam = { TatalPages: 1, PageIndex: 1, Sort: 0, OrderBy: "OrderId", NickName: $('input[name=NickName]').val() }
+
+        $("#AgentTable").children("thead").children("tr").eq(0).children("th").click(function () {
+            if ($(this).attr("data-orderBy") != undefined) {
+                GlobalQueryParam.OrderBy = $(this).attr("data-orderBy");
+                GlobalQueryParam.Sort = $(this).attr("data-sort");
+                AgentMangePage(GlobalQueryParam);
+                $(this).attr("data-sort", GlobalQueryParam.Sort == 1 ? 0 : 1);
+            }
+        });
+
+        $(function () {
+            if ("@(ViewBag.User == null)" == "True") {
+                $('#myModal').modal('show');
+            } 
+            $("#demo").jqPaginator({
+                totalPages: GlobalQueryParam.TatalPages,
+                visiblePages: 5,
+                currentPage: 1,
+                activeClass: 'active',
+                disableClass: "disabled",
+                first: "<li class='first'><a href='#'>First</a></li>",
+                prev: "<li class='prev'><a href='#'>&laquo;</a></li>",
+                page: "<li ><a href='#'>{{page}}</a></li>",
+                next: "<li class='next'><a href='#'>&raquo;</a></li>",
+                last: "<li class='first'><a href='#'>Last</a></li>",
+                onPageChange: function (n) {
+                    GlobalQueryParam.PageIndex = n;
+                    GlobalQueryParam.NickName = $('input[name=NickName]').val();
+                    AgentMangePage(GlobalQueryParam);
+                }
+            });
+        })
+
+        function Search() {
+            GlobalQueryParam.PageIndex = 1;
+            GlobalQueryParam.NickName = $('input[name=NickName]').val();
+            AgentMangePage(GlobalQueryParam);
+        }
+
+        function Gooo() {
+            var index = parseInt($("#Goto").val());
+            if (IsLegalIndex(index)) {
+                $('#demo').jqPaginator('option', { currentPage: index });
+                GlobalQueryParam.PageIndex = index;
+                GlobalQueryParam.NickName = $('input[name=NickName]').val();
+                AgentMangePage(GlobalQueryParam);
+            }
+            $("#Goto").val("");
+        }
+
+        function IsLegalIndex(index) {
+            var re = /^[0-9]*[1-9][0-9]*$/;
+            if (index > GlobalQueryParam.TatalPages)
+                return false;
+            return re.test(index);
+        }
+
+        function destory() {
+            $('#demo').jqPaginator('destroy');
+        }
+
+        function AgentMangePage(GlobalQueryParam) {
+            if (GlobalIsEnd)
+                return false;
+            $.ajax({
+                url: "/Diancan/OrderPage",
+                data: GlobalQueryParam,
+                dataType: "json",
+                type: "post",
+                success: function (data) {
+                    $('#demo').jqPaginator('option', { totalPages: data.Key.TotalPages });
+                    $("#Agents").empty();
+                    var html = SetAgentPage(data.Value);
+                    $("#Agents").append(html);
+                }
+            });
+        }
+
+        function SetAgentPage(value) {
+            var html = "";
+            if (value != null && value.length > 0) {
+                for (var i = 0; i < value.length; i++) {
+                    html += "<tr><td>" + value[i].OrderId + "</td><td>" + value[i].UserName + "</td><td>" + value[i].FoodName + "</td><td>" + value[i].OrderTime + "</td><td>" + value[i].UpdateTime + "</td><td>X</td></tr>";
+                }
+            }
+            return html;
+        }
+         
+        //注册用户
+        function Register() {
+            var accountName = $("input[name=AccountName]").val();
+            var password = $("input[name=Password]").val();
+            if (accountName.length < 20 && accountName.length > 0 && password.length < 20 && password.length > 0) {
+                jQuery.ajax({
+                    url: "/Diancan/Register",
+                    type: "post",
+                    dataType: "json",
+                    data: { accountName: accountName, password: password },
+                    success: function (e) {
+                        if (e.success) {
+                            location.reload();
+                        }
+                    }
+                });
+            }
+        }
+
+        function SignIn(){
+            var accountName=$("input[name=AccountName]").val();
+            var password=$("input[name=Password]").val();
+            if(accountName.length<20&&accountName.length>0&&password.length<20&&password.length>0){
+                jQuery.ajax({
+                    url:"/Diancan/SignIn",
+                    type:"post",
+                    dataType:"json",
+                    data:{accountName:accountName,password:password},
+                    success:function(e){
+                        if(e.success){ 
+                            location.reload();
+                        }
+                    }
+                });
+            }
+        } 
+
+        function PlaceOrder() {
+            var foodId = $("input[name=foodInp]:checked").attr("data-id");
+            if (foodId > 0) {
+                jQuery.ajax({
+                    url: "/Diancan/PlaceOrder",
+                    type: "post",
+                    data: { foodId: foodId },
+                    success: function (e) {
+                        if (e.success) {
+                            location.reload();
+                        }
+                    }
+                });
+            } else {
+                alert("你没点！");
+            }
+        }
+
+        function CancelOrder() {
+            jQuery.ajax({
+                url: "/Diancan/CanCelOrder",
+                type: "post",
+                success: function (e) {
+                    if (e.success) {
+                        location.reload();
+                    }
+                }
+            });
+        }
+    </script>
+}

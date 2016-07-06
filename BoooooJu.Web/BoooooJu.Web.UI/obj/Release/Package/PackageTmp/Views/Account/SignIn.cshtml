@@ -1,0 +1,50 @@
+﻿@model BoooooJu.Web.Core.ViewModels.Account.SignInModel
+@{
+    ViewBag.Title = "SignIn";
+    Layout = "~/Views/Shared/_default.cshtml";
+}
+<h2>SignIn</h2>
+@using (Html.BeginForm())
+{
+    @Html.TextBoxFor(model => model.SignName, new { placeholder = "请输入手机/邮箱/用户名" })
+    @Html.PasswordFor(model => model.Pswd, new { placeholder = "请输入密码" })
+    <button type="button" onclick="SignIn()">登入</button>
+    <a href="/Account/Register">注册</a>
+    <a href="/Account/UpdatePswd">修改密码</a> 
+}
+<div id="AutoSkip"></div>
+@section Js{
+    <script>
+        var returnUrl = "@ViewData["returnUrl"]";
+        $(function () {
+            AutoSkipInit();
+        });
+        function SignIn() {
+            var signName = $("input[name=SignName]").val();
+            var pswd = $("input[name=Pswd]").val();
+            if(FormValidate(signName,pswd))
+            $.ajax({
+                url: "/Account/SignIn",
+                type: "post",
+                dataType: "json",
+                data: { SignName: signName, Pswd: pswd },
+                success: function (e) {
+                    if (e.success) {
+                        if (returnUrl === "") { 
+                            AutoSkip("恭喜你，登入成功！跳转中....", e.url,2);
+                        } else {
+                            AutoSkip("恭喜你，登入成功！跳转中....",returnUrl,1.5); 
+                        }
+                    } else {
+                        AutoSkip("登入失败...")
+                    }
+                }
+            });
+            return false;
+        }
+        //表单验证
+        function FormValidate(SignName, Pswd) {
+            return true;
+        }
+    </script>
+}

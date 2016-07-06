@@ -1,0 +1,12 @@
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Cache\bin\Debug\BoooooJu.Service.Api.Cache.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Cache\bin\Debug\BoooooJu.Service.Api.Cache.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Cache\obj\Debug\BoooooJu.Service.Api.Cache.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Cache\obj\Debug\BoooooJu.Service.Api.Cache.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Cache\obj\Debug\BoooooJu.Service.Api.Cache.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Cache\bin\Debug\ServiceStack.Common.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Cache\bin\Debug\ServiceStack.Interfaces.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Cache\bin\Debug\ServiceStack.Redis.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Cache\bin\Debug\ServiceStack.Text.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Cache\bin\Debug\ServiceStack.Common.xml
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Cache\bin\Debug\ServiceStack.Redis.xml
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Cache\bin\Debug\ServiceStack.Text.xml

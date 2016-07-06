@@ -1,0 +1,11 @@
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\bin\Release\Common.Loger.Test.dll
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\bin\Release\Common.Loger.Test.pdb
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\bin\Release\Autofac.dll
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\bin\Release\Common.Loger.dll
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\bin\Release\Common.Loger.pdb
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\bin\Release\Autofac.xml
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\bin\Release\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\obj\Release\Common.Loger.Test.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\obj\Release\Common.Loger.Test.dll
+X:\Projetcts\BoooooJu\Common\Conmmon.Loger.Test\obj\Release\Common.Loger.Test.pdb

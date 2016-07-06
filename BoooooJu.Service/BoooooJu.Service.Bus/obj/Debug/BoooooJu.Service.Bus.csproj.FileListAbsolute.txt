@@ -1,0 +1,14 @@
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Bus\bin\Debug\BoooooJu.Service.Bus.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Bus\bin\Debug\BoooooJu.Service.Bus.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Bus\bin\Debug\BoooooJu.Service.DPCore.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Bus\bin\Debug\BoooooJu.Service.DPModels.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Bus\bin\Debug\BoooooJu.Service.ICore.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Bus\bin\Debug\Dapper.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Bus\bin\Debug\BoooooJu.Service.ICore.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Bus\bin\Debug\BoooooJu.Service.DPCore.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Bus\bin\Debug\BoooooJu.Service.DPModels.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Bus\bin\Debug\Dapper.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Bus\bin\Debug\Dapper.xml
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Bus\obj\Debug\BoooooJu.Service.Bus.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Bus\obj\Debug\BoooooJu.Service.Bus.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Bus\obj\Debug\BoooooJu.Service.Bus.pdb

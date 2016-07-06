@@ -1,0 +1,9 @@
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Dal\bin\Debug\BoooooJu.Service.Api.Dal.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Dal\bin\Debug\BoooooJu.Service.Api.Dal.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Dal\obj\Debug\BoooooJu.Service.Api.Dal.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Dal\obj\Debug\BoooooJu.Service.Api.Dal.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Dal\obj\Debug\BoooooJu.Service.Api.Dal.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Dal\bin\Debug\BoooooJu.Service.Api.Dto.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Dal\bin\Debug\Dapper.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Dal\bin\Debug\BoooooJu.Service.Api.Dto.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Api.Dal\bin\Debug\Dapper.xml

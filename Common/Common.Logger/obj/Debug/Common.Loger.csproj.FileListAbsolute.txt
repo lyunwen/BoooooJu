@@ -1,0 +1,9 @@
+F:\Git\SVN\Common.Loger\bin\Debug\Common.Loger.dll
+F:\Git\SVN\Common.Loger\bin\Debug\Common.Loger.pdb
+F:\Git\SVN\Common.Loger\obj\Debug\Common.Loger.dll
+F:\Git\SVN\Common.Loger\obj\Debug\Common.Loger.pdb
+X:\Projetcts\BoooooJu\Common\Common.Loger\bin\Debug\Common.Loger.dll
+X:\Projetcts\BoooooJu\Common\Common.Loger\bin\Debug\Common.Loger.pdb
+X:\Projetcts\BoooooJu\Common\Common.Loger\obj\Debug\Common.Loger.dll
+X:\Projetcts\BoooooJu\Common\Common.Loger\obj\Debug\Common.Loger.pdb
+X:\Projetcts\BoooooJu\Common\Common.Loger\obj\Debug\Common.Loger.csprojResolveAssemblyReference.cache

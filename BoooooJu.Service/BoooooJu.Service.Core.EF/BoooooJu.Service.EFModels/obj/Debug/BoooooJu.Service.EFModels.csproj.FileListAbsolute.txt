@@ -1,0 +1,12 @@
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.EF\BoooooJu.Service.EFModels\bin\Debug\BoooooJu.Service.EFModels.dll.config
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.EF\BoooooJu.Service.EFModels\bin\Debug\BoooooJu.Service.EFModels.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.EF\BoooooJu.Service.EFModels\bin\Debug\BoooooJu.Service.EFModels.pdb
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.EF\BoooooJu.Service.EFModels\bin\Debug\EntityFramework.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.EF\BoooooJu.Service.EFModels\bin\Debug\EntityFramework.SqlServer.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.EF\BoooooJu.Service.EFModels\bin\Debug\EntityFramework.xml
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.EF\BoooooJu.Service.EFModels\bin\Debug\EntityFramework.SqlServer.xml
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.EF\BoooooJu.Service.EFModels\bin\Debug\zh-Hans\EntityFramework.resources.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.EF\BoooooJu.Service.EFModels\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.EF\BoooooJu.Service.EFModels\obj\Debug\BoooooJu.Service.EFModels.csprojResolveAssemblyReference.cache
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.EF\BoooooJu.Service.EFModels\obj\Debug\BoooooJu.Service.EFModels.dll
+X:\Projetcts\BoooooJu\BoooooJu.Service\BoooooJu.Service.Core.EF\BoooooJu.Service.EFModels\obj\Debug\BoooooJu.Service.EFModels.pdb
