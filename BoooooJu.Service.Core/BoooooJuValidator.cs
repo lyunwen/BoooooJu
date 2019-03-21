@@ -14,7 +14,7 @@ namespace ServerWcfService.CustomValidators
     {
         public override void Validate(string userName, string password)
         {
-            if (userName != "boooooju.com" || password != "123456")
+            if (userName != "boooooju.com" || password != "1234567")
                 throw new SecurityTokenException("用户名或者密码错误！");
         }
     } 
